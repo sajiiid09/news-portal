@@ -27,6 +27,18 @@ interface AwardWinner {
 
 const LOCAL_STORAGE_COMMENTS_KEY = 'bb_comments'
 
+function getLocalStorageComments(): Comment[] {
+  if (typeof window === 'undefined' || typeof window.localStorage?.getItem !== 'function') {
+    return []
+  }
+
+  try {
+    return JSON.parse(window.localStorage.getItem(LOCAL_STORAGE_COMMENTS_KEY) || '[]') as Comment[]
+  } catch {
+    return []
+  }
+}
+
 export const DataService = {
   articles: {
     getAll: () => import('./articles/articles').then((m) => m.articles),
@@ -121,10 +133,7 @@ export const DataService = {
   comments: {
     getByArticle: async (articleId: string) => {
       const moduleComments = (await import('./comments/comments')).comments
-      const localComments =
-        typeof window === 'undefined'
-          ? []
-          : (JSON.parse(localStorage.getItem(LOCAL_STORAGE_COMMENTS_KEY) || '[]') as Comment[])
+      const localComments = getLocalStorageComments()
 
       return [...moduleComments, ...localComments].filter((c) => c.articleId === articleId)
     },
@@ -135,11 +144,9 @@ export const DataService = {
         createdAt: new Date().toISOString(),
       }
 
-      if (typeof window !== 'undefined') {
-        const currentComments = JSON.parse(
-          localStorage.getItem(LOCAL_STORAGE_COMMENTS_KEY) || '[]'
-        ) as Comment[]
-        localStorage.setItem(
+      if (typeof window !== 'undefined' && typeof window.localStorage?.setItem === 'function') {
+        const currentComments = getLocalStorageComments()
+        window.localStorage.setItem(
           LOCAL_STORAGE_COMMENTS_KEY,
           JSON.stringify([...currentComments, newComment])
         )
