@@ -6,8 +6,13 @@ export function MobileMenuToggle() {
   const { mobileMenuOpen, setMobileMenuOpen } = useUIStore()
 
   return (
-    <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} aria-label="Open mobile menu">
-      ☰
+    <button
+      className="bb-icon-button bb-mobile-menu-toggle"
+      onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+      aria-label={mobileMenuOpen ? 'মেনু বন্ধ করুন' : 'মেনু খুলুন'}
+      aria-expanded={mobileMenuOpen}
+    >
+      <span aria-hidden="true">☰</span>
     </button>
   )
 }

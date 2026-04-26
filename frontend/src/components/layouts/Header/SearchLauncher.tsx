@@ -8,8 +8,9 @@ export function SearchLauncher() {
 
   return (
     <>
-      <button onClick={() => setOpen(true)} aria-label="Open search">
-        সার্চ
+      <button className="bb-icon-button" onClick={() => setOpen(true)} aria-label="সার্চ খুলুন">
+        <span aria-hidden="true">⌕</span>
+        <span className="bb-sr-only">সার্চ</span>
       </button>
       <SearchModal open={open} onClose={() => setOpen(false)} />
     </>

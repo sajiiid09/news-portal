@@ -26,56 +26,77 @@ export function MobileMenu() {
 
   return (
     <>
-      <div className="bb-mobile-menu-overlay" onClick={() => setMobileMenuOpen(false)} />
-      <aside className="bb-mobile-menu">
-        <div className="bb-section__header">
-          <h3>মেনু</h3>
-          <button onClick={() => setMobileMenuOpen(false)} aria-label="Close mobile menu">
-            Close
+      <div
+        className="bb-mobile-menu-overlay"
+        onClick={() => setMobileMenuOpen(false)}
+        aria-hidden="true"
+      />
+      <aside className="bb-mobile-menu" aria-label="মোবাইল মেনু">
+        <div className="bb-mobile-menu__header">
+          <Link href="/" onClick={() => setMobileMenuOpen(false)}>
+            বর্তমান বাংলা
+          </Link>
+          <button
+            className="bb-icon-button"
+            onClick={() => setMobileMenuOpen(false)}
+            aria-label="মেনু বন্ধ করুন"
+          >
+            ×
           </button>
         </div>
 
-        <input placeholder="মেনুতে সার্চ করুন" />
+        <label className="bb-mobile-menu__search">
+          <span className="bb-sr-only">মেনুতে সার্চ করুন</span>
+          <input placeholder="খুঁজুন..." />
+        </label>
 
-        {navigation.map((item) => {
-          const key = item.href.replace('/', '')
-          const hasSubs = !!grouped[key]?.length
+        <nav className="bb-mobile-menu__nav" aria-label="মোবাইল প্রধান নেভিগেশন">
+          {navigation.map((item) => {
+            const key = item.href.replace('/', '')
+            const hasSubs = !!grouped[key]?.length
 
-          return (
-            <div key={item.href} className="bb-mobile-accordion-item">
-              <div className="bb-mobile-accordion-header">
-                <Link href={item.href} onClick={() => setMobileMenuOpen(false)}>
-                  {item.label}
-                </Link>
-                {hasSubs ? (
-                  <button
-                    onClick={() =>
-                      setOpenSections((state) => ({ ...state, [key]: !state[key] }))
-                    }
-                  >
-                    {openSections[key] ? '-' : '+'}
-                  </button>
+            return (
+              <div key={item.href} className="bb-mobile-accordion-item">
+                <div className="bb-mobile-accordion-header">
+                  <Link href={item.href} onClick={() => setMobileMenuOpen(false)}>
+                    {item.label}
+                  </Link>
+                  {hasSubs ? (
+                    <button
+                      className="bb-mobile-accordion-trigger"
+                      onClick={() =>
+                        setOpenSections((state) => ({ ...state, [key]: !state[key] }))
+                      }
+                      aria-expanded={!!openSections[key]}
+                      aria-label={`${item.label} উপবিভাগ ${openSections[key] ? 'বন্ধ করুন' : 'খুলুন'}`}
+                    >
+                      {openSections[key] ? '−' : '+'}
+                    </button>
+                  ) : null}
+                </div>
+                {hasSubs && openSections[key] ? (
+                  <div className="bb-mobile-accordion-content">
+                    {grouped[key].map((sub) => (
+                      <Link
+                        key={sub.id}
+                        href={`${item.href}/${sub.slug}`}
+                        onClick={() => setMobileMenuOpen(false)}
+                      >
+                        {sub.name}
+                      </Link>
+                    ))}
+                  </div>
                 ) : null}
               </div>
-              {hasSubs && openSections[key] ? (
-                <div className="bb-mobile-accordion-content">
-                  {grouped[key].map((sub) => (
-                    <Link
-                      key={sub.id}
-                      href={`${item.href}/${sub.slug}`}
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      {sub.name}
-                    </Link>
-                  ))}
-                </div>
-              ) : null}
-            </div>
-          )
-        })}
+            )
+          })}
+        </nav>
 
         <div className="bb-mobile-menu-footer">
-          <ThemeToggle />
+          <div>
+            <p>ই-পেপার ও Eng সংস্করণ আপাতত স্থির</p>
+            <ThemeToggle />
+          </div>
           <Link href="/login" onClick={() => setMobileMenuOpen(false)}>
             লগইন
           </Link>
