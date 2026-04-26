@@ -1,0 +1,68 @@
+[
+  {
+    "id": "video-1",
+    "title": "নির্বাচন পরিস্থিতির সর্বশেষ আপডেট",
+    "slug": "latest-election-update",
+    "categoryId": "politics",
+    "thumbnail": "https://img.youtube.com/vi/21X5lGlDOfg/hqdefault.jpg",
+    "duration": "3:45",
+    "views": 12450,
+    "url": "https://www.youtube.com/embed/21X5lGlDOfg",
+    "publishedAt": "2026-04-24T08:00:00.000Z"
+  },
+  {
+    "id": "video-2",
+    "title": "বাংলাদেশ ক্রিকেট দলের প্রস্তুতি",
+    "slug": "cricket-team-preparation",
+    "categoryId": "sports",
+    "thumbnail": "https://img.youtube.com/vi/W4hTJybfU7s/hqdefault.jpg",
+    "duration": "5:12",
+    "views": 9321,
+    "url": "https://www.youtube.com/embed/W4hTJybfU7s",
+    "publishedAt": "2026-04-24T06:30:00.000Z"
+  },
+  {
+    "id": "video-3",
+    "title": "ঢাকা ট্রাফিক আপডেট লাইভ",
+    "slug": "dhaka-traffic-live",
+    "categoryId": "bangladesh",
+    "thumbnail": "https://img.youtube.com/vi/aqz-KE-bpKQ/hqdefault.jpg",
+    "duration": "12:10",
+    "views": 18440,
+    "url": "https://www.youtube.com/embed/aqz-KE-bpKQ",
+    "publishedAt": "2026-04-24T09:10:00.000Z"
+  },
+  {
+    "id": "video-4",
+    "title": "বিশ্লেষণ: বাজেট ২০২৬",
+    "slug": "budget-analysis-2026",
+    "categoryId": "business",
+    "thumbnail": "https://img.youtube.com/vi/Gc2en3nHxA4/hqdefault.jpg",
+    "duration": "8:40",
+    "views": 9920,
+    "url": "https://www.youtube.com/embed/Gc2en3nHxA4",
+    "publishedAt": "2026-04-24T05:50:00.000Z"
+  },
+  {
+    "id": "video-5",
+    "title": "ফুটবল ডার্বির সেরা মুহূর্ত",
+    "slug": "derby-highlights",
+    "categoryId": "sports",
+    "thumbnail": "https://img.youtube.com/vi/ysz5S6PUM-U/hqdefault.jpg",
+    "duration": "4:18",
+    "views": 15200,
+    "url": "https://www.youtube.com/embed/ysz5S6PUM-U",
+    "publishedAt": "2026-04-24T04:00:00.000Z"
+  },
+  {
+    "id": "video-6",
+    "title": "সাক্ষাৎকার: তরুণ উদ্যোক্তার গল্প",
+    "slug": "startup-founder-interview",
+    "categoryId": "lifestyle",
+    "thumbnail": "https://img.youtube.com/vi/oUFJJNQGwhk/hqdefault.jpg",
+    "duration": "6:22",
+    "views": 7120,
+    "url": "https://www.youtube.com/embed/oUFJJNQGwhk",
+    "publishedAt": "2026-04-23T22:10:00.000Z"
+  }
+]

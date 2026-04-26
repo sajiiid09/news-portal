@@ -1,0 +1,24 @@
+.bb-container {
+  width: min(var(--container-max-width), 100% - (var(--container-padding) * 2));
+  margin-inline: auto;
+}
+
+.bb-grid {
+  display: grid;
+  gap: var(--spacing-4);
+}
+
+.bb-grid--two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.bb-grid--three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 900px) {
+  .bb-grid--two,
+  .bb-grid--three {
+    grid-template-columns: 1fr;
+  }
+}

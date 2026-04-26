@@ -1,0 +1,38 @@
+[
+  {
+    "id": "gallery-1",
+    "slug": "city-life-dhaka",
+    "title": "ঢাকা শহরের ব্যস্ত দিন",
+    "coverImage": "https://images.unsplash.com/photo-1586500036706-41963de24d8b?auto=format&fit=crop&w=1400&q=80",
+    "publishedAt": "2026-04-24T07:00:00.000Z",
+    "photos": [
+      { "id": "p1", "url": "https://images.unsplash.com/photo-1536421469767-80559bb6f5e1?auto=format&fit=crop&w=1400&q=80", "caption": "সকালের ব্যস্ততা" },
+      { "id": "p2", "url": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?auto=format&fit=crop&w=1400&q=80", "caption": "ট্রাফিকের চাপ" },
+      { "id": "p3", "url": "https://images.unsplash.com/photo-1501696461415-6bd6660c6742?auto=format&fit=crop&w=1400&q=80", "caption": "বৃষ্টিভেজা বিকেল" }
+    ]
+  },
+  {
+    "id": "gallery-2",
+    "slug": "storm-clouds-over-bay",
+    "title": "উপকূলে ঝড়ের পূর্বাভাস: আকাশে মেঘের নাটকীয়তা",
+    "coverImage": "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1400&q=80",
+    "publishedAt": "2026-04-23T18:10:00.000Z",
+    "photos": [
+      { "id": "p4", "url": "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=1400&q=80", "caption": "সন্ধ্যার কালো মেঘ" },
+      { "id": "p5", "url": "https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=1400&q=80", "caption": "জেলেপাড়ায় প্রস্তুতি" },
+      { "id": "p6", "url": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1400&q=80", "caption": "সমুদ্রে ঢেউ বেড়েছে" }
+    ]
+  },
+  {
+    "id": "gallery-3",
+    "slug": "city-music-festival",
+    "title": "সিটি মিউজিক ফেস্টিভালের রঙিন মুহূর্ত",
+    "coverImage": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1400&q=80",
+    "publishedAt": "2026-04-23T12:00:00.000Z",
+    "photos": [
+      { "id": "p7", "url": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1400&q=80", "caption": "মঞ্চে জনপ্রিয় ব্যান্ড" },
+      { "id": "p8", "url": "https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?auto=format&fit=crop&w=1400&q=80", "caption": "আলোকসজ্জায় উৎসব" },
+      { "id": "p9", "url": "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=1400&q=80", "caption": "দর্শকের উচ্ছ্বাস" }
+    ]
+  }
+]

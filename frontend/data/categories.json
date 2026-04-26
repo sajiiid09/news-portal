@@ -1,0 +1,13 @@
+[
+  { "id": "bangladesh", "slug": "bangladesh", "name": "বাংলাদেশ", "description": "দেশের খবর" },
+  { "id": "politics", "slug": "politics", "name": "রাজনীতি", "description": "রাজনৈতিক আপডেট" },
+  { "id": "world", "slug": "world", "name": "বিশ্ব", "description": "আন্তর্জাতিক সংবাদ" },
+  { "id": "business", "slug": "business", "name": "বাণিজ্য", "description": "অর্থনীতি ও কর্পোরেট" },
+  { "id": "sports", "slug": "sports", "name": "খেলা", "description": "খেলার খবর" },
+  { "id": "entertainment", "slug": "entertainment", "name": "বিনোদন", "description": "বিনোদন জগত" },
+  { "id": "opinion", "slug": "opinion", "name": "মতামত", "description": "কলাম ও সম্পাদকীয়" },
+  { "id": "video", "slug": "video", "name": "ভিডিও", "description": "ভিডিও সংবাদ" },
+  { "id": "jobs", "slug": "jobs", "name": "চাকরি", "description": "চাকরির খবর" },
+  { "id": "lifestyle", "slug": "lifestyle", "name": "জীবনযাপন", "description": "স্বাস্থ্য, সম্পর্ক, প্রযুক্তি" },
+  { "id": "latest", "slug": "latest", "name": "সর্বশেষ", "description": "তাৎক্ষণিক আপডেট" }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "id": "user-1",
+    "name": "Demo User",
+    "email": "demo@bortomanbangla.com",
+    "password": "password123",
+    "role": "reader",
+    "token": "demo-token"
+  }
+]

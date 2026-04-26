@@ -1,0 +1,35 @@
+[
+  {
+    "id": "comment-1",
+    "articleId": "article-1",
+    "userId": "user-1",
+    "userName": "আলম",
+    "message": "খুব গুরুত্বপূর্ণ প্রতিবেদন।",
+    "createdAt": "2026-04-24T08:45:00.000Z"
+  },
+  {
+    "id": "comment-2",
+    "articleId": "article-1",
+    "userId": "user-2",
+    "userName": "মৌ",
+    "message": "স্বাস্থ্য সচেতনতা নিয়ে আরও তথ্য দিলে ভালো হতো।",
+    "createdAt": "2026-04-24T08:55:00.000Z"
+  },
+  {
+    "id": "comment-3",
+    "articleId": "article-1",
+    "userId": "user-3",
+    "userName": "রিয়াজ",
+    "message": "@মৌ একমত। বিশেষ করে শিশুদের জন্য গাইডলাইন দরকার।",
+    "parentId": "comment-2",
+    "createdAt": "2026-04-24T09:02:00.000Z"
+  },
+  {
+    "id": "comment-4",
+    "articleId": "article-9",
+    "userId": "user-4",
+    "userName": "জয়",
+    "message": "ডার্বির ম্যাচটা অসাধারণ ছিল।",
+    "createdAt": "2026-04-24T06:45:00.000Z"
+  }
+]

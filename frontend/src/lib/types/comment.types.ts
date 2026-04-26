@@ -1,0 +1,9 @@
+export interface Comment {
+  id: string
+  articleId: string
+  userId: string
+  userName: string
+  message: string
+  parentId?: string
+  createdAt: string
+}
