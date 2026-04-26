@@ -8,12 +8,17 @@ body {
   padding: 0;
 }
 
+html {
+  overflow-x: clip;
+}
+
 body {
   font-family: var(--font-primary);
   background: var(--color-white);
   color: var(--color-ink);
   font-size: var(--font-size-base);
   font-synthesis-weight: none;
+  overflow-x: hidden;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
@@ -66,6 +71,7 @@ button:active {
 input,
 textarea,
 select {
+  min-width: 0;
   width: 100%;
   border: 1px solid var(--color-light-gray);
   border-radius: 4px;
@@ -295,7 +301,7 @@ button.bb-static-utility {
   gap: var(--spacing-1);
   margin-inline: auto;
   max-width: var(--container-max-width);
-  overflow-x: auto;
+  overflow: visible;
   padding: 0 var(--spacing-4);
   scrollbar-width: none;
   white-space: nowrap;
@@ -503,6 +509,14 @@ button.bb-static-utility {
   min-width: 0;
 }
 
+.bb-home-lead-story p,
+.bb-home-text-story p,
+.bb-home-media-story p,
+.bb-home-video-card p,
+.bb-home-gallery-item p {
+  overflow-wrap: break-word;
+}
+
 .bb-home-lead-story h1,
 .bb-home-text-story h3,
 .bb-home-media-story h3,
@@ -692,6 +706,7 @@ button.bb-static-utility {
   gap: var(--spacing-5);
   border-bottom: 1px solid var(--color-light-gray);
   padding-bottom: var(--spacing-6);
+  min-width: 0;
 }
 
 .bb-home-two-column {
@@ -720,6 +735,7 @@ button.bb-static-utility {
   justify-content: space-between;
   margin-bottom: var(--spacing-4);
   padding-top: var(--spacing-4);
+  min-width: 0;
 }
 
 .bb-home-section-header h2 {
@@ -751,6 +767,7 @@ button.bb-static-utility {
   color: var(--color-accent-dark);
   font-size: var(--font-size-sm);
   font-weight: 700;
+  flex: 0 0 auto;
 }
 
 .bb-home-category__grid {
@@ -1006,7 +1023,7 @@ button.bb-static-utility {
   overflow: auto;
   background: var(--color-white);
   padding: var(--spacing-6);
-  border-radius: 10px;
+  border-radius: 4px;
 }
 
 .bb-search-filters {
@@ -1524,6 +1541,7 @@ button.bb-static-utility {
 
   .bb-nav {
     overflow-x: auto;
+    overflow-y: hidden;
     flex-wrap: nowrap;
     white-space: nowrap;
     gap: var(--spacing-2);
@@ -1550,6 +1568,7 @@ button.bb-static-utility {
 
   .bb-search-modal {
     width: 96vw;
+    max-width: calc(100vw - var(--spacing-4));
     padding: var(--spacing-3);
   }
 
@@ -1595,9 +1614,13 @@ button.bb-static-utility {
     min-width: 32px;
   }
 
+  .bb-auth-entry {
+    font-size: var(--font-size-xs);
+  }
+
   .bb-home-media-story--compact,
   .bb-home-gallery-item {
-    grid-template-columns: 96px minmax(0, 1fr);
+    grid-template-columns: minmax(82px, 28vw) minmax(0, 1fr);
   }
 
   .bb-home-lead-story h1 {
@@ -1619,5 +1642,9 @@ button.bb-static-utility {
     grid-template-columns: 1fr;
     gap: var(--spacing-2);
     padding-inline: var(--spacing-2);
+  }
+
+  .bb-ticker__label {
+    width: max-content;
   }
 }
