@@ -7,8 +7,16 @@ export function AuthEntry() {
   const { user, isAuthenticated } = useUserStore()
 
   if (!isAuthenticated) {
-    return <Link href="/login">লগইন</Link>
+    return (
+      <Link href="/login" className="bb-auth-entry">
+        লগইন
+      </Link>
+    )
   }
 
-  return <Link href="/dashboard">{user?.name || 'Profile'}</Link>
+  return (
+    <Link href="/dashboard" className="bb-auth-entry">
+      {user?.name || 'প্রোফাইল'}
+    </Link>
+  )
 }

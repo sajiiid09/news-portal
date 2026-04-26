@@ -3,12 +3,19 @@ import type { NextConfig } from 'next'
 const nextConfig: NextConfig = {
   output: 'standalone',
   compress: true,
+  turbopack: {
+    root: process.cwd(),
+  },
   images: {
     formats: ['image/avif', 'image/webp'],
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: '**',
+        hostname: 'images.unsplash.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'img.youtube.com',
       },
     ],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
@@ -17,15 +24,6 @@ const nextConfig: NextConfig = {
   },
   async headers() {
     return [
-      {
-        source: '/_next/static/:path*',
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable',
-          },
-        ],
-      },
       {
         source: '/static/:path*',
         headers: [

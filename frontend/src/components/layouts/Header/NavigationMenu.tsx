@@ -9,21 +9,28 @@ export function NavigationMenu() {
   }, {})
 
   return (
-    <nav className="bb-nav" aria-label="Main navigation">
-      {navigation.map((item) => (
-        <div key={item.href} className="bb-nav-item">
-          <Link href={item.href}>{item.label}</Link>
-          {grouped[item.href.replace('/', '')]?.length ? (
-            <div className="bb-nav-dropdown">
-              {grouped[item.href.replace('/', '')].map((sub) => (
-                <Link key={sub.id} href={`${item.href}/${sub.slug}`}>
-                  {sub.name}
-                </Link>
-              ))}
+    <div className="bb-nav-shell">
+      <nav className="bb-nav" aria-label="প্রধান নেভিগেশন">
+        {navigation.map((item) => {
+          const key = item.href.replace('/', '')
+          const children = grouped[key] || []
+
+          return (
+            <div key={item.href} className="bb-nav-item">
+              <Link href={item.href}>{item.label}</Link>
+              {children.length ? (
+                <div className="bb-nav-dropdown" aria-label={`${item.label} উপবিভাগ`}>
+                  {children.map((sub) => (
+                    <Link key={sub.id} href={`${item.href}/${sub.slug}`}>
+                      {sub.name}
+                    </Link>
+                  ))}
+                </div>
+              ) : null}
             </div>
-          ) : null}
-        </div>
-      ))}
-    </nav>
+          )
+        })}
+      </nav>
+    </div>
   )
 }

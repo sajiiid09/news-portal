@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import type { Article, Category, Gallery, Video } from '@/lib/types'
 import { formatBanglaDate } from '@/lib/utils'
+import { HomeMotion } from './HomeMotion'
 
 interface HomepageLayoutProps {
   featuredArticles: Article[]
@@ -36,7 +37,7 @@ function StoryMeta({ article, categoryMap }: { article: Article; categoryMap: Ma
 
 function LeadStory({ article, categoryMap }: { article: Article; categoryMap: Map<string, string> }) {
   return (
-    <article className="bb-home-lead-story">
+    <article className="bb-home-lead-story" data-bb-reveal>
       <Link href={`/article/${article.slug}`} className="bb-home-media bb-home-media--lead">
         <Image
           src={article.image}
@@ -66,7 +67,10 @@ function TextStory({
   prominent?: boolean
 }) {
   return (
-    <article className={prominent ? 'bb-home-text-story bb-home-text-story--prominent' : 'bb-home-text-story'}>
+    <article
+      className={prominent ? 'bb-home-text-story bb-home-text-story--prominent' : 'bb-home-text-story'}
+      data-bb-reveal
+    >
       <StoryMeta article={article} categoryMap={categoryMap} />
       <h3>
         <Link href={`/article/${article.slug}`}>{article.title}</Link>
@@ -86,7 +90,10 @@ function MediaStory({
   compact?: boolean
 }) {
   return (
-    <article className={compact ? 'bb-home-media-story bb-home-media-story--compact' : 'bb-home-media-story'}>
+    <article
+      className={compact ? 'bb-home-media-story bb-home-media-story--compact' : 'bb-home-media-story'}
+      data-bb-reveal
+    >
       <Link href={`/article/${article.slug}`} className="bb-home-media">
         <Image
           src={article.image}
@@ -134,7 +141,7 @@ function StoryStrip({
 
 function RankedList({ title, articles }: { title: string; articles: Article[] }) {
   return (
-    <section className="bb-home-ranked">
+    <section className="bb-home-ranked" data-bb-reveal>
       <h2>{title}</h2>
       <ol>
         {articles.map((article) => (
@@ -149,7 +156,7 @@ function RankedList({ title, articles }: { title: string; articles: Article[] })
 
 function LatestList({ articles, categoryMap }: { articles: Article[]; categoryMap: Map<string, string> }) {
   return (
-    <section className="bb-home-latest-panel">
+    <section className="bb-home-latest-panel" data-bb-reveal>
       <div className="bb-home-tabs" role="presentation">
         <span>সর্বশেষ</span>
         <span>জনপ্রিয়</span>
@@ -186,7 +193,10 @@ function CategoryBlock({
   }
 
   return (
-    <section className={variant === 'dense' ? 'bb-home-category bb-home-category--dense' : 'bb-home-category'}>
+    <section
+      className={variant === 'dense' ? 'bb-home-category bb-home-category--dense' : 'bb-home-category'}
+      data-bb-reveal
+    >
       <SectionHeader title={title} href={href} />
       <div className="bb-home-category__grid">
         <MediaStory article={feature} categoryMap={categoryMap} />
@@ -213,7 +223,7 @@ function OpinionBlock({ articles, categoryMap }: { articles: Article[]; category
   }
 
   return (
-    <section className="bb-home-opinion">
+    <section className="bb-home-opinion" data-bb-reveal>
       <SectionHeader title="মতামত" href="/opinion" />
       <div className="bb-home-opinion__grid">
         <TextStory article={feature} categoryMap={categoryMap} prominent />
@@ -227,12 +237,12 @@ function OpinionBlock({ articles, categoryMap }: { articles: Article[]; category
 
 function MediaBlock({ videos, galleries }: { videos: Video[]; galleries: Gallery[] }) {
   return (
-    <section className="bb-home-media-block">
+    <section className="bb-home-media-block" data-bb-reveal>
       <div>
         <SectionHeader title="ভিডিও" href="/video" />
         <div className="bb-home-media-block__grid">
           {videos.slice(0, 3).map((video) => (
-            <article key={video.id} className="bb-home-video-card">
+            <article key={video.id} className="bb-home-video-card" data-bb-reveal>
               <Link href={`/video/${video.id}`} className="bb-home-media">
                 <Image
                   src={video.thumbnail}
@@ -254,7 +264,7 @@ function MediaBlock({ videos, galleries }: { videos: Video[]; galleries: Gallery
         <SectionHeader title="ছবি" href="/photo" />
         <div className="bb-home-gallery-list">
           {galleries.slice(0, 3).map((gallery) => (
-            <article key={gallery.id} className="bb-home-gallery-item">
+            <article key={gallery.id} className="bb-home-gallery-item" data-bb-reveal>
               <Link href={`/photo/${gallery.id}`} className="bb-home-media">
                 <Image
                   src={gallery.coverImage}
@@ -305,6 +315,7 @@ export function HomepageLayout({
 
   return (
     <div className="bb-home">
+      <HomeMotion />
       <section className="bb-home-lead-grid" aria-label="প্রধান সংবাদ">
         <div className="bb-home-lead-grid__left">
           <LeadStory article={lead} categoryMap={categoryMap} />
@@ -390,7 +401,7 @@ export function HomepageLayout({
         </div>
         <aside className="bb-home-two-column__rail" aria-label="পাঠকের পছন্দ">
           <RankedList title="সর্বাধিক পঠিত" articles={mostRead.slice(0, 8)} />
-          <section className="bb-home-static-note">
+          <section className="bb-home-static-note" data-bb-reveal>
             <h2>আজকের আয়োজন</h2>
             <p>ই-পেপার ও ইংরেজি সংস্করণ আপাতত স্থির অবস্থায় রাখা হয়েছে।</p>
           </section>

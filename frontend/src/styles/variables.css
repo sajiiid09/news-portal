@@ -32,6 +32,8 @@
   --transition-fast: 0.2s ease;
   --transition-normal: 0.3s ease;
   --transition-slow: 0.5s ease;
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --motion-pop: cubic-bezier(0.2, 0.8, 0.2, 1);
 
   --font-body: var(--font-bangla-sans), 'Noto Sans Bengali', 'SolaimanLipi', 'Kalpurush',
     sans-serif;
