@@ -4,17 +4,22 @@ h3,
 h4,
 h5,
 h6 {
-  line-height: 1.2;
+  font-family: var(--font-headline);
+  font-weight: 800;
+  line-height: 1.22;
   color: var(--color-black);
   margin: 0;
+  text-wrap: pretty;
 }
 
 p {
-  line-height: 1.6;
+  color: var(--color-ink);
+  line-height: 1.75;
   margin: 0;
 }
 
 .bb-meta {
   color: var(--color-medium-gray);
   font-size: var(--font-size-sm);
+  line-height: 1.45;
 }
