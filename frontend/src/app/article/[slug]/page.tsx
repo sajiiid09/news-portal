@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Fragment } from 'react'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
@@ -10,6 +11,8 @@ import { CommentSection } from '@/components/modules/Comments'
 import { ArticleReadingProgress } from '@/components/modules/ArticleReadingProgress'
 import { ArticleShare } from '@/components/modules/ArticleShare'
 import { ArticleReactions } from '@/components/modules/ArticleReactions'
+import { ArticleCard } from '@/components/ui/Card/ArticleCard'
+import { adSlots } from '@/config/ads'
 
 const BASE_URL = 'https://your-domain.com'
 
@@ -63,6 +66,11 @@ export default async function ArticlePage({
     notFound()
   }
 
+  const categories = await DataService.categories.getAll()
+  const subCategories = await DataService.subCategories.getByCategory(article.categoryId)
+  const category = categories.find((item) => item.id === article.categoryId)
+  const subCategory = subCategories.find((item) => item.id === article.subCategoryId)
+
   const related = (await DataService.articles.getByCategory(article.categoryId))
     .filter((item) => item.id !== article.id)
     .slice(0, 3)
@@ -72,6 +80,10 @@ export default async function ArticlePage({
   )
   const readingTime = Math.max(1, Math.ceil(article.body.split(' ').length / 200))
   const articleUrl = `${BASE_URL}/article/${article.slug}`
+  const bodyParagraphs = article.body
+    .split(/\n+/)
+    .map((paragraph) => paragraph.trim())
+    .filter(Boolean)
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'NewsArticle',
@@ -99,67 +111,121 @@ export default async function ArticlePage({
     <Container>
       <ArticleReadingProgress />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <article className="bb-section">
-        <p className="bb-meta">
-          <Link href={`/${article.categoryId}`}>{article.categoryId}</Link>
-        </p>
-        <h1>{article.title}</h1>
-        <p>{article.summary}</p>
-        <p className="bb-meta">প্রকাশিত: {formatBanglaDate(article.publishedAt)} • {readingTime} মিনিট পড়া</p>
-        {article.updatedAt ? <p className="bb-meta">সর্বশেষ আপডেট: {formatBanglaDate(article.updatedAt)}</p> : null}
-        {article.image ? (
-          <figure className="bb-card">
-            <Image
-              src={article.image}
-              alt={article.title}
-              width={1200}
-              height={675}
-              sizes="(max-width: 768px) 100vw, 75vw"
-            />
-            <figcaption className="bb-meta">
-              {article.imageCaption || article.title}
-              {article.imageCredit ? ` • ${article.imageCredit}` : ''}
-            </figcaption>
-          </figure>
-        ) : null}
-        <div className="bb-section">
-          <p>{article.body}</p>
-        </div>
-        <div className="bb-card">
-          <p className="bb-meta">বিজ্ঞাপন</p>
-          <div className="bb-ad-slot">300x250</div>
-        </div>
-
-        <section className="bb-section bb-card">
-          <h3>লেখক পরিচিতি</h3>
-          <p>{author?.name || 'স্টাফ রিপোর্টার'}</p>
-          <p className="bb-meta">{author?.designation || 'Reporter'}</p>
-          {author ? <Link href={`/author/${author.slug}`}>লেখকের অন্যান্য লেখা</Link> : null}
-        </section>
-
-        <div className="bb-tag-list">
-          {article.tags.map((tag) => (
-            <Link key={tag} href={`/tag/${tag}`}>
-              #{tag}
+      <div className="bb-article-layout">
+        <article className="bb-article">
+          <nav className="bb-article-breadcrumb" aria-label="Breadcrumb">
+            <Link href="/">প্রচ্ছদ</Link>
+            <span aria-hidden="true">/</span>
+            <Link href={`/${category?.slug || article.categoryId}`}>
+              {category?.name || article.categoryId}
             </Link>
-          ))}
-        </div>
-        <ArticleShare title={article.title} url={articleUrl} />
-        <ArticleReactions articleId={article.id} />
-      </article>
+            {subCategory ? (
+              <>
+                <span aria-hidden="true">/</span>
+                <Link href={`/${category?.slug || article.categoryId}/${subCategory.slug}`}>
+                  {subCategory.name}
+                </Link>
+              </>
+            ) : null}
+          </nav>
 
-      <CommentSection articleId={article.id} />
+          <header className="bb-article-header">
+            <p className="bb-meta bb-article-section">
+              <Link href={`/${category?.slug || article.categoryId}`}>
+                {category?.name || article.categoryId}
+              </Link>
+            </p>
+            <h1>{article.title}</h1>
+            <p className="bb-article-lead">{article.summary}</p>
+            <div className="bb-article-meta">
+              <div className="bb-article-byline">
+                <span className="bb-article-avatar" aria-hidden="true">
+                  {(author?.name || 'স্টাফ রিপোর্টার').slice(0, 1)}
+                </span>
+                <div>
+                  <p className="bb-article-author">{author?.name || 'স্টাফ রিপোর্টার'}</p>
+                  <p className="bb-meta">{author?.designation || 'Reporter'}</p>
+                </div>
+              </div>
+              <div className="bb-article-meta__time">
+                <p className="bb-meta">প্রকাশিত: {formatBanglaDate(article.publishedAt)}</p>
+                {article.updatedAt ? (
+                  <p className="bb-meta">সর্বশেষ আপডেট: {formatBanglaDate(article.updatedAt)}</p>
+                ) : null}
+                <p className="bb-meta">পড়তে সময়: {readingTime} মিনিট</p>
+              </div>
+            </div>
+          </header>
 
-      <section className="bb-section">
+          {article.image ? (
+            <figure className="bb-article-hero">
+              <Image
+                src={article.image}
+                alt={article.title}
+                width={1200}
+                height={675}
+                sizes="(max-width: 768px) 100vw, 75vw"
+                priority
+              />
+              <figcaption className="bb-meta">
+                {article.imageCaption || article.title}
+                {article.imageCredit ? ` • ${article.imageCredit}` : ''}
+              </figcaption>
+            </figure>
+          ) : null}
+
+          <div className="bb-article-body">
+            {(bodyParagraphs.length ? bodyParagraphs : [article.body]).map((paragraph, index) => (
+              <Fragment key={`${article.id}-p-${index}`}>
+                <p>{paragraph}</p>
+                {index === 2 ? (
+                  <div className="bb-card bb-article-inline-ad" aria-label="Advertisement">
+                    <p className="bb-meta">বিজ্ঞাপন</p>
+                    <div className="bb-ad-slot">{adSlots.inArticle}</div>
+                  </div>
+                ) : null}
+              </Fragment>
+            ))}
+          </div>
+
+          <div className="bb-tag-list bb-article-tags">
+            {article.tags.map((tag) => (
+              <Link key={tag} href={`/tag/${tag}`}>
+                #{tag}
+              </Link>
+            ))}
+          </div>
+
+          <div className="bb-article-actions">
+            <ArticleShare title={article.title} url={articleUrl} />
+            <ArticleReactions articleId={article.id} />
+          </div>
+        </article>
+
+        <aside className="bb-article-rail">
+          <div className="bb-card bb-article-ad">
+            <p className="bb-meta">বিজ্ঞাপন</p>
+            <div className="bb-ad-slot bb-ad-slot--sidebar">{adSlots.sidebarSticky}</div>
+          </div>
+          <section className="bb-card bb-article-author-card">
+            <h3>লেখক পরিচিতি</h3>
+            <p>{author?.name || 'স্টাফ রিপোর্টার'}</p>
+            <p className="bb-meta">{author?.designation || 'Reporter'}</p>
+            {author ? <Link href={`/author/${author.slug}`}>লেখকের অন্যান্য লেখা</Link> : null}
+          </section>
+        </aside>
+      </div>
+
+      <section className="bb-section bb-article-related">
         <h2>সম্পর্কিত খবর</h2>
         <div className="bb-grid bb-grid--three">
           {related.map((item) => (
-            <article key={item.id} className="bb-card">
-              <Link href={`/article/${item.slug}`}>{item.title}</Link>
-            </article>
+            <ArticleCard key={item.id} article={item} />
           ))}
         </div>
       </section>
+
+      <CommentSection articleId={article.id} />
     </Container>
   )
 }

@@ -1,0 +1,44 @@
+[
+  {
+    "tradingCode": "DSEX",
+    "lastTradingPrice": "৬,১৮৩.২৯",
+    "change": "+২২.৪১",
+    "changePercent": "+০.৩৬%",
+    "indicator": "উর্ধ"
+  },
+  {
+    "tradingCode": "DS30",
+    "lastTradingPrice": "২,১৪১.৭০",
+    "change": "+৮.১১",
+    "changePercent": "+০.৩৮%",
+    "indicator": "উর্ধ"
+  },
+  {
+    "tradingCode": "BATBC",
+    "lastTradingPrice": "৪২১.২০",
+    "change": "-২.১০",
+    "changePercent": "-০.৫০%",
+    "indicator": "নিম্ন"
+  },
+  {
+    "tradingCode": "SQURPHARMA",
+    "lastTradingPrice": "২১৮.৯০",
+    "change": "০.০০",
+    "changePercent": "০.০০%",
+    "indicator": "অপরিবর্তন"
+  },
+  {
+    "tradingCode": "GP",
+    "lastTradingPrice": "২৯৪.৬০",
+    "change": "+১.৮০",
+    "changePercent": "+০.৬১%",
+    "indicator": "উর্ধ"
+  },
+  {
+    "tradingCode": "BRACBANK",
+    "lastTradingPrice": "৫১.৩০",
+    "change": "-০.৪০",
+    "changePercent": "-০.৭৭%",
+    "indicator": "নিম্ন"
+  }
+]

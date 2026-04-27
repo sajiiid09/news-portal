@@ -1,0 +1,5177 @@
+[
+  {
+    "id": "87",
+    "name": "ঢাকা বিভাগ",
+    "enName": null,
+    "slug": "ঢাকা-বিভাগ",
+    "parentId": null,
+    "parentName": null,
+    "type": "division"
+  },
+  {
+    "id": "1698",
+    "name": "চট্টগ্রাম বিভাগ",
+    "enName": null,
+    "slug": "চট্টগ্রাম-বিভাগ",
+    "parentId": null,
+    "parentName": null,
+    "type": "division"
+  },
+  {
+    "id": "1692",
+    "name": "রাজশাহী বিভাগ",
+    "enName": null,
+    "slug": "রাজশাহী-বিভাগ",
+    "parentId": null,
+    "parentName": null,
+    "type": "division"
+  },
+  {
+    "id": "1690",
+    "name": "খুলনা বিভাগ",
+    "enName": null,
+    "slug": "খুলনা-বিভাগ",
+    "parentId": null,
+    "parentName": null,
+    "type": "division"
+  },
+  {
+    "id": "1688",
+    "name": "বরিশাল বিভাগ",
+    "enName": null,
+    "slug": "বরিশাল-বিভাগ",
+    "parentId": null,
+    "parentName": null,
+    "type": "division"
+  },
+  {
+    "id": "1684",
+    "name": "সিলেট বিভাগ",
+    "enName": null,
+    "slug": "সিলেট-বিভাগ",
+    "parentId": null,
+    "parentName": null,
+    "type": "division"
+  },
+  {
+    "id": "1682",
+    "name": "রংপুর বিভাগ",
+    "enName": null,
+    "slug": "রংপুর-বিভাগ",
+    "parentId": null,
+    "parentName": null,
+    "type": "division"
+  },
+  {
+    "id": "5821",
+    "name": "ময়মনসিংহ বিভাগ",
+    "enName": null,
+    "slug": "ময়মনসিংহ-বিভাগ",
+    "parentId": null,
+    "parentName": null,
+    "type": "division"
+  },
+  {
+    "id": "1148",
+    "name": "ঢাকা",
+    "enName": "Dhaka",
+    "slug": "ঢাকা",
+    "parentId": "87",
+    "parentName": "ঢাকা বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "530",
+    "name": "জামালপুর",
+    "enName": "Jamalpur",
+    "slug": "জামালপুর",
+    "parentId": "5821",
+    "parentName": "ময়মনসিংহ বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "487",
+    "name": "নাটোর",
+    "enName": "Natore",
+    "slug": "নাটোর",
+    "parentId": "1692",
+    "parentName": "রাজশাহী বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "463",
+    "name": "মাগুরা",
+    "enName": "Magura",
+    "slug": "মাগুরা",
+    "parentId": "1690",
+    "parentName": "খুলনা বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "441",
+    "name": "লক্ষ্মীপুর",
+    "enName": "Lakshmipur",
+    "slug": "লক্ষ্মীপুর",
+    "parentId": "1698",
+    "parentName": "চট্টগ্রাম বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "386",
+    "name": "নরসিংদী",
+    "enName": "Narsingdi",
+    "slug": "নরসিংদী",
+    "parentId": "87",
+    "parentName": "ঢাকা বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "385",
+    "name": "মুন্সিগঞ্জ",
+    "enName": "Munshiganj",
+    "slug": "মুন্সিগঞ্জ",
+    "parentId": "87",
+    "parentName": "ঢাকা বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "376",
+    "name": "বান্দরবান",
+    "enName": "Bandarban",
+    "slug": "বান্দরবান",
+    "parentId": "1698",
+    "parentName": "চট্টগ্রাম বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "374",
+    "name": "মানিকগঞ্জ",
+    "enName": "Manikganj",
+    "slug": "মানিকগঞ্জ",
+    "parentId": "87",
+    "parentName": "ঢাকা বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "356",
+    "name": "লালমনিরহাট",
+    "enName": "Lalmonirhat",
+    "slug": "লালমনিরহাট",
+    "parentId": "1682",
+    "parentName": "রংপুর বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "343",
+    "name": "চাঁপাইনবাবগঞ্জ",
+    "enName": "Chapainawabganj",
+    "slug": "চাঁপাইনবাবগঞ্জ",
+    "parentId": "1692",
+    "parentName": "রাজশাহী বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "339",
+    "name": "ঝালকাঠি",
+    "enName": "Jhalakathi",
+    "slug": "ঝালকাঠি",
+    "parentId": "1688",
+    "parentName": "বরিশাল বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "333",
+    "name": "ফেনী",
+    "enName": "Feni",
+    "slug": "ফেনী",
+    "parentId": "1698",
+    "parentName": "চট্টগ্রাম বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "329",
+    "name": "টাঙ্গাইল",
+    "enName": "Tangail",
+    "slug": "টাঙ্গাইল",
+    "parentId": "87",
+    "parentName": "ঢাকা বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "324",
+    "name": "ভোলা",
+    "enName": "Bhola",
+    "slug": "ভোলা",
+    "parentId": "1688",
+    "parentName": "বরিশাল বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "322",
+    "name": "গাইবান্ধা",
+    "enName": "Gaibandha",
+    "slug": "গাইবান্ধা",
+    "parentId": "1682",
+    "parentName": "রংপুর বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "320",
+    "name": "পাবনা",
+    "enName": "Pabna",
+    "slug": "পাবনা",
+    "parentId": "1692",
+    "parentName": "রাজশাহী বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "315",
+    "name": "ফরিদপুর",
+    "enName": "Faridpur",
+    "slug": "ফরিদপুর",
+    "parentId": "87",
+    "parentName": "ঢাকা বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "314",
+    "name": "গোপালগঞ্জ",
+    "enName": "Gopalganj",
+    "slug": "গোপালগঞ্জ",
+    "parentId": "87",
+    "parentName": "ঢাকা বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "312",
+    "name": "ঝিনাইদহ",
+    "enName": "Jhenaidah",
+    "slug": "ঝিনাইদহ",
+    "parentId": "1690",
+    "parentName": "খুলনা বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "311",
+    "name": "মাদারীপুর",
+    "enName": "Madaripur",
+    "slug": "মাদারীপুর",
+    "parentId": "87",
+    "parentName": "ঢাকা বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "307",
+    "name": "পিরোজপুর",
+    "enName": "Pirojpur",
+    "slug": "পিরোজপুর",
+    "parentId": "1688",
+    "parentName": "বরিশাল বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "299",
+    "name": "ঠাকুরগাঁও",
+    "enName": "Thakurgaon",
+    "slug": "ঠাকুরগাঁও",
+    "parentId": "1682",
+    "parentName": "রংপুর বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "285",
+    "name": "বাগেরহাট",
+    "enName": "Bagerhat",
+    "slug": "বাগেরহাট",
+    "parentId": "1690",
+    "parentName": "খুলনা বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "283",
+    "name": "নীলফামারী",
+    "enName": "Nilphamari",
+    "slug": "নীলফামারী",
+    "parentId": "1682",
+    "parentName": "রংপুর বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "282",
+    "name": "দিনাজপুর",
+    "enName": "Dinajpur",
+    "slug": "দিনাজপুর",
+    "parentId": "1682",
+    "parentName": "রংপুর বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "281",
+    "name": "সিরাজগঞ্জ",
+    "enName": "Sirajganj",
+    "slug": "সিরাজগঞ্জ",
+    "parentId": "1692",
+    "parentName": "রাজশাহী বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "280",
+    "name": "নওগাঁ",
+    "enName": "Naogaon",
+    "slug": "নওগাঁ",
+    "parentId": "1692",
+    "parentName": "রাজশাহী বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "278",
+    "name": "শেরপুর",
+    "enName": "Sherpur",
+    "slug": "শেরপুর",
+    "parentId": "5821",
+    "parentName": "ময়মনসিংহ বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "275",
+    "name": "বরগুনা",
+    "enName": "Barguna",
+    "slug": "বরগুনা",
+    "parentId": "1688",
+    "parentName": "বরিশাল বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "274",
+    "name": "সাতক্ষীরা",
+    "enName": "Satkhira",
+    "slug": "সাতক্ষীরা",
+    "parentId": "1690",
+    "parentName": "খুলনা বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "269",
+    "name": "মেহেরপুর",
+    "enName": "Meherpur",
+    "slug": "মেহেরপুর",
+    "parentId": "1690",
+    "parentName": "খুলনা বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "262",
+    "name": "রাঙামাটি",
+    "enName": "Rangamati",
+    "slug": "রাঙামাটি",
+    "parentId": "1698",
+    "parentName": "চট্টগ্রাম বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "264",
+    "name": "কক্সবাজার",
+    "enName": "Coxsbazar",
+    "slug": "কক্সবাজার",
+    "parentId": "1698",
+    "parentName": "চট্টগ্রাম বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "260",
+    "name": "হবিগঞ্জ",
+    "enName": "Habiganj",
+    "slug": "হবিগঞ্জ",
+    "parentId": "1684",
+    "parentName": "সিলেট বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "253",
+    "name": "নেত্রকোনা",
+    "enName": "Netrokona",
+    "slug": "নেত্রকোনা",
+    "parentId": "5821",
+    "parentName": "ময়মনসিংহ বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "252",
+    "name": "সুনামগঞ্জ",
+    "enName": "Sunamganj",
+    "slug": "সুনামগঞ্জ",
+    "parentId": "1684",
+    "parentName": "সিলেট বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "250",
+    "name": "কিশোরগঞ্জ",
+    "enName": "Kishoreganj",
+    "slug": "কিশোরগঞ্জ",
+    "parentId": "87",
+    "parentName": "ঢাকা বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "245",
+    "name": "গাজীপুর",
+    "enName": "Gazipur",
+    "slug": "গাজীপুর",
+    "parentId": "87",
+    "parentName": "ঢাকা বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "244",
+    "name": "মৌলভীবাজার",
+    "enName": "Moulvibazar",
+    "slug": "মৌলভীবাজার",
+    "parentId": "1684",
+    "parentName": "সিলেট বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "243",
+    "name": "চাঁদপুর",
+    "enName": "Chandpur",
+    "slug": "চাঁদপুর",
+    "parentId": "1698",
+    "parentName": "চট্টগ্রাম বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "241",
+    "name": "যশোর",
+    "enName": "Jashore",
+    "slug": "যশোর",
+    "parentId": "1690",
+    "parentName": "খুলনা বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "144",
+    "name": "কুমিল্লা",
+    "enName": "Comilla",
+    "slug": "কুমিল্লা",
+    "parentId": "1698",
+    "parentName": "চট্টগ্রাম বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "92",
+    "name": "বরিশাল",
+    "enName": "Barisal",
+    "slug": "বরিশাল",
+    "parentId": "1688",
+    "parentName": "বরিশাল বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "90",
+    "name": "খুলনা",
+    "enName": "Khulna",
+    "slug": "খুলনা",
+    "parentId": "1690",
+    "parentName": "খুলনা বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "88",
+    "name": "সিলেট",
+    "enName": "Sylhet",
+    "slug": "সিলেট",
+    "parentId": "1684",
+    "parentName": "সিলেট বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "55",
+    "name": "চট্টগ্রাম",
+    "enName": "Chattogram",
+    "slug": "চট্টগ্রাম",
+    "parentId": "1698",
+    "parentName": "চট্টগ্রাম বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "50",
+    "name": "রাজশাহী",
+    "enName": "Rajshahi",
+    "slug": "রাজশাহী",
+    "parentId": "1692",
+    "parentName": "রাজশাহী বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "47",
+    "name": "রংপুর",
+    "enName": "Rangpur",
+    "slug": "রংপুর",
+    "parentId": "1682",
+    "parentName": "রংপুর বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "247",
+    "name": "নারায়ণগঞ্জ",
+    "enName": "Narayanganj",
+    "slug": "নারায়ণগঞ্জ",
+    "parentId": "87",
+    "parentName": "ঢাকা বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "305",
+    "name": "জয়পুরহাট",
+    "enName": "Joypurhat",
+    "slug": "জয়পুরহাট",
+    "parentId": "1692",
+    "parentName": "রাজশাহী বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "272",
+    "name": "কুষ্টিয়া",
+    "enName": "Kushtia",
+    "slug": "কুষ্টিয়া",
+    "parentId": "1690",
+    "parentName": "খুলনা বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "266",
+    "name": "নোয়াখালী",
+    "enName": "Noakhali",
+    "slug": "নোয়াখালী",
+    "parentId": "1698",
+    "parentName": "চট্টগ্রাম বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "301",
+    "name": "কুড়িগ্রাম",
+    "enName": "Kurigram",
+    "slug": "কুড়িগ্রাম",
+    "parentId": "1682",
+    "parentName": "রংপুর বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "364",
+    "name": "চুয়াডাঙ্গা",
+    "enName": "Chuadanga",
+    "slug": "চুয়াডাঙ্গা",
+    "parentId": "1690",
+    "parentName": "খুলনা বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "410",
+    "name": "শরীয়তপুর",
+    "enName": "Shariatpur",
+    "slug": "শরীয়তপুর",
+    "parentId": "87",
+    "parentName": "ঢাকা বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "328",
+    "name": "ব্রাহ্মণবাড়িয়া",
+    "enName": "Brahmanbaria",
+    "slug": "ব্রাহ্মণবাড়িয়া",
+    "parentId": "1698",
+    "parentName": "চট্টগ্রাম বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "256",
+    "name": "ময়মনসিংহ",
+    "enName": "Mymensingh",
+    "slug": "ময়মনসিংহ",
+    "parentId": "5821",
+    "parentName": "ময়মনসিংহ বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "337",
+    "name": "খাগড়াছড়ি",
+    "enName": "Khagrachhari",
+    "slug": "খাগড়াছড়ি",
+    "parentId": "1698",
+    "parentName": "চট্টগ্রাম বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "355",
+    "name": "পটুয়াখালী",
+    "enName": "Patuakhali",
+    "slug": "পটুয়াখালী",
+    "parentId": "1688",
+    "parentName": "বরিশাল বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "483",
+    "name": "পঞ্চগড়",
+    "enName": "Panchagarh",
+    "slug": "পঞ্চগড়",
+    "parentId": "1682",
+    "parentName": "রংপুর বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "277",
+    "name": "বগুড়া",
+    "enName": "Bogura",
+    "slug": "বগুড়া",
+    "parentId": "1692",
+    "parentName": "রাজশাহী বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "66146",
+    "name": "শেরপুর",
+    "enName": null,
+    "slug": "শেরপুর-বগুড়া",
+    "parentId": "277",
+    "parentName": "বগুড়া",
+    "type": "district"
+  },
+  {
+    "id": "368",
+    "name": "রাজবাড়ী",
+    "enName": "Rajbari",
+    "slug": "রাজবাড়ী",
+    "parentId": "87",
+    "parentName": "ঢাকা বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "248",
+    "name": "নড়াইল",
+    "enName": "Narail",
+    "slug": "নড়াইল",
+    "parentId": "1690",
+    "parentName": "খুলনা বিভাগ",
+    "type": "district"
+  },
+  {
+    "id": "9521",
+    "name": "সদরদক্ষিণ",
+    "enName": null,
+    "slug": "সদর-দক্ষিণ",
+    "parentId": "144",
+    "parentName": "কুমিল্লা",
+    "type": "district"
+  },
+  {
+    "id": "1814",
+    "name": "নাসিরনগর",
+    "enName": null,
+    "slug": "নাসিরনগর",
+    "parentId": "328",
+    "parentName": "ব্রাহ্মণবাড়িয়া",
+    "type": "district"
+  },
+  {
+    "id": "1812",
+    "name": "আশুগঞ্জ",
+    "enName": null,
+    "slug": "আশুগঞ্জ",
+    "parentId": "328",
+    "parentName": "ব্রাহ্মণবাড়িয়া",
+    "type": "district"
+  },
+  {
+    "id": "1810",
+    "name": "শাহরাস্তি",
+    "enName": null,
+    "slug": "শাহরাস্তি",
+    "parentId": "243",
+    "parentName": "চাঁদপুর",
+    "type": "district"
+  },
+  {
+    "id": "1808",
+    "name": "হাইমচর",
+    "enName": null,
+    "slug": "হাইমচর",
+    "parentId": "243",
+    "parentName": "চাঁদপুর",
+    "type": "district"
+  },
+  {
+    "id": "1804",
+    "name": "ফরিদগঞ্জ",
+    "enName": null,
+    "slug": "ফরিদগঞ্জ",
+    "parentId": "243",
+    "parentName": "চাঁদপুর",
+    "type": "district"
+  },
+  {
+    "id": "1800",
+    "name": "চাঁদপুরসদর",
+    "enName": null,
+    "slug": "চাঁদপুর-সদর",
+    "parentId": "243",
+    "parentName": "চাঁদপুর",
+    "type": "district"
+  },
+  {
+    "id": "1798",
+    "name": "তিতাস",
+    "enName": null,
+    "slug": "তিতাস",
+    "parentId": "144",
+    "parentName": "কুমিল্লা",
+    "type": "district"
+  },
+  {
+    "id": "1794",
+    "name": "লাঙ্গলকোট",
+    "enName": null,
+    "slug": "লাঙ্গলকোট",
+    "parentId": "144",
+    "parentName": "কুমিল্লা",
+    "type": "district"
+  },
+  {
+    "id": "1792",
+    "name": "মুরাদনগর",
+    "enName": null,
+    "slug": "মুরাদনগর",
+    "parentId": "144",
+    "parentName": "কুমিল্লা",
+    "type": "district"
+  },
+  {
+    "id": "1790",
+    "name": "হোমনা",
+    "enName": null,
+    "slug": "হোমনা",
+    "parentId": "144",
+    "parentName": "কুমিল্লা",
+    "type": "district"
+  },
+  {
+    "id": "1786",
+    "name": "চান্দিনা",
+    "enName": null,
+    "slug": "চান্দিনা",
+    "parentId": "144",
+    "parentName": "কুমিল্লা",
+    "type": "district"
+  },
+  {
+    "id": "1782",
+    "name": "পরশুরাম",
+    "enName": null,
+    "slug": "পরশুরাম",
+    "parentId": "333",
+    "parentName": "ফেনী",
+    "type": "district"
+  },
+  {
+    "id": "1778",
+    "name": "সোনাগাজী",
+    "enName": null,
+    "slug": "সোনাগাজী",
+    "parentId": "333",
+    "parentName": "ফেনী",
+    "type": "district"
+  },
+  {
+    "id": "1774",
+    "name": "ফেনীসদর",
+    "enName": null,
+    "slug": "ফেনী-সদর",
+    "parentId": "333",
+    "parentName": "ফেনী",
+    "type": "district"
+  },
+  {
+    "id": "1772",
+    "name": "কমলনগর",
+    "enName": null,
+    "slug": "কমলনগর",
+    "parentId": "441",
+    "parentName": "লক্ষ্মীপুর",
+    "type": "district"
+  },
+  {
+    "id": "1770",
+    "name": "রামগঞ্জ",
+    "enName": null,
+    "slug": "রামগঞ্জ",
+    "parentId": "441",
+    "parentName": "লক্ষ্মীপুর",
+    "type": "district"
+  },
+  {
+    "id": "1768",
+    "name": "লক্ষ্মীপুরসদর",
+    "enName": null,
+    "slug": "লক্ষ্মীপুর-সদর",
+    "parentId": "441",
+    "parentName": "লক্ষ্মীপুর",
+    "type": "district"
+  },
+  {
+    "id": "1762",
+    "name": "সুবর্ণচর",
+    "enName": null,
+    "slug": "সুবর্ণচর",
+    "parentId": "266",
+    "parentName": "নোয়াখালী",
+    "type": "district"
+  },
+  {
+    "id": "1766",
+    "name": "কবিরহাট",
+    "enName": null,
+    "slug": "কবিরহাট",
+    "parentId": "266",
+    "parentName": "নোয়াখালী",
+    "type": "district"
+  },
+  {
+    "id": "1760",
+    "name": "সেনবাগ",
+    "enName": null,
+    "slug": "সেনবাগ",
+    "parentId": "266",
+    "parentName": "নোয়াখালী",
+    "type": "district"
+  },
+  {
+    "id": "1756",
+    "name": "চাটখিল",
+    "enName": null,
+    "slug": "চাটখিল",
+    "parentId": "266",
+    "parentName": "নোয়াখালী",
+    "type": "district"
+  },
+  {
+    "id": "1754",
+    "name": "বেগমগঞ্জ",
+    "enName": null,
+    "slug": "বেগমগঞ্জ",
+    "parentId": "266",
+    "parentName": "নোয়াখালী",
+    "type": "district"
+  },
+  {
+    "id": "1750",
+    "name": "লংগদু",
+    "enName": null,
+    "slug": "লংগদু",
+    "parentId": "262",
+    "parentName": "রাঙামাটি",
+    "type": "district"
+  },
+  {
+    "id": "1746",
+    "name": "রাঙামাটিসদর",
+    "enName": null,
+    "slug": "রাঙামাটি-সদর",
+    "parentId": "262",
+    "parentName": "রাঙামাটি",
+    "type": "district"
+  },
+  {
+    "id": "1744",
+    "name": "বরকল",
+    "enName": null,
+    "slug": "বরকল",
+    "parentId": "262",
+    "parentName": "রাঙামাটি",
+    "type": "district"
+  },
+  {
+    "id": "1728",
+    "name": "লামা",
+    "enName": null,
+    "slug": "লামা",
+    "parentId": "376",
+    "parentName": "বান্দরবান",
+    "type": "district"
+  },
+  {
+    "id": "1724",
+    "name": "বান্দরবানসদর",
+    "enName": null,
+    "slug": "বান্দরবান-সদর",
+    "parentId": "376",
+    "parentName": "বান্দরবান",
+    "type": "district"
+  },
+  {
+    "id": "1720",
+    "name": "আলিকদম",
+    "enName": null,
+    "slug": "আলিকদম",
+    "parentId": "376",
+    "parentName": "বান্দরবান",
+    "type": "district"
+  },
+  {
+    "id": "1714",
+    "name": "কক্সবাজার সদর",
+    "enName": null,
+    "slug": "কক্সবাজার-সদর",
+    "parentId": "264",
+    "parentName": "কক্সবাজার",
+    "type": "district"
+  },
+  {
+    "id": "1710",
+    "name": "সন্দ্বীপ",
+    "enName": null,
+    "slug": "সন্দ্বীপ",
+    "parentId": "55",
+    "parentName": "চট্টগ্রাম",
+    "type": "district"
+  },
+  {
+    "id": "1708",
+    "name": "রাউজান",
+    "enName": null,
+    "slug": "রাউজান",
+    "parentId": "55",
+    "parentName": "চট্টগ্রাম",
+    "type": "district"
+  },
+  {
+    "id": "1704",
+    "name": "চন্দনাইশ",
+    "enName": null,
+    "slug": "চন্দনাইশ",
+    "parentId": "55",
+    "parentName": "চট্টগ্রাম",
+    "type": "district"
+  },
+  {
+    "id": "1700",
+    "name": "বাঁশখালী",
+    "enName": null,
+    "slug": "বাঁশখালী",
+    "parentId": "55",
+    "parentName": "চট্টগ্রাম",
+    "type": "district"
+  },
+  {
+    "id": "1680",
+    "name": "রাজশাহীসিটি",
+    "enName": null,
+    "slug": "রাজশাহী-সিটি",
+    "parentId": "50",
+    "parentName": "রাজশাহী",
+    "type": "district"
+  },
+  {
+    "id": "1676",
+    "name": "তানোর",
+    "enName": null,
+    "slug": "তানোর",
+    "parentId": "50",
+    "parentName": "রাজশাহী",
+    "type": "district"
+  },
+  {
+    "id": "1674",
+    "name": "রাজশাহী সদর",
+    "enName": null,
+    "slug": "রাজশাহী-সদর",
+    "parentId": "50",
+    "parentName": "রাজশাহী",
+    "type": "district"
+  },
+  {
+    "id": "1670",
+    "name": "মোহনপুর",
+    "enName": null,
+    "slug": "মোহনপুর",
+    "parentId": "50",
+    "parentName": "রাজশাহী",
+    "type": "district"
+  },
+  {
+    "id": "1668",
+    "name": "চারঘাট",
+    "enName": null,
+    "slug": "চারঘাট",
+    "parentId": "50",
+    "parentName": "রাজশাহী",
+    "type": "district"
+  },
+  {
+    "id": "2233",
+    "name": "গোদাগাড়ী",
+    "enName": null,
+    "slug": "গোদাগাড়ী",
+    "parentId": "50",
+    "parentName": "রাজশাহী",
+    "type": "district"
+  },
+  {
+    "id": "1664",
+    "name": "নাটোরসদর",
+    "enName": null,
+    "slug": "নাটোর-সদর",
+    "parentId": "487",
+    "parentName": "নাটোর",
+    "type": "district"
+  },
+  {
+    "id": "1662",
+    "name": "বরাইগ্রাম",
+    "enName": null,
+    "slug": "বরাইগ্রাম",
+    "parentId": "487",
+    "parentName": "নাটোর",
+    "type": "district"
+  },
+  {
+    "id": "1660",
+    "name": "চাঁপাইনবাবগঞ্জ সদর",
+    "enName": null,
+    "slug": "চাঁপাইনবাবগঞ্জ-সদর",
+    "parentId": "343",
+    "parentName": "চাঁপাইনবাবগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1658",
+    "name": "নাচোল",
+    "enName": null,
+    "slug": "নাচোল",
+    "parentId": "343",
+    "parentName": "চাঁপাইনবাবগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1656",
+    "name": "পাঁচবিবি",
+    "enName": null,
+    "slug": "পাঁচবিবি",
+    "parentId": "305",
+    "parentName": "জয়পুরহাট",
+    "type": "district"
+  },
+  {
+    "id": "1654",
+    "name": "কালাই",
+    "enName": null,
+    "slug": "কালাই",
+    "parentId": "305",
+    "parentName": "জয়পুরহাট",
+    "type": "district"
+  },
+  {
+    "id": "1650",
+    "name": "মিটামইন",
+    "enName": null,
+    "slug": "মিটামইন",
+    "parentId": "250",
+    "parentName": "কিশোরগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1648",
+    "name": "বাজিতপুর",
+    "enName": null,
+    "slug": "বাজিতপুর",
+    "parentId": "250",
+    "parentName": "কিশোরগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1640",
+    "name": "করিমগঞ্জ",
+    "enName": null,
+    "slug": "করিমগঞ্জ",
+    "parentId": "250",
+    "parentName": "কিশোরগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1638",
+    "name": "ইটনা",
+    "enName": null,
+    "slug": "ইটনা",
+    "parentId": "250",
+    "parentName": "কিশোরগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1636",
+    "name": "অষ্টগ্রাম",
+    "enName": null,
+    "slug": "অষ্টগ্রাম",
+    "parentId": "250",
+    "parentName": "কিশোরগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1634",
+    "name": "কিশোরগঞ্জসদর",
+    "enName": null,
+    "slug": "কিশোরগঞ্জ-সদর",
+    "parentId": "250",
+    "parentName": "কিশোরগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1632",
+    "name": "সালথা",
+    "enName": null,
+    "slug": "সালথা",
+    "parentId": "315",
+    "parentName": "ফরিদপুর",
+    "type": "district"
+  },
+  {
+    "id": "1630",
+    "name": "সদরপুর",
+    "enName": null,
+    "slug": "সদরপুর",
+    "parentId": "315",
+    "parentName": "ফরিদপুর",
+    "type": "district"
+  },
+  {
+    "id": "1626",
+    "name": "আলফাডাঙা",
+    "enName": null,
+    "slug": "আলফাডাঙা",
+    "parentId": "315",
+    "parentName": "ফরিদপুর",
+    "type": "district"
+  },
+  {
+    "id": "1622",
+    "name": "ফরিদপুরসদর",
+    "enName": null,
+    "slug": "ফরিদপুর-সদর",
+    "parentId": "315",
+    "parentName": "ফরিদপুর",
+    "type": "district"
+  },
+  {
+    "id": "1620",
+    "name": "রাজৈর",
+    "enName": null,
+    "slug": "রাজৈর",
+    "parentId": "311",
+    "parentName": "মাদারীপুর",
+    "type": "district"
+  },
+  {
+    "id": "1616",
+    "name": "মাদারীপুর সদর",
+    "enName": null,
+    "slug": "মাদারীপুর-সদর",
+    "parentId": "311",
+    "parentName": "মাদারীপুর",
+    "type": "district"
+  },
+  {
+    "id": "1614",
+    "name": "নেত্রকোনাসদর",
+    "enName": null,
+    "slug": "নেত্রকোনা-সদর",
+    "parentId": "253",
+    "parentName": "নেত্রকোনা",
+    "type": "district"
+  },
+  {
+    "id": "1612",
+    "name": "পত্নীতলা",
+    "enName": null,
+    "slug": "পত্নীতলা",
+    "parentId": "280",
+    "parentName": "নওগাঁ",
+    "type": "district"
+  },
+  {
+    "id": "1608",
+    "name": "মদন",
+    "enName": null,
+    "slug": "মদন",
+    "parentId": "253",
+    "parentName": "নেত্রকোনা",
+    "type": "district"
+  },
+  {
+    "id": "1606",
+    "name": "কলমাকান্দা",
+    "enName": null,
+    "slug": "কলমাকান্দা",
+    "parentId": "253",
+    "parentName": "নেত্রকোনা",
+    "type": "district"
+  },
+  {
+    "id": "1602",
+    "name": "দুর্গাপুর",
+    "enName": null,
+    "slug": "দুর্গাপুর",
+    "parentId": "253",
+    "parentName": "নেত্রকোনা",
+    "type": "district"
+  },
+  {
+    "id": "1600",
+    "name": "পোরশা",
+    "enName": null,
+    "slug": "পোরশা",
+    "parentId": "280",
+    "parentName": "নওগাঁ",
+    "type": "district"
+  },
+  {
+    "id": "1598",
+    "name": "বারহাট্টা",
+    "enName": null,
+    "slug": "বারহাট্টা",
+    "parentId": "253",
+    "parentName": "নেত্রকোনা",
+    "type": "district"
+  },
+  {
+    "id": "1594",
+    "name": "গোসাইরহাট",
+    "enName": null,
+    "slug": "গোসাইরহাট",
+    "parentId": "410",
+    "parentName": "শরীয়তপুর",
+    "type": "district"
+  },
+  {
+    "id": "1590",
+    "name": "ভেদরগঞ্জ",
+    "enName": null,
+    "slug": "ভেদরগঞ্জ",
+    "parentId": "410",
+    "parentName": "শরীয়তপুর",
+    "type": "district"
+  },
+  {
+    "id": "1584",
+    "name": "ডামুড্যা",
+    "enName": null,
+    "slug": "ডামুড্যা",
+    "parentId": "410",
+    "parentName": "শরীয়তপুর",
+    "type": "district"
+  },
+  {
+    "id": "1580",
+    "name": "মেলান্দহ",
+    "enName": null,
+    "slug": "মেলান্দহ",
+    "parentId": "530",
+    "parentName": "জামালপুর",
+    "type": "district"
+  },
+  {
+    "id": "1578",
+    "name": "ইসলামপুর",
+    "enName": null,
+    "slug": "ইসলামপুর",
+    "parentId": "530",
+    "parentName": "জামালপুর",
+    "type": "district"
+  },
+  {
+    "id": "1574",
+    "name": "বকশীগঞ্জ",
+    "enName": null,
+    "slug": "বকশীগঞ্জ",
+    "parentId": "530",
+    "parentName": "জামালপুর",
+    "type": "district"
+  },
+  {
+    "id": "1572",
+    "name": "জামালপুরসদর",
+    "enName": null,
+    "slug": "জামালপুর-সদর",
+    "parentId": "530",
+    "parentName": "জামালপুর",
+    "type": "district"
+  },
+  {
+    "id": "1570",
+    "name": "মান্দা",
+    "enName": null,
+    "slug": "মান্দা",
+    "parentId": "280",
+    "parentName": "নওগাঁ",
+    "type": "district"
+  },
+  {
+    "id": "1562",
+    "name": "আত্রাই",
+    "enName": null,
+    "slug": "আত্রাই",
+    "parentId": "280",
+    "parentName": "নওগাঁ",
+    "type": "district"
+  },
+  {
+    "id": "1560",
+    "name": "মুকসুদপুর",
+    "enName": null,
+    "slug": "মুকসুদপুর",
+    "parentId": "314",
+    "parentName": "গোপালগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1558",
+    "name": "গোপালগঞ্জসদর",
+    "enName": null,
+    "slug": "গোপালগঞ্জ-সদর",
+    "parentId": "314",
+    "parentName": "গোপালগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1556",
+    "name": "রানীনগর",
+    "enName": null,
+    "slug": "রানীনগর",
+    "parentId": "280",
+    "parentName": "নওগাঁ",
+    "type": "district"
+  },
+  {
+    "id": "1554",
+    "name": "নওগাঁ সদর",
+    "enName": null,
+    "slug": "নওগাঁ-সদর",
+    "parentId": "280",
+    "parentName": "নওগাঁ",
+    "type": "district"
+  },
+  {
+    "id": "1550",
+    "name": "শেরপুরসদর",
+    "enName": null,
+    "slug": "শেরপুর-সদর",
+    "parentId": "278",
+    "parentName": "শেরপুর",
+    "type": "district"
+  },
+  {
+    "id": "1546",
+    "name": "নকলা",
+    "enName": null,
+    "slug": "নকলা",
+    "parentId": "278",
+    "parentName": "শেরপুর",
+    "type": "district"
+  },
+  {
+    "id": "1532",
+    "name": "কাহালু",
+    "enName": null,
+    "slug": "কাহালু",
+    "parentId": "277",
+    "parentName": "বগুড়া",
+    "type": "district"
+  },
+  {
+    "id": "1530",
+    "name": "নন্দীগ্রাম",
+    "enName": null,
+    "slug": "নন্দীগ্রাম",
+    "parentId": "277",
+    "parentName": "বগুড়া",
+    "type": "district"
+  },
+  {
+    "id": "1522",
+    "name": "সোনাতলা",
+    "enName": null,
+    "slug": "সোনাতলা",
+    "parentId": "277",
+    "parentName": "বগুড়া",
+    "type": "district"
+  },
+  {
+    "id": "1518",
+    "name": "মুক্তাগাছা",
+    "enName": null,
+    "slug": "মুক্তাগাছা",
+    "parentId": "256",
+    "parentName": "ময়মনসিংহ",
+    "type": "district"
+  },
+  {
+    "id": "1514",
+    "name": "চাটমোহর",
+    "enName": null,
+    "slug": "চাটমোহর",
+    "parentId": "320",
+    "parentName": "পাবনা",
+    "type": "district"
+  },
+  {
+    "id": "1512",
+    "name": "পাবনাসদর",
+    "enName": null,
+    "slug": "পাবনা-সদর",
+    "parentId": "320",
+    "parentName": "পাবনা",
+    "type": "district"
+  },
+  {
+    "id": "1510",
+    "name": "ফরিদপুর",
+    "enName": null,
+    "slug": "ফরিদপুর-পাবনা",
+    "parentId": "320",
+    "parentName": "পাবনা",
+    "type": "district"
+  },
+  {
+    "id": "1506",
+    "name": "ভাঙ্গুরা",
+    "enName": null,
+    "slug": "ভাঙ্গুরা",
+    "parentId": "320",
+    "parentName": "পাবনা",
+    "type": "district"
+  },
+  {
+    "id": "1504",
+    "name": "কামারখন্দ",
+    "enName": null,
+    "slug": "কামারখন্দ",
+    "parentId": "281",
+    "parentName": "সিরাজগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1500",
+    "name": "কাজীপুর",
+    "enName": null,
+    "slug": "কাজীপুর",
+    "parentId": "281",
+    "parentName": "সিরাজগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1498",
+    "name": "সিরাজগঞ্জসদর",
+    "enName": null,
+    "slug": "সিরাজগঞ্জ-সদর",
+    "parentId": "281",
+    "parentName": "সিরাজগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1492",
+    "name": "তেরখাদা",
+    "enName": null,
+    "slug": "তেরখাদা",
+    "parentId": "90",
+    "parentName": "খুলনা",
+    "type": "district"
+  },
+  {
+    "id": "1488",
+    "name": "পাইকগাছা",
+    "enName": null,
+    "slug": "পাইকগাছা",
+    "parentId": "90",
+    "parentName": "খুলনা",
+    "type": "district"
+  },
+  {
+    "id": "1484",
+    "name": "রূপসা",
+    "enName": null,
+    "slug": "রূপসা",
+    "parentId": "90",
+    "parentName": "খুলনা",
+    "type": "district"
+  },
+  {
+    "id": "1480",
+    "name": "চিতলমারী",
+    "enName": null,
+    "slug": "চিতলমারী",
+    "parentId": "285",
+    "parentName": "বাগেরহাট",
+    "type": "district"
+  },
+  {
+    "id": "1478",
+    "name": "বাগেরহাটসদর",
+    "enName": null,
+    "slug": "বাগেরহাট-সদর",
+    "parentId": "285",
+    "parentName": "বাগেরহাট",
+    "type": "district"
+  },
+  {
+    "id": "1476",
+    "name": "শরণখোলা",
+    "enName": null,
+    "slug": "শরণখোলা",
+    "parentId": "285",
+    "parentName": "বাগেরহাট",
+    "type": "district"
+  },
+  {
+    "id": "1470",
+    "name": "জীবননগর",
+    "enName": null,
+    "slug": "জীবননগর",
+    "parentId": "364",
+    "parentName": "চুয়াডাঙ্গা",
+    "type": "district"
+  },
+  {
+    "id": "1468",
+    "name": "যশোরসদর",
+    "enName": null,
+    "slug": "যশোর-সদর",
+    "parentId": "241",
+    "parentName": "যশোর",
+    "type": "district"
+  },
+  {
+    "id": "1466",
+    "name": "কেশবপুর",
+    "enName": null,
+    "slug": "কেশবপুর",
+    "parentId": "241",
+    "parentName": "যশোর",
+    "type": "district"
+  },
+  {
+    "id": "1464",
+    "name": "চৌগাছা",
+    "enName": null,
+    "slug": "চৌগাছা",
+    "parentId": "241",
+    "parentName": "যশোর",
+    "type": "district"
+  },
+  {
+    "id": "1460",
+    "name": "মনিরামপুর",
+    "enName": null,
+    "slug": "মনিরামপুর",
+    "parentId": "241",
+    "parentName": "যশোর",
+    "type": "district"
+  },
+  {
+    "id": "1458",
+    "name": "শার্শা",
+    "enName": null,
+    "slug": "শার্শা",
+    "parentId": "241",
+    "parentName": "যশোর",
+    "type": "district"
+  },
+  {
+    "id": "1454",
+    "name": "কোটচাঁদপুর",
+    "enName": null,
+    "slug": "কোটচাঁদপুর",
+    "parentId": "312",
+    "parentName": "ঝিনাইদহ",
+    "type": "district"
+  },
+  {
+    "id": "1452",
+    "name": "ঝিনাইদহসদর",
+    "enName": null,
+    "slug": "ঝিনাইদহ-সদর",
+    "parentId": "312",
+    "parentName": "ঝিনাইদহ",
+    "type": "district"
+  },
+  {
+    "id": "1450",
+    "name": "মহেশপুর",
+    "enName": null,
+    "slug": "মহেশপুর",
+    "parentId": "312",
+    "parentName": "ঝিনাইদহ",
+    "type": "district"
+  },
+  {
+    "id": "1444",
+    "name": "কুমারখালী",
+    "enName": null,
+    "slug": "কুমারখালী",
+    "parentId": "272",
+    "parentName": "কুষ্টিয়া",
+    "type": "district"
+  },
+  {
+    "id": "1440",
+    "name": "খোকসা",
+    "enName": null,
+    "slug": "খোকসা",
+    "parentId": "272",
+    "parentName": "কুষ্টিয়া",
+    "type": "district"
+  },
+  {
+    "id": "1438",
+    "name": "মিরপুর",
+    "enName": null,
+    "slug": "মিরপুর-কুষ্টিয়া",
+    "parentId": "272",
+    "parentName": "কুষ্টিয়া",
+    "type": "district"
+  },
+  {
+    "id": "1436",
+    "name": "মাগুরাসদর",
+    "enName": null,
+    "slug": "মাগুরা-সদর",
+    "parentId": "463",
+    "parentName": "মাগুরা",
+    "type": "district"
+  },
+  {
+    "id": "1434",
+    "name": "মহম্মদপুর",
+    "enName": null,
+    "slug": "মহম্মদপুর",
+    "parentId": "463",
+    "parentName": "মাগুরা",
+    "type": "district"
+  },
+  {
+    "id": "1432",
+    "name": "শালিখা",
+    "enName": null,
+    "slug": "শালিখা",
+    "parentId": "463",
+    "parentName": "মাগুরা",
+    "type": "district"
+  },
+  {
+    "id": "1430",
+    "name": "গাংনী",
+    "enName": null,
+    "slug": "গাংনী",
+    "parentId": "269",
+    "parentName": "মেহেরপুর",
+    "type": "district"
+  },
+  {
+    "id": "1428",
+    "name": "মেহেরপুরসদর",
+    "enName": null,
+    "slug": "মেহেরপুর-সদর",
+    "parentId": "269",
+    "parentName": "মেহেরপুর",
+    "type": "district"
+  },
+  {
+    "id": "1426",
+    "name": "মুজিবনগর",
+    "enName": null,
+    "slug": "মুজিবনগর",
+    "parentId": "269",
+    "parentName": "মেহেরপুর",
+    "type": "district"
+  },
+  {
+    "id": "1418",
+    "name": "আশাশুনি",
+    "enName": null,
+    "slug": "আশাশুনি",
+    "parentId": "274",
+    "parentName": "সাতক্ষীরা",
+    "type": "district"
+  },
+  {
+    "id": "1412",
+    "name": "তালা",
+    "enName": null,
+    "slug": "তালা",
+    "parentId": "274",
+    "parentName": "সাতক্ষীরা",
+    "type": "district"
+  },
+  {
+    "id": "1410",
+    "name": "দেবহাটা",
+    "enName": null,
+    "slug": "দেবহাটা",
+    "parentId": "274",
+    "parentName": "সাতক্ষীরা",
+    "type": "district"
+  },
+  {
+    "id": "1408",
+    "name": "শ্যামনগর",
+    "enName": null,
+    "slug": "শ্যামনগর",
+    "parentId": "274",
+    "parentName": "সাতক্ষীরা",
+    "type": "district"
+  },
+  {
+    "id": "1406",
+    "name": "সাতক্ষীরাসদর",
+    "enName": null,
+    "slug": "সাতক্ষীরা-সদর",
+    "parentId": "274",
+    "parentName": "সাতক্ষীরা",
+    "type": "district"
+  },
+  {
+    "id": "1402",
+    "name": "বাকেরগঞ্জ",
+    "enName": null,
+    "slug": "বাকেরগঞ্জ",
+    "parentId": "92",
+    "parentName": "বরিশাল",
+    "type": "district"
+  },
+  {
+    "id": "1400",
+    "name": "বাবুগঞ্জ",
+    "enName": null,
+    "slug": "বাবুগঞ্জ",
+    "parentId": "92",
+    "parentName": "বরিশাল",
+    "type": "district"
+  },
+  {
+    "id": "1396",
+    "name": "হিজলা",
+    "enName": null,
+    "slug": "হিজলা",
+    "parentId": "92",
+    "parentName": "বরিশাল",
+    "type": "district"
+  },
+  {
+    "id": "1394",
+    "name": "বরিশালসদর",
+    "enName": null,
+    "slug": "বরিশাল-সদর",
+    "parentId": "92",
+    "parentName": "বরিশাল",
+    "type": "district"
+  },
+  {
+    "id": "1388",
+    "name": "বরগুনা সদর",
+    "enName": null,
+    "slug": "বরগুনা-সদর",
+    "parentId": "275",
+    "parentName": "বরগুনা",
+    "type": "district"
+  },
+  {
+    "id": "1380",
+    "name": "দৌলতখান",
+    "enName": null,
+    "slug": "দৌলতখান",
+    "parentId": "324",
+    "parentName": "ভোলা",
+    "type": "district"
+  },
+  {
+    "id": "1384",
+    "name": "বামনা",
+    "enName": null,
+    "slug": "বামনা",
+    "parentId": "275",
+    "parentName": "বরগুনা",
+    "type": "district"
+  },
+  {
+    "id": "1378",
+    "name": "বোরহানউদ্দিন",
+    "enName": null,
+    "slug": "বোরহানউদ্দিন",
+    "parentId": "324",
+    "parentName": "ভোলা",
+    "type": "district"
+  },
+  {
+    "id": "1376",
+    "name": "ভোলাসদর",
+    "enName": null,
+    "slug": "ভোলা-সদর",
+    "parentId": "324",
+    "parentName": "ভোলা",
+    "type": "district"
+  },
+  {
+    "id": "1374",
+    "name": "মনপুরা",
+    "enName": null,
+    "slug": "মনপুরা",
+    "parentId": "324",
+    "parentName": "ভোলা",
+    "type": "district"
+  },
+  {
+    "id": "1370",
+    "name": "ঝালকাঠি সদর",
+    "enName": null,
+    "slug": "ঝালকাঠি-সদর",
+    "parentId": "339",
+    "parentName": "ঝালকাঠি",
+    "type": "district"
+  },
+  {
+    "id": "1368",
+    "name": "নলছিটি",
+    "enName": null,
+    "slug": "নলছিটি",
+    "parentId": "339",
+    "parentName": "ঝালকাঠি",
+    "type": "district"
+  },
+  {
+    "id": "1364",
+    "name": "দশমিনা",
+    "enName": null,
+    "slug": "দশমিনা",
+    "parentId": "355",
+    "parentName": "পটুয়াখালী",
+    "type": "district"
+  },
+  {
+    "id": "1362",
+    "name": "মির্জাগঞ্জ",
+    "enName": null,
+    "slug": "মির্জাগঞ্জ",
+    "parentId": "355",
+    "parentName": "পটুয়াখালী",
+    "type": "district"
+  },
+  {
+    "id": "1360",
+    "name": "দুমকি",
+    "enName": null,
+    "slug": "দুমকি",
+    "parentId": "355",
+    "parentName": "পটুয়াখালী",
+    "type": "district"
+  },
+  {
+    "id": "1354",
+    "name": "নাজিরপুর",
+    "enName": null,
+    "slug": "নাজিরপুর",
+    "parentId": "307",
+    "parentName": "পিরোজপুর",
+    "type": "district"
+  },
+  {
+    "id": "1350",
+    "name": "পিরোজপুরসদর",
+    "enName": null,
+    "slug": "পিরোজপুর-সদর",
+    "parentId": "307",
+    "parentName": "পিরোজপুর",
+    "type": "district"
+  },
+  {
+    "id": "1342",
+    "name": "বালাগঞ্জ",
+    "enName": null,
+    "slug": "বালাগঞ্জ",
+    "parentId": "88",
+    "parentName": "সিলেট",
+    "type": "district"
+  },
+  {
+    "id": "1340",
+    "name": "কোম্পানীগঞ্জ",
+    "enName": null,
+    "slug": "কোম্পানীগঞ্জ",
+    "parentId": "88",
+    "parentName": "সিলেট",
+    "type": "district"
+  },
+  {
+    "id": "1336",
+    "name": "কানাইঘাট",
+    "enName": null,
+    "slug": "কানাইঘাট",
+    "parentId": "88",
+    "parentName": "সিলেট",
+    "type": "district"
+  },
+  {
+    "id": "1334",
+    "name": "সিলেটসদর",
+    "enName": null,
+    "slug": "সিলেট-সদর",
+    "parentId": "88",
+    "parentName": "সিলেট",
+    "type": "district"
+  },
+  {
+    "id": "1332",
+    "name": "জকিগঞ্জ",
+    "enName": null,
+    "slug": "জকিগঞ্জ",
+    "parentId": "88",
+    "parentName": "সিলেট",
+    "type": "district"
+  },
+  {
+    "id": "1330",
+    "name": "দক্ষিণ সুরমা",
+    "enName": null,
+    "slug": "দক্ষিণ-সুরমা",
+    "parentId": "88",
+    "parentName": "সিলেট",
+    "type": "district"
+  },
+  {
+    "id": "1324",
+    "name": "বাহুবল",
+    "enName": null,
+    "slug": "বাহুবল",
+    "parentId": "260",
+    "parentName": "হবিগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1322",
+    "name": "চুনারুঘাট",
+    "enName": null,
+    "slug": "চুনারুঘাট",
+    "parentId": "260",
+    "parentName": "হবিগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1320",
+    "name": "হবিগঞ্জসদর",
+    "enName": null,
+    "slug": "হবিগঞ্জ-সদর",
+    "parentId": "260",
+    "parentName": "হবিগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1318",
+    "name": "লাখাই",
+    "enName": null,
+    "slug": "লাখাই",
+    "parentId": "260",
+    "parentName": "হবিগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1312",
+    "name": "মৌলভীবাজার সদর",
+    "enName": null,
+    "slug": "মৌলভীবাজার-সদর",
+    "parentId": "244",
+    "parentName": "মৌলভীবাজার",
+    "type": "district"
+  },
+  {
+    "id": "1308",
+    "name": "বিশ্বম্ভরপুর",
+    "enName": null,
+    "slug": "বিশ্বম্ভরপুর",
+    "parentId": "252",
+    "parentName": "সুনামগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1306",
+    "name": "ছাতক",
+    "enName": null,
+    "slug": "ছাতক",
+    "parentId": "252",
+    "parentName": "সুনামগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1300",
+    "name": "জামালগঞ্জ",
+    "enName": null,
+    "slug": "জামালগঞ্জ",
+    "parentId": "252",
+    "parentName": "সুনামগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1298",
+    "name": "শাল্লা",
+    "enName": null,
+    "slug": "শাল্লা",
+    "parentId": "252",
+    "parentName": "সুনামগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1296",
+    "name": "সুনামগঞ্জসদর",
+    "enName": null,
+    "slug": "সুনামগঞ্জ-সদর",
+    "parentId": "252",
+    "parentName": "সুনামগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1292",
+    "name": "রংপুর সদর",
+    "enName": null,
+    "slug": "রংপুর-সদর",
+    "parentId": "47",
+    "parentName": "রংপুর",
+    "type": "district"
+  },
+  {
+    "id": "1284",
+    "name": "বীরগঞ্জ",
+    "enName": null,
+    "slug": "বীরগঞ্জ",
+    "parentId": "282",
+    "parentName": "দিনাজপুর",
+    "type": "district"
+  },
+  {
+    "id": "1282",
+    "name": "বোচাগঞ্জ",
+    "enName": null,
+    "slug": "বোচাগঞ্জ",
+    "parentId": "282",
+    "parentName": "দিনাজপুর",
+    "type": "district"
+  },
+  {
+    "id": "1280",
+    "name": "চিরিরবন্দর",
+    "enName": null,
+    "slug": "চিরিরবন্দর",
+    "parentId": "282",
+    "parentName": "দিনাজপুর",
+    "type": "district"
+  },
+  {
+    "id": "1276",
+    "name": "কাহারোল",
+    "enName": null,
+    "slug": "কাহারোল",
+    "parentId": "282",
+    "parentName": "দিনাজপুর",
+    "type": "district"
+  },
+  {
+    "id": "1274",
+    "name": "খানসামা",
+    "enName": null,
+    "slug": "খানসামা",
+    "parentId": "282",
+    "parentName": "দিনাজপুর",
+    "type": "district"
+  },
+  {
+    "id": "1272",
+    "name": "দিনাজপুরসদর",
+    "enName": null,
+    "slug": "দিনাজপুর-সদর",
+    "parentId": "282",
+    "parentName": "দিনাজপুর",
+    "type": "district"
+  },
+  {
+    "id": "1270",
+    "name": "বিরল",
+    "enName": null,
+    "slug": "বিরল",
+    "parentId": "282",
+    "parentName": "দিনাজপুর",
+    "type": "district"
+  },
+  {
+    "id": "1268",
+    "name": "গাইবান্ধা সদর",
+    "enName": null,
+    "slug": "গাইবান্ধা-সদর",
+    "parentId": "322",
+    "parentName": "গাইবান্ধা",
+    "type": "district"
+  },
+  {
+    "id": "1260",
+    "name": "সাঘাটা",
+    "enName": null,
+    "slug": "সাঘাটা",
+    "parentId": "322",
+    "parentName": "গাইবান্ধা",
+    "type": "district"
+  },
+  {
+    "id": "1258",
+    "name": "উলিপুর",
+    "enName": null,
+    "slug": "উলিপুর",
+    "parentId": "301",
+    "parentName": "কুড়িগ্রাম",
+    "type": "district"
+  },
+  {
+    "id": "1254",
+    "name": "চররাজীবপুর",
+    "enName": null,
+    "slug": "চর-রাজীবপুর",
+    "parentId": "301",
+    "parentName": "কুড়িগ্রাম",
+    "type": "district"
+  },
+  {
+    "id": "1252",
+    "name": "চিলমারী",
+    "enName": null,
+    "slug": "চিলমারী",
+    "parentId": "301",
+    "parentName": "কুড়িগ্রাম",
+    "type": "district"
+  },
+  {
+    "id": "1246",
+    "name": "রাজারহাট",
+    "enName": null,
+    "slug": "রাজারহাট",
+    "parentId": "301",
+    "parentName": "কুড়িগ্রাম",
+    "type": "district"
+  },
+  {
+    "id": "1244",
+    "name": "রৌমারী",
+    "enName": null,
+    "slug": "রৌমারী",
+    "parentId": "301",
+    "parentName": "কুড়িগ্রাম",
+    "type": "district"
+  },
+  {
+    "id": "1232",
+    "name": "মধুপুর",
+    "enName": null,
+    "slug": "মধুপুর",
+    "parentId": "329",
+    "parentName": "টাঙ্গাইল",
+    "type": "district"
+  },
+  {
+    "id": "1230",
+    "name": "নাগরপুর",
+    "enName": null,
+    "slug": "নাগরপুর",
+    "parentId": "329",
+    "parentName": "টাঙ্গাইল",
+    "type": "district"
+  },
+  {
+    "id": "1228",
+    "name": "ভূঞাপুর",
+    "enName": null,
+    "slug": "ভূঞাপুর",
+    "parentId": "329",
+    "parentName": "টাঙ্গাইল",
+    "type": "district"
+  },
+  {
+    "id": "1226",
+    "name": "গোপালপুর",
+    "enName": null,
+    "slug": "গোপালপুর",
+    "parentId": "329",
+    "parentName": "টাঙ্গাইল",
+    "type": "district"
+  },
+  {
+    "id": "1224",
+    "name": "বাসাইল",
+    "enName": null,
+    "slug": "বাসাইল",
+    "parentId": "329",
+    "parentName": "টাঙ্গাইল",
+    "type": "district"
+  },
+  {
+    "id": "1222",
+    "name": "টাঙ্গাইলসদর",
+    "enName": null,
+    "slug": "টাঙ্গাইল-সদর",
+    "parentId": "329",
+    "parentName": "টাঙ্গাইল",
+    "type": "district"
+  },
+  {
+    "id": "1220",
+    "name": "ঘিওর",
+    "enName": null,
+    "slug": "ঘিওর",
+    "parentId": "374",
+    "parentName": "মানিকগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1216",
+    "name": "সিঙ্গাইর",
+    "enName": null,
+    "slug": "সিঙ্গাইর",
+    "parentId": "374",
+    "parentName": "মানিকগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1214",
+    "name": "মানিকগঞ্জসদর",
+    "enName": null,
+    "slug": "মানিকগঞ্জ-সদর",
+    "parentId": "374",
+    "parentName": "মানিকগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1212",
+    "name": "মুন্সিগঞ্জ সদর",
+    "enName": null,
+    "slug": "মুন্সিগঞ্জ-সদর",
+    "parentId": "385",
+    "parentName": "মুন্সিগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1210",
+    "name": "লৌহজং",
+    "enName": null,
+    "slug": "লৌহজং",
+    "parentId": "385",
+    "parentName": "মুন্সিগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1206",
+    "name": "শ্রীনগর",
+    "enName": null,
+    "slug": "শ্রীনগর",
+    "parentId": "385",
+    "parentName": "মুন্সিগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1204",
+    "name": "শ্রীপুর",
+    "enName": null,
+    "slug": "শ্রীপুর",
+    "parentId": "245",
+    "parentName": "গাজীপুর",
+    "type": "district"
+  },
+  {
+    "id": "1200",
+    "name": "গাজীপুরসদর",
+    "enName": null,
+    "slug": "গাজীপুর-সদর",
+    "parentId": "245",
+    "parentName": "গাজীপুর",
+    "type": "district"
+  },
+  {
+    "id": "1196",
+    "name": "ডোমার",
+    "enName": null,
+    "slug": "ডোমার",
+    "parentId": "283",
+    "parentName": "নীলফামারী",
+    "type": "district"
+  },
+  {
+    "id": "1194",
+    "name": "ডিমলা",
+    "enName": null,
+    "slug": "ডিমলা",
+    "parentId": "283",
+    "parentName": "নীলফামারী",
+    "type": "district"
+  },
+  {
+    "id": "1192",
+    "name": "জলঢাকা",
+    "enName": null,
+    "slug": "জলঢাকা",
+    "parentId": "283",
+    "parentName": "নীলফামারী",
+    "type": "district"
+  },
+  {
+    "id": "1188",
+    "name": "রূপগঞ্জ",
+    "enName": null,
+    "slug": "রূপগঞ্জ",
+    "parentId": "247",
+    "parentName": "নারায়ণগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1186",
+    "name": "দেবীগঞ্জ",
+    "enName": null,
+    "slug": "দেবীগঞ্জ",
+    "parentId": "483",
+    "parentName": "পঞ্চগড়",
+    "type": "district"
+  },
+  {
+    "id": "1180",
+    "name": "বন্দর",
+    "enName": null,
+    "slug": "বন্দর",
+    "parentId": "247",
+    "parentName": "নারায়ণগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1174",
+    "name": "বোদা",
+    "enName": null,
+    "slug": "বোদা",
+    "parentId": "483",
+    "parentName": "পঞ্চগড়",
+    "type": "district"
+  },
+  {
+    "id": "1172",
+    "name": "ঠাকুরগাঁওসদর",
+    "enName": null,
+    "slug": "ঠাকুরগাঁও-সদর",
+    "parentId": "299",
+    "parentName": "ঠাকুরগাঁও",
+    "type": "district"
+  },
+  {
+    "id": "1170",
+    "name": "রানীশংকৈল",
+    "enName": null,
+    "slug": "রানীশংকৈল",
+    "parentId": "299",
+    "parentName": "ঠাকুরগাঁও",
+    "type": "district"
+  },
+  {
+    "id": "1168",
+    "name": "হরিপুর",
+    "enName": null,
+    "slug": "হরিপুর",
+    "parentId": "299",
+    "parentName": "ঠাকুরগাঁও",
+    "type": "district"
+  },
+  {
+    "id": "1166",
+    "name": "লালমনিরহাটসদর",
+    "enName": null,
+    "slug": "লালমনিরহাট-সদর",
+    "parentId": "356",
+    "parentName": "লালমনিরহাট",
+    "type": "district"
+  },
+  {
+    "id": "1160",
+    "name": "নরসিংদী সদর",
+    "enName": null,
+    "slug": "নরসিংদী-সদর",
+    "parentId": "386",
+    "parentName": "নরসিংদী",
+    "type": "district"
+  },
+  {
+    "id": "1156",
+    "name": "শিবপুর",
+    "enName": null,
+    "slug": "শিবপুর",
+    "parentId": "386",
+    "parentName": "নরসিংদী",
+    "type": "district"
+  },
+  {
+    "id": "1154",
+    "name": "মনোহরদী",
+    "enName": null,
+    "slug": "মনোহরদী",
+    "parentId": "386",
+    "parentName": "নরসিংদী",
+    "type": "district"
+  },
+  {
+    "id": "1152",
+    "name": "বেলাবো",
+    "enName": null,
+    "slug": "বেলাবো",
+    "parentId": "386",
+    "parentName": "নরসিংদী",
+    "type": "district"
+  },
+  {
+    "id": "1150",
+    "name": "ধামরাই",
+    "enName": null,
+    "slug": "ধামরাই",
+    "parentId": "1148",
+    "parentName": "ঢাকা",
+    "type": "district"
+  },
+  {
+    "id": "1144",
+    "name": "নাগেশ্বরী",
+    "enName": null,
+    "slug": "নাগেশ্বরী",
+    "parentId": "301",
+    "parentName": "কুড়িগ্রাম",
+    "type": "district"
+  },
+  {
+    "id": "1130",
+    "name": "আলমডাঙ্গা",
+    "enName": null,
+    "slug": "আলমডাঙ্গা",
+    "parentId": "364",
+    "parentName": "চুয়াডাঙ্গা",
+    "type": "district"
+  },
+  {
+    "id": "1126",
+    "name": "ঝিকরগাছা",
+    "enName": null,
+    "slug": "ঝিকরগাছা",
+    "parentId": "241",
+    "parentName": "যশোর",
+    "type": "district"
+  },
+  {
+    "id": "1112",
+    "name": "বেলকুচি",
+    "enName": null,
+    "slug": "বেলকুচি",
+    "parentId": "281",
+    "parentName": "সিরাজগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1110",
+    "name": "গফরগাঁও",
+    "enName": null,
+    "slug": "গফরগাঁও",
+    "parentId": "256",
+    "parentName": "ময়মনসিংহ",
+    "type": "district"
+  },
+  {
+    "id": "1100",
+    "name": "সুন্দরগঞ্জ",
+    "enName": null,
+    "slug": "সুন্দরগঞ্জ",
+    "parentId": "322",
+    "parentName": "গাইবান্ধা",
+    "type": "district"
+  },
+  {
+    "id": "1062",
+    "name": "জৈন্তাপুর",
+    "enName": null,
+    "slug": "জৈন্তাপুর",
+    "parentId": "88",
+    "parentName": "সিলেট",
+    "type": "district"
+  },
+  {
+    "id": "1040",
+    "name": "রাজাপুর",
+    "enName": null,
+    "slug": "রাজাপুর",
+    "parentId": "339",
+    "parentName": "ঝালকাঠি",
+    "type": "district"
+  },
+  {
+    "id": "1028",
+    "name": "গাজীপুরসিটি",
+    "enName": null,
+    "slug": "গাজীপুর-সিটি",
+    "parentId": "245",
+    "parentName": "গাজীপুর",
+    "type": "district"
+  },
+  {
+    "id": "1008",
+    "name": "ক্ষেতলাল",
+    "enName": null,
+    "slug": "ক্ষেতলাল",
+    "parentId": "305",
+    "parentName": "জয়পুরহাট",
+    "type": "district"
+  },
+  {
+    "id": "962",
+    "name": "সাপাহার",
+    "enName": null,
+    "slug": "সাপাহার",
+    "parentId": "280",
+    "parentName": "নওগাঁ",
+    "type": "district"
+  },
+  {
+    "id": "960",
+    "name": "পবা",
+    "enName": null,
+    "slug": "পবা",
+    "parentId": "50",
+    "parentName": "রাজশাহী",
+    "type": "district"
+  },
+  {
+    "id": "946",
+    "name": "রুমা",
+    "enName": null,
+    "slug": "রুমা",
+    "parentId": "376",
+    "parentName": "বান্দরবান",
+    "type": "district"
+  },
+  {
+    "id": "940",
+    "name": "হরিরামপুর",
+    "enName": null,
+    "slug": "হরিরামপুর",
+    "parentId": "374",
+    "parentName": "মানিকগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "906",
+    "name": "দাকোপ",
+    "enName": null,
+    "slug": "দাকোপ",
+    "parentId": "90",
+    "parentName": "খুলনা",
+    "type": "district"
+  },
+  {
+    "id": "874",
+    "name": "গোমস্তাপুর",
+    "enName": null,
+    "slug": "গোমস্তাপুর",
+    "parentId": "343",
+    "parentName": "চাঁপাইনবাবগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "868",
+    "name": "মহাদেবপুর",
+    "enName": null,
+    "slug": "মহাদেবপুর",
+    "parentId": "280",
+    "parentName": "নওগাঁ",
+    "type": "district"
+  },
+  {
+    "id": "866",
+    "name": "ভাঙ্গা",
+    "enName": null,
+    "slug": "ভাঙ্গা",
+    "parentId": "315",
+    "parentName": "ফরিদপুর",
+    "type": "district"
+  },
+  {
+    "id": "842",
+    "name": "ফুলগাজী",
+    "enName": null,
+    "slug": "ফুলগাজী",
+    "parentId": "333",
+    "parentName": "ফেনী",
+    "type": "district"
+  },
+  {
+    "id": "802",
+    "name": "সুজানগর",
+    "enName": null,
+    "slug": "সুজানগর",
+    "parentId": "320",
+    "parentName": "পাবনা",
+    "type": "district"
+  },
+  {
+    "id": "801",
+    "name": "পাংশা",
+    "enName": null,
+    "slug": "পাংশা",
+    "parentId": "368",
+    "parentName": "রাজবাড়ী",
+    "type": "district"
+  },
+  {
+    "id": "800",
+    "name": "বালিয়াকান্দি",
+    "enName": null,
+    "slug": "বালিয়াকান্দি",
+    "parentId": "368",
+    "parentName": "রাজবাড়ী",
+    "type": "district"
+  },
+  {
+    "id": "788",
+    "name": "থানচি",
+    "enName": null,
+    "slug": "থানচি",
+    "parentId": "376",
+    "parentName": "বান্দরবান",
+    "type": "district"
+  },
+  {
+    "id": "780",
+    "name": "পূর্বধলা",
+    "enName": null,
+    "slug": "পূর্বধলা",
+    "parentId": "253",
+    "parentName": "নেত্রকোনা",
+    "type": "district"
+  },
+  {
+    "id": "779",
+    "name": "ফেঞ্চুগঞ্জ",
+    "enName": null,
+    "slug": "ফেঞ্চুগঞ্জ",
+    "parentId": "88",
+    "parentName": "সিলেট",
+    "type": "district"
+  },
+  {
+    "id": "767",
+    "name": "পলাশ",
+    "enName": null,
+    "slug": "পলাশ",
+    "parentId": "386",
+    "parentName": "নরসিংদী",
+    "type": "district"
+  },
+  {
+    "id": "765",
+    "name": "দেবীদ্বার",
+    "enName": null,
+    "slug": "দেবীদ্বার",
+    "parentId": "144",
+    "parentName": "কুমিল্লা",
+    "type": "district"
+  },
+  {
+    "id": "757",
+    "name": "মিঠাপুকুর",
+    "enName": null,
+    "slug": "মিঠাপুকুর",
+    "parentId": "47",
+    "parentName": "রংপুর",
+    "type": "district"
+  },
+  {
+    "id": "712",
+    "name": "বিশ্বনাথ",
+    "enName": null,
+    "slug": "বিশ্বনাথ",
+    "parentId": "88",
+    "parentName": "সিলেট",
+    "type": "district"
+  },
+  {
+    "id": "711",
+    "name": "শিবচর",
+    "enName": null,
+    "slug": "শিবচর",
+    "parentId": "311",
+    "parentName": "মাদারীপুর",
+    "type": "district"
+  },
+  {
+    "id": "705",
+    "name": "লালমোহন",
+    "enName": null,
+    "slug": "লালমোহন",
+    "parentId": "324",
+    "parentName": "ভোলা",
+    "type": "district"
+  },
+  {
+    "id": "690",
+    "name": "হোসেনপুর",
+    "enName": null,
+    "slug": "হোসেনপুর",
+    "parentId": "250",
+    "parentName": "কিশোরগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "687",
+    "name": "কালিহাতী",
+    "enName": null,
+    "slug": "কালিহাতী",
+    "parentId": "329",
+    "parentName": "টাঙ্গাইল",
+    "type": "district"
+  },
+  {
+    "id": "676",
+    "name": "উজিরপুর",
+    "enName": null,
+    "slug": "উজিরপুর",
+    "parentId": "92",
+    "parentName": "বরিশাল",
+    "type": "district"
+  },
+  {
+    "id": "675",
+    "name": "দৌলতপুর",
+    "enName": null,
+    "slug": "দৌলতপুর",
+    "parentId": "272",
+    "parentName": "কুষ্টিয়া",
+    "type": "district"
+  },
+  {
+    "id": "674",
+    "name": "হাজীগঞ্জ",
+    "enName": null,
+    "slug": "হাজীগঞ্জ",
+    "parentId": "243",
+    "parentName": "চাঁদপুর",
+    "type": "district"
+  },
+  {
+    "id": "671",
+    "name": "চৌদ্দগ্রাম",
+    "enName": null,
+    "slug": "চৌদ্দগ্রাম",
+    "parentId": "144",
+    "parentName": "কুমিল্লা",
+    "type": "district"
+  },
+  {
+    "id": "654",
+    "name": "মাটিরাঙ্গা",
+    "enName": null,
+    "slug": "মাটিরাঙ্গা",
+    "parentId": "337",
+    "parentName": "খাগড়াছড়ি",
+    "type": "district"
+  },
+  {
+    "id": "651",
+    "name": "ভোলাহাট",
+    "enName": null,
+    "slug": "ভোলাহাট",
+    "parentId": "343",
+    "parentName": "চাঁপাইনবাবগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "637",
+    "name": "গৌরীপুর",
+    "enName": null,
+    "slug": "গৌরীপুর",
+    "parentId": "256",
+    "parentName": "ময়মনসিংহ",
+    "type": "district"
+  },
+  {
+    "id": "634",
+    "name": "রামপাল",
+    "enName": null,
+    "slug": "রামপাল",
+    "parentId": "285",
+    "parentName": "বাগেরহাট",
+    "type": "district"
+  },
+  {
+    "id": "628",
+    "name": "মোংলা",
+    "enName": null,
+    "slug": "মোংলা",
+    "parentId": "285",
+    "parentName": "বাগেরহাট",
+    "type": "district"
+  },
+  {
+    "id": "625",
+    "name": "লালপুর",
+    "enName": null,
+    "slug": "লালপুর",
+    "parentId": "487",
+    "parentName": "নাটোর",
+    "type": "district"
+  },
+  {
+    "id": "624",
+    "name": "ফকিরহাট",
+    "enName": null,
+    "slug": "ফকিরহাট",
+    "parentId": "285",
+    "parentName": "বাগেরহাট",
+    "type": "district"
+  },
+  {
+    "id": "610",
+    "name": "ভালুকা",
+    "enName": null,
+    "slug": "ভালুকা",
+    "parentId": "256",
+    "parentName": "ময়মনসিংহ",
+    "type": "district"
+  },
+  {
+    "id": "583",
+    "name": "নগরকান্দা",
+    "enName": null,
+    "slug": "নগরকান্দা",
+    "parentId": "315",
+    "parentName": "ফরিদপুর",
+    "type": "district"
+  },
+  {
+    "id": "580",
+    "name": "চরফ্যাশন",
+    "enName": null,
+    "slug": "চরফ্যাশন",
+    "parentId": "324",
+    "parentName": "ভোলা",
+    "type": "district"
+  },
+  {
+    "id": "558",
+    "name": "বাঘা",
+    "enName": null,
+    "slug": "বাঘা",
+    "parentId": "50",
+    "parentName": "রাজশাহী",
+    "type": "district"
+  },
+  {
+    "id": "555",
+    "name": "রামগতি",
+    "enName": null,
+    "slug": "রামগতি",
+    "parentId": "441",
+    "parentName": "লক্ষ্মীপুর",
+    "type": "district"
+  },
+  {
+    "id": "553",
+    "name": "মাদারগঞ্জ",
+    "enName": null,
+    "slug": "মাদারগঞ্জ",
+    "parentId": "530",
+    "parentName": "জামালপুর",
+    "type": "district"
+  },
+  {
+    "id": "537",
+    "name": "রামু",
+    "enName": null,
+    "slug": "রামু",
+    "parentId": "264",
+    "parentName": "কক্সবাজার",
+    "type": "district"
+  },
+  {
+    "id": "535",
+    "name": "বাউফল",
+    "enName": null,
+    "slug": "বাউফল",
+    "parentId": "355",
+    "parentName": "পটুয়াখালী",
+    "type": "district"
+  },
+  {
+    "id": "532",
+    "name": "কাপ্তাই",
+    "enName": null,
+    "slug": "কাপ্তাই",
+    "parentId": "262",
+    "parentName": "রাঙামাটি",
+    "type": "district"
+  },
+  {
+    "id": "517",
+    "name": "মোল্লাহাট",
+    "enName": null,
+    "slug": "মোল্লাহাট",
+    "parentId": "285",
+    "parentName": "বাগেরহাট",
+    "type": "district"
+  },
+  {
+    "id": "509",
+    "name": "মোহনগঞ্জ",
+    "enName": null,
+    "slug": "মোহনগঞ্জ",
+    "parentId": "253",
+    "parentName": "নেত্রকোনা",
+    "type": "district"
+  },
+  {
+    "id": "497",
+    "name": "গোলাপগঞ্জ",
+    "enName": null,
+    "slug": "গোলাপগঞ্জ",
+    "parentId": "88",
+    "parentName": "সিলেট",
+    "type": "district"
+  },
+  {
+    "id": "486",
+    "name": "গুরুদাসপুর",
+    "enName": null,
+    "slug": "গুরুদাসপুর",
+    "parentId": "487",
+    "parentName": "নাটোর",
+    "type": "district"
+  },
+  {
+    "id": "484",
+    "name": "তাহিরপুর",
+    "enName": null,
+    "slug": "তাহিরপুর",
+    "parentId": "252",
+    "parentName": "সুনামগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "482",
+    "name": "নবীগঞ্জ",
+    "enName": null,
+    "slug": "নবীগঞ্জ",
+    "parentId": "260",
+    "parentName": "হবিগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "479",
+    "name": "ফুলপুর",
+    "enName": null,
+    "slug": "ফুলপুর",
+    "parentId": "256",
+    "parentName": "ময়মনসিংহ",
+    "type": "district"
+  },
+  {
+    "id": "465",
+    "name": "গলাচিপা",
+    "enName": null,
+    "slug": "গলাচিপা",
+    "parentId": "355",
+    "parentName": "পটুয়াখালী",
+    "type": "district"
+  },
+  {
+    "id": "462",
+    "name": "পীরগঞ্জ",
+    "enName": null,
+    "slug": "পীরগঞ্জ",
+    "parentId": "299",
+    "parentName": "ঠাকুরগাঁও",
+    "type": "district"
+  },
+  {
+    "id": "461",
+    "name": "পাটগ্রাম",
+    "enName": null,
+    "slug": "পাটগ্রাম",
+    "parentId": "356",
+    "parentName": "লালমনিরহাট",
+    "type": "district"
+  },
+  {
+    "id": "460",
+    "name": "শ্রীমঙ্গল",
+    "enName": null,
+    "slug": "শ্রীমঙ্গল",
+    "parentId": "244",
+    "parentName": "মৌলভীবাজার",
+    "type": "district"
+  },
+  {
+    "id": "443",
+    "name": "কমলগঞ্জ",
+    "enName": null,
+    "slug": "কমলগঞ্জ",
+    "parentId": "244",
+    "parentName": "মৌলভীবাজার",
+    "type": "district"
+  },
+  {
+    "id": "442",
+    "name": "কসবা",
+    "enName": null,
+    "slug": "কসবা",
+    "parentId": "328",
+    "parentName": "ব্রাহ্মণবাড়িয়া",
+    "type": "district"
+  },
+  {
+    "id": "438",
+    "name": "নবাবগঞ্জ",
+    "enName": null,
+    "slug": "নবাবগঞ্জ",
+    "parentId": "282",
+    "parentName": "দিনাজপুর",
+    "type": "district"
+  },
+  {
+    "id": "437",
+    "name": "দোহার",
+    "enName": null,
+    "slug": "দোহার",
+    "parentId": "1148",
+    "parentName": "ঢাকা",
+    "type": "district"
+  },
+  {
+    "id": "425",
+    "name": "লাকসাম",
+    "enName": null,
+    "slug": "লাকসাম",
+    "parentId": "144",
+    "parentName": "কুমিল্লা",
+    "type": "district"
+  },
+  {
+    "id": "414",
+    "name": "ঘাটাইল",
+    "enName": null,
+    "slug": "ঘাটাইল",
+    "parentId": "329",
+    "parentName": "টাঙ্গাইল",
+    "type": "district"
+  },
+  {
+    "id": "413",
+    "name": "বদরগঞ্জ",
+    "enName": null,
+    "slug": "বদরগঞ্জ",
+    "parentId": "47",
+    "parentName": "রংপুর",
+    "type": "district"
+  },
+  {
+    "id": "409",
+    "name": "টেকনাফ",
+    "enName": null,
+    "slug": "টেকনাফ",
+    "parentId": "264",
+    "parentName": "কক্সবাজার",
+    "type": "district"
+  },
+  {
+    "id": "389",
+    "name": "মনোহরগঞ্জ",
+    "enName": null,
+    "slug": "মনোহরগঞ্জ",
+    "parentId": "144",
+    "parentName": "কুমিল্লা",
+    "type": "district"
+  },
+  {
+    "id": "388",
+    "name": "দাউদকান্দি",
+    "enName": null,
+    "slug": "দাউদকান্দি",
+    "parentId": "144",
+    "parentName": "কুমিল্লা",
+    "type": "district"
+  },
+  {
+    "id": "382",
+    "name": "নবীনগর",
+    "enName": null,
+    "slug": "নবীনগর",
+    "parentId": "328",
+    "parentName": "ব্রাহ্মণবাড়িয়া",
+    "type": "district"
+  },
+  {
+    "id": "381",
+    "name": "মাধবপুর",
+    "enName": null,
+    "slug": "মাধবপুর",
+    "parentId": "260",
+    "parentName": "হবিগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "380",
+    "name": "নিকলী",
+    "enName": null,
+    "slug": "নিকলী",
+    "parentId": "250",
+    "parentName": "কিশোরগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "379",
+    "name": "সরাইল",
+    "enName": null,
+    "slug": "সরাইল",
+    "parentId": "328",
+    "parentName": "ব্রাহ্মণবাড়িয়া",
+    "type": "district"
+  },
+  {
+    "id": "378",
+    "name": "কেরানীগঞ্জ",
+    "enName": null,
+    "slug": "কেরানীগঞ্জ",
+    "parentId": "1148",
+    "parentName": "ঢাকা",
+    "type": "district"
+  },
+  {
+    "id": "373",
+    "name": "শিবগঞ্জ",
+    "enName": null,
+    "slug": "শিবগঞ্জ",
+    "parentId": "277",
+    "parentName": "বগুড়া",
+    "type": "district"
+  },
+  {
+    "id": "369",
+    "name": "মধুখালী",
+    "enName": null,
+    "slug": "মধুখালী",
+    "parentId": "315",
+    "parentName": "ফরিদপুর",
+    "type": "district"
+  },
+  {
+    "id": "361",
+    "name": "পার্বতীপুর",
+    "enName": null,
+    "slug": "পার্বতীপুর",
+    "parentId": "282",
+    "parentName": "দিনাজপুর",
+    "type": "district"
+  },
+  {
+    "id": "360",
+    "name": "ফুলতলা",
+    "enName": null,
+    "slug": "ফুলতলা",
+    "parentId": "90",
+    "parentName": "খুলনা",
+    "type": "district"
+  },
+  {
+    "id": "358",
+    "name": "শাহজাদপুর",
+    "enName": null,
+    "slug": "শাহজাদপুর",
+    "parentId": "281",
+    "parentName": "সিরাজগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "357",
+    "name": "বাঞ্ছারামপুর",
+    "enName": null,
+    "slug": "বাঞ্ছারামপুর",
+    "parentId": "328",
+    "parentName": "ব্রাহ্মণবাড়িয়া",
+    "type": "district"
+  },
+  {
+    "id": "354",
+    "name": "ঈশ্বরদী",
+    "enName": null,
+    "slug": "ঈশ্বরদী",
+    "parentId": "320",
+    "parentName": "পাবনা",
+    "type": "district"
+  },
+  {
+    "id": "353",
+    "name": "ধুনট",
+    "enName": null,
+    "slug": "ধুনট",
+    "parentId": "277",
+    "parentName": "বগুড়া",
+    "type": "district"
+  },
+  {
+    "id": "338",
+    "name": "দীঘিনালা",
+    "enName": null,
+    "slug": "দীঘিনালা",
+    "parentId": "337",
+    "parentName": "খাগড়াছড়ি",
+    "type": "district"
+  },
+  {
+    "id": "336",
+    "name": "সীতাকুণ্ড",
+    "enName": null,
+    "slug": "সীতাকুণ্ড",
+    "parentId": "55",
+    "parentName": "চট্টগ্রাম",
+    "type": "district"
+  },
+  {
+    "id": "332",
+    "name": "সাভার",
+    "enName": null,
+    "slug": "সাভার",
+    "parentId": "1148",
+    "parentName": "ঢাকা",
+    "type": "district"
+  },
+  {
+    "id": "331",
+    "name": "তারাগঞ্জ",
+    "enName": null,
+    "slug": "তারাগঞ্জ",
+    "parentId": "47",
+    "parentName": "রংপুর",
+    "type": "district"
+  },
+  {
+    "id": "330",
+    "name": "মির্জাপুর",
+    "enName": null,
+    "slug": "মির্জাপুর",
+    "parentId": "329",
+    "parentName": "টাঙ্গাইল",
+    "type": "district"
+  },
+  {
+    "id": "327",
+    "name": "দিরাই",
+    "enName": null,
+    "slug": "দিরাই",
+    "parentId": "252",
+    "parentName": "সুনামগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "326",
+    "name": "হাটহাজারী",
+    "enName": null,
+    "slug": "হাটহাজারী",
+    "parentId": "55",
+    "parentName": "চট্টগ্রাম",
+    "type": "district"
+  },
+  {
+    "id": "325",
+    "name": "গোবিন্দগঞ্জ",
+    "enName": null,
+    "slug": "গোবিন্দগঞ্জ",
+    "parentId": "322",
+    "parentName": "গাইবান্ধা",
+    "type": "district"
+  },
+  {
+    "id": "321",
+    "name": "বাগমারা",
+    "enName": null,
+    "slug": "বাগমারা",
+    "parentId": "50",
+    "parentName": "রাজশাহী",
+    "type": "district"
+  },
+  {
+    "id": "319",
+    "name": "মতলবদক্ষিণ",
+    "enName": null,
+    "slug": "মতলব-দক্ষিণ",
+    "parentId": "243",
+    "parentName": "চাঁদপুর",
+    "type": "district"
+  },
+  {
+    "id": "317",
+    "name": "বিরামপুর",
+    "enName": null,
+    "slug": "বিরামপুর",
+    "parentId": "282",
+    "parentName": "দিনাজপুর",
+    "type": "district"
+  },
+  {
+    "id": "316",
+    "name": "হাকিমপুর",
+    "enName": null,
+    "slug": "হাকিমপুর",
+    "parentId": "282",
+    "parentName": "দিনাজপুর",
+    "type": "district"
+  },
+  {
+    "id": "309",
+    "name": "গাবতলী",
+    "enName": null,
+    "slug": "গাবতলী",
+    "parentId": "277",
+    "parentName": "বগুড়া",
+    "type": "district"
+  },
+  {
+    "id": "308",
+    "name": "আমতলী",
+    "enName": null,
+    "slug": "আমতলী",
+    "parentId": "275",
+    "parentName": "বরগুনা",
+    "type": "district"
+  },
+  {
+    "id": "304",
+    "name": "আক্কেলপুর",
+    "enName": null,
+    "slug": "আক্কেলপুর",
+    "parentId": "305",
+    "parentName": "জয়পুরহাট",
+    "type": "district"
+  },
+  {
+    "id": "303",
+    "name": "পীরগাছা",
+    "enName": null,
+    "slug": "পীরগাছা",
+    "parentId": "47",
+    "parentName": "রংপুর",
+    "type": "district"
+  },
+  {
+    "id": "284",
+    "name": "মোরেলগঞ্জ",
+    "enName": null,
+    "slug": "মোরেলগঞ্জ",
+    "parentId": "285",
+    "parentName": "বাগেরহাট",
+    "type": "district"
+  },
+  {
+    "id": "276",
+    "name": "পাথরঘাটা",
+    "enName": null,
+    "slug": "পাথরঘাটা",
+    "parentId": "275",
+    "parentName": "বরগুনা",
+    "type": "district"
+  },
+  {
+    "id": "271",
+    "name": "গৌরনদী",
+    "enName": null,
+    "slug": "গৌরনদী",
+    "parentId": "92",
+    "parentName": "বরিশাল",
+    "type": "district"
+  },
+  {
+    "id": "268",
+    "name": "ভৈরব",
+    "enName": null,
+    "slug": "ভৈরব",
+    "parentId": "250",
+    "parentName": "কিশোরগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "267",
+    "name": "ত্রিশাল",
+    "enName": null,
+    "slug": "ত্রিশাল",
+    "parentId": "256",
+    "parentName": "ময়মনসিংহ",
+    "type": "district"
+  },
+  {
+    "id": "265",
+    "name": "মহেশখালী",
+    "enName": null,
+    "slug": "মহেশখালী",
+    "parentId": "264",
+    "parentName": "কক্সবাজার",
+    "type": "district"
+  },
+  {
+    "id": "261",
+    "name": "মিরসরাই",
+    "enName": null,
+    "slug": "মিরসরাই",
+    "parentId": "55",
+    "parentName": "চট্টগ্রাম",
+    "type": "district"
+  },
+  {
+    "id": "257",
+    "name": "নান্দাইল",
+    "enName": null,
+    "slug": "নান্দাইল",
+    "parentId": "256",
+    "parentName": "ময়মনসিংহ",
+    "type": "district"
+  },
+  {
+    "id": "255",
+    "name": "ঈশ্বরগঞ্জ",
+    "enName": null,
+    "slug": "ঈশ্বরগঞ্জ",
+    "parentId": "256",
+    "parentName": "ময়মনসিংহ",
+    "type": "district"
+  },
+  {
+    "id": "251",
+    "name": "জগন্নাথপুর",
+    "enName": null,
+    "slug": "জগন্নাথপুর",
+    "parentId": "252",
+    "parentName": "সুনামগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "246",
+    "name": "সোনারগাঁ",
+    "enName": null,
+    "slug": "সোনারগাঁ",
+    "parentId": "247",
+    "parentName": "নারায়ণগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1588",
+    "name": "বদলগাছী",
+    "enName": null,
+    "slug": "বদলগাছী",
+    "parentId": "280",
+    "parentName": "নওগাঁ",
+    "type": "district"
+  },
+  {
+    "id": "1592",
+    "name": "জাজিরা",
+    "enName": null,
+    "slug": "জাজিরা",
+    "parentId": "410",
+    "parentName": "শরীয়তপুর",
+    "type": "district"
+  },
+  {
+    "id": "1338",
+    "name": "গোয়াইনঘাট",
+    "enName": null,
+    "slug": "গোয়াইনঘাট",
+    "parentId": "88",
+    "parentName": "সিলেট",
+    "type": "district"
+  },
+  {
+    "id": "1234",
+    "name": "সখিপুর",
+    "enName": null,
+    "slug": "সখিপুর",
+    "parentId": "329",
+    "parentName": "টাঙ্গাইল",
+    "type": "district"
+  },
+  {
+    "id": "1618",
+    "name": "কালকিনী",
+    "enName": null,
+    "slug": "কালকিনী",
+    "parentId": "311",
+    "parentName": "মাদারীপুর",
+    "type": "district"
+  },
+  {
+    "id": "84231",
+    "name": "ডাসার",
+    "enName": null,
+    "slug": "ডাসার",
+    "parentId": "311",
+    "parentName": "মাদারীপুর",
+    "type": "district"
+  },
+  {
+    "id": "1628",
+    "name": "চরভদ্রাসন",
+    "enName": null,
+    "slug": "চর-ভদ্রাসন",
+    "parentId": "315",
+    "parentName": "ফরিদপুর",
+    "type": "district"
+  },
+  {
+    "id": "2015",
+    "name": "বরুড়া",
+    "enName": null,
+    "slug": "বরুড়া",
+    "parentId": "144",
+    "parentName": "কুমিল্লা",
+    "type": "district"
+  },
+  {
+    "id": "1796",
+    "name": "মেঘনা",
+    "enName": null,
+    "slug": "মেঘনা-নদী",
+    "parentId": "144",
+    "parentName": "কুমিল্লা",
+    "type": "district"
+  },
+  {
+    "id": "1544",
+    "name": "আদমদিঘী",
+    "enName": null,
+    "slug": "আদমদিঘী",
+    "parentId": "277",
+    "parentName": "বগুড়া",
+    "type": "district"
+  },
+  {
+    "id": "1520",
+    "name": "সাজাহানপুর",
+    "enName": null,
+    "slug": "সাজাহানপুর",
+    "parentId": "277",
+    "parentName": "বগুড়া",
+    "type": "district"
+  },
+  {
+    "id": "1502",
+    "name": "চৌহালি",
+    "enName": null,
+    "slug": "চৌহালি",
+    "parentId": "281",
+    "parentName": "সিরাজগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1496",
+    "name": "খুলনাসিটি",
+    "enName": null,
+    "slug": "খুলনা-সিটি-করপোরেশন",
+    "parentId": "90",
+    "parentName": "খুলনা",
+    "type": "district"
+  },
+  {
+    "id": "1446",
+    "name": "হরিণাকুণ্ড",
+    "enName": null,
+    "slug": "হরিণাকুণ্ড",
+    "parentId": "312",
+    "parentName": "ঝিনাইদহ",
+    "type": "district"
+  },
+  {
+    "id": "1448",
+    "name": "শৈলকূপা",
+    "enName": null,
+    "slug": "শৈলকূপা",
+    "parentId": "312",
+    "parentName": "ঝিনাইদহ",
+    "type": "district"
+  },
+  {
+    "id": "1358",
+    "name": "রাঙ্গাবালি",
+    "enName": null,
+    "slug": "রাঙ্গাবালি",
+    "parentId": "355",
+    "parentName": "পটুয়াখালী",
+    "type": "district"
+  },
+  {
+    "id": "1776",
+    "name": "দাগনভূঁইয়া",
+    "enName": null,
+    "slug": "দাগনভূঁইয়া",
+    "parentId": "333",
+    "parentName": "ফেনী",
+    "type": "district"
+  },
+  {
+    "id": "1764",
+    "name": "সোনাইমুড়ি",
+    "enName": null,
+    "slug": "সোনাইমুড়ি",
+    "parentId": "266",
+    "parentName": "নোয়াখালী",
+    "type": "district"
+  },
+  {
+    "id": "1328",
+    "name": "আজমিরিগঞ্জ",
+    "enName": null,
+    "slug": "আজমিরিগঞ্জ",
+    "parentId": "260",
+    "parentName": "হবিগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1314",
+    "name": "রাজানগর",
+    "enName": null,
+    "slug": "রাজানগর",
+    "parentId": "244",
+    "parentName": "মৌলভীবাজার",
+    "type": "district"
+  },
+  {
+    "id": "1310",
+    "name": "জুড়ি",
+    "enName": null,
+    "slug": "জুড়ি",
+    "parentId": "244",
+    "parentName": "মৌলভীবাজার",
+    "type": "district"
+  },
+  {
+    "id": "1302",
+    "name": "দোয়ারাবাজার",
+    "enName": null,
+    "slug": "দোয়ারাবাজার",
+    "parentId": "252",
+    "parentName": "সুনামগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1304",
+    "name": "ধর্মপাশা",
+    "enName": null,
+    "slug": "ধর্মপাশা",
+    "parentId": "252",
+    "parentName": "সুনামগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "84229",
+    "name": "মধ্যনগর",
+    "enName": null,
+    "slug": "মধ্যনগর",
+    "parentId": "252",
+    "parentName": "সুনামগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "84232",
+    "name": "শান্তিগঞ্জ",
+    "enName": null,
+    "slug": "শান্তিগঞ্জ",
+    "parentId": "252",
+    "parentName": "সুনামগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1348",
+    "name": "ভাণ্ডারিয়া",
+    "enName": null,
+    "slug": "ভাণ্ডারিয়া",
+    "parentId": "307",
+    "parentName": "পিরোজপুর",
+    "type": "district"
+  },
+  {
+    "id": "9532",
+    "name": "শ্রীপুর",
+    "enName": null,
+    "slug": "শ্রীপুর-মাগুরা",
+    "parentId": "463",
+    "parentName": "মাগুরা",
+    "type": "district"
+  },
+  {
+    "id": "1162",
+    "name": "হাতীবান্ধা",
+    "enName": null,
+    "slug": "হাতীবান্ধা",
+    "parentId": "356",
+    "parentName": "লালমনিরহাট",
+    "type": "district"
+  },
+  {
+    "id": "1382",
+    "name": "তজুমদ্দিন",
+    "enName": null,
+    "slug": "তজুমদ্দিন",
+    "parentId": "324",
+    "parentName": "ভোলা",
+    "type": "district"
+  },
+  {
+    "id": "9534",
+    "name": "শিবগঞ্জচাঁপাইনবাবগঞ্জ",
+    "enName": null,
+    "slug": "শিবগঞ্জ-চাঁপাইনবাবগঞ্জ",
+    "parentId": "343",
+    "parentName": "চাঁপাইনবাবগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "9537",
+    "name": "দুর্গাপুর রাজশাহী",
+    "enName": null,
+    "slug": "দুর্গাপুর-রাজশাহী",
+    "parentId": "50",
+    "parentName": "রাজশাহী",
+    "type": "district"
+  },
+  {
+    "id": "9536",
+    "name": "দৌলতপুর মানিকগঞ্জ",
+    "enName": null,
+    "slug": "দৌলতপুর-মানিকগঞ্জ",
+    "parentId": "374",
+    "parentName": "মানিকগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "9535",
+    "name": "নবাবগঞ্জঢাকা",
+    "enName": null,
+    "slug": "নবাবগঞ্জ-ঢাকা",
+    "parentId": "1148",
+    "parentName": "ঢাকা",
+    "type": "district"
+  },
+  {
+    "id": "1262",
+    "name": "সাদুল্লাপুর",
+    "enName": null,
+    "slug": "সাদুল্লাপুর",
+    "parentId": "322",
+    "parentName": "গাইবান্ধা",
+    "type": "district"
+  },
+  {
+    "id": "1248",
+    "name": "ভুরুঙ্গামারী",
+    "enName": null,
+    "slug": "ভুরুঙ্গামারী",
+    "parentId": "301",
+    "parentName": "কুড়িগ্রাম",
+    "type": "district"
+  },
+  {
+    "id": "2506",
+    "name": "ঝিনাইগাতী",
+    "enName": null,
+    "slug": "ঝিনাইগাতী",
+    "parentId": "278",
+    "parentName": "শেরপুর",
+    "type": "district"
+  },
+  {
+    "id": "1552",
+    "name": "শ্রীবরদী",
+    "enName": null,
+    "slug": "শ্রীবরদী",
+    "parentId": "278",
+    "parentName": "শেরপুর",
+    "type": "district"
+  },
+  {
+    "id": "9416",
+    "name": "গুইমারা",
+    "enName": null,
+    "slug": "গুইমারা",
+    "parentId": "337",
+    "parentName": "খাগড়াছড়ি",
+    "type": "district"
+  },
+  {
+    "id": "9531",
+    "name": "ইন্দুরকানি",
+    "enName": null,
+    "slug": "ইন্দুরকানি",
+    "parentId": "307",
+    "parentName": "পিরোজপুর",
+    "type": "district"
+  },
+  {
+    "id": "9530",
+    "name": "তালতলী",
+    "enName": null,
+    "slug": "তালতলী",
+    "parentId": "275",
+    "parentName": "বরগুনা",
+    "type": "district"
+  },
+  {
+    "id": "9529",
+    "name": "শায়েস্তাগঞ্জ",
+    "enName": null,
+    "slug": "শায়েস্তাগঞ্জ",
+    "parentId": "260",
+    "parentName": "হবিগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "9528",
+    "name": "ওসমানীনগর",
+    "enName": null,
+    "slug": "ওসমানীনগর",
+    "parentId": "88",
+    "parentName": "সিলেট",
+    "type": "district"
+  },
+  {
+    "id": "9527",
+    "name": "আদিতমারী",
+    "enName": null,
+    "slug": "আদিতমারী",
+    "parentId": "356",
+    "parentName": "লালমনিরহাট",
+    "type": "district"
+  },
+  {
+    "id": "9526",
+    "name": "কালুখালী",
+    "enName": null,
+    "slug": "কালুখালী",
+    "parentId": "368",
+    "parentName": "রাজবাড়ী",
+    "type": "district"
+  },
+  {
+    "id": "9525",
+    "name": "তারাকান্দা",
+    "enName": null,
+    "slug": "তারাকান্দা",
+    "parentId": "256",
+    "parentName": "ময়মনসিংহ",
+    "type": "district"
+  },
+  {
+    "id": "9522",
+    "name": "আদর্শসদর",
+    "enName": null,
+    "slug": "আদর্শ-সদর",
+    "parentId": "144",
+    "parentName": "কুমিল্লা",
+    "type": "district"
+  },
+  {
+    "id": "9523",
+    "name": "লালমাই",
+    "enName": null,
+    "slug": "লালমাই",
+    "parentId": "144",
+    "parentName": "কুমিল্লা",
+    "type": "district"
+  },
+  {
+    "id": "1198",
+    "name": "নীলফামারী সদর",
+    "enName": null,
+    "slug": "নীলফামারী-সদর",
+    "parentId": "283",
+    "parentName": "নীলফামারী",
+    "type": "district"
+  },
+  {
+    "id": "318",
+    "name": "লোহাগড়া",
+    "enName": null,
+    "slug": "লোহাগড়া-নড়াইল",
+    "parentId": "248",
+    "parentName": "নড়াইল",
+    "type": "district"
+  },
+  {
+    "id": "370",
+    "name": "কালীগঞ্জ",
+    "enName": null,
+    "slug": "কালীগঞ্জ-গাজীপুর",
+    "parentId": "245",
+    "parentName": "গাজীপুর",
+    "type": "district"
+  },
+  {
+    "id": "1164",
+    "name": "কালীগঞ্জ",
+    "enName": null,
+    "slug": "কালীগঞ্জ-লালমনিরহাট",
+    "parentId": "356",
+    "parentName": "লালমনিরহাট",
+    "type": "district"
+  },
+  {
+    "id": "296",
+    "name": "রাজধানীঢাকা",
+    "enName": null,
+    "slug": "রাজধানী-জাতীয়",
+    "parentId": "1148",
+    "parentName": "ঢাকা",
+    "type": "district"
+  },
+  {
+    "id": "1738",
+    "name": "কাউখালী",
+    "enName": null,
+    "slug": "কাউখালী-রাঙ্গামাটি",
+    "parentId": "262",
+    "parentName": "রাঙামাটি",
+    "type": "district"
+  },
+  {
+    "id": "1758",
+    "name": "কোম্পানীগঞ্জ",
+    "enName": null,
+    "slug": "কোম্পানীগঞ্জ-নোয়াখালী",
+    "parentId": "266",
+    "parentName": "নোয়াখালী",
+    "type": "district"
+  },
+  {
+    "id": "1414",
+    "name": "কালীগঞ্জ",
+    "enName": null,
+    "slug": "কালীগঞ্জ-সাতক্ষীরা",
+    "parentId": "274",
+    "parentName": "সাতক্ষীরা",
+    "type": "district"
+  },
+  {
+    "id": "1286",
+    "name": "পীরগঞ্জ",
+    "enName": null,
+    "slug": "পীরগঞ্জ-রংপুর",
+    "parentId": "47",
+    "parentName": "রংপুর",
+    "type": "district"
+  },
+  {
+    "id": "1294",
+    "name": "রংপুরসিটি",
+    "enName": null,
+    "slug": "রংপুর-সিটি",
+    "parentId": "47",
+    "parentName": "রংপুর",
+    "type": "district"
+  },
+  {
+    "id": "1456",
+    "name": "কালীগঞ্জ",
+    "enName": null,
+    "slug": "কালীগঞ্জ-ঝিনাইদহ",
+    "parentId": "312",
+    "parentName": "ঝিনাইদহ",
+    "type": "district"
+  },
+  {
+    "id": "1398",
+    "name": "বানারীপাড়",
+    "enName": null,
+    "slug": "বানারীপাড়",
+    "parentId": "92",
+    "parentName": "বরিশাল",
+    "type": "district"
+  },
+  {
+    "id": "1490",
+    "name": "দিঘলিয়া",
+    "enName": null,
+    "slug": "দিঘলিয়া",
+    "parentId": "90",
+    "parentName": "খুলনা",
+    "type": "district"
+  },
+  {
+    "id": "1712",
+    "name": "কর্ণফুলী",
+    "enName": null,
+    "slug": "কর্ণফুলী",
+    "parentId": "55",
+    "parentName": "চট্টগ্রাম",
+    "type": "district"
+  },
+  {
+    "id": "1190",
+    "name": "কিশোরগঞ্জ",
+    "enName": null,
+    "slug": "কিশোরগঞ্জ-নীলফামারী",
+    "parentId": "283",
+    "parentName": "নীলফামারী",
+    "type": "district"
+  },
+  {
+    "id": "1208",
+    "name": "সিরাজদিখান",
+    "enName": null,
+    "slug": "সিরাজদিখান",
+    "parentId": "385",
+    "parentName": "মুন্সিগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1250",
+    "name": "ফুলবাড়ী",
+    "enName": null,
+    "slug": "ফুলবাড়ী-কুড়িগ্রাম",
+    "parentId": "301",
+    "parentName": "কুড়িগ্রাম",
+    "type": "district"
+  },
+  {
+    "id": "27800",
+    "name": "ফুলবাড়ী",
+    "enName": null,
+    "slug": "ফুলবাড়ী-কুড়িগ্রাম",
+    "parentId": "301",
+    "parentName": "কুড়িগ্রাম",
+    "type": "district"
+  },
+  {
+    "id": "1352",
+    "name": "নেছারাবাদস্বরূপকাঠি",
+    "enName": null,
+    "slug": "নেছারাবাদ-স্বরূপকাঠি",
+    "parentId": "307",
+    "parentName": "পিরোজপুর",
+    "type": "district"
+  },
+  {
+    "id": "9222",
+    "name": "লোহাগাড়া",
+    "enName": null,
+    "slug": "লোহাগাড়া",
+    "parentId": "55",
+    "parentName": "চট্টগ্রাম",
+    "type": "district"
+  },
+  {
+    "id": "1344",
+    "name": "সিলেট সিটি",
+    "enName": null,
+    "slug": "সিলেট-সিটি",
+    "parentId": "88",
+    "parentName": "সিলেট",
+    "type": "district"
+  },
+  {
+    "id": "1386",
+    "name": "বেতাগী",
+    "enName": null,
+    "slug": "বেতাগী",
+    "parentId": "275",
+    "parentName": "বরগুনা",
+    "type": "district"
+  },
+  {
+    "id": "1392",
+    "name": "মেহেন্দীগঞ্জ",
+    "enName": null,
+    "slug": "মেহেন্দীগঞ্জ",
+    "parentId": "92",
+    "parentName": "বরিশাল",
+    "type": "district"
+  },
+  {
+    "id": "1748",
+    "name": "রাজস্থলী",
+    "enName": null,
+    "slug": "রাজস্থলী",
+    "parentId": "262",
+    "parentName": "রাঙামাটি",
+    "type": "district"
+  },
+  {
+    "id": "9524",
+    "name": "মতলবউত্তর",
+    "enName": null,
+    "slug": "মতলব-উত্তর",
+    "parentId": "243",
+    "parentName": "চাঁদপুর",
+    "type": "district"
+  },
+  {
+    "id": "1390",
+    "name": "মুলাদী",
+    "enName": null,
+    "slug": "মুলাদী",
+    "parentId": "92",
+    "parentName": "বরিশাল",
+    "type": "district"
+  },
+  {
+    "id": "1548",
+    "name": "নালিতাবাড়ি",
+    "enName": null,
+    "slug": "নালিতাবাড়ি",
+    "parentId": "278",
+    "parentName": "শেরপুর",
+    "type": "district"
+  },
+  {
+    "id": "1610",
+    "name": "ধামইরহাট",
+    "enName": null,
+    "slug": "ধামইরহাট",
+    "parentId": "280",
+    "parentName": "নওগাঁ",
+    "type": "district"
+  },
+  {
+    "id": "1356",
+    "name": "কাউখালী",
+    "enName": null,
+    "slug": "কাউখালী-পিরোজপুর",
+    "parentId": "307",
+    "parentName": "পিরোজপুর",
+    "type": "district"
+  },
+  {
+    "id": "1482",
+    "name": "কচুয়া",
+    "enName": null,
+    "slug": "কচুয়া-বাগেরহাট",
+    "parentId": "285",
+    "parentName": "বাগেরহাট",
+    "type": "district"
+  },
+  {
+    "id": "377",
+    "name": "বাঘাইছড়ি",
+    "enName": null,
+    "slug": "বাঘাইছড়ি",
+    "parentId": "262",
+    "parentName": "রাঙামাটি",
+    "type": "district"
+  },
+  {
+    "id": "383",
+    "name": "রাঙ্গুনিয়া",
+    "enName": null,
+    "slug": "রাঙ্গুনিয়া",
+    "parentId": "55",
+    "parentName": "চট্টগ্রাম",
+    "type": "district"
+  },
+  {
+    "id": "342",
+    "name": "ফটিকছড়ি",
+    "enName": null,
+    "slug": "ফটিকছড়ি",
+    "parentId": "55",
+    "parentName": "চট্টগ্রাম",
+    "type": "district"
+  },
+  {
+    "id": "352",
+    "name": "ডুমুরিয়া",
+    "enName": null,
+    "slug": "ডুমুরিয়া",
+    "parentId": "90",
+    "parentName": "খুলনা",
+    "type": "district"
+  },
+  {
+    "id": "529",
+    "name": "সরিষাবাড়ী",
+    "enName": null,
+    "slug": "সরিষাবাড়ী",
+    "parentId": "530",
+    "parentName": "জামালপুর",
+    "type": "district"
+  },
+  {
+    "id": "531",
+    "name": "পটিয়া",
+    "enName": null,
+    "slug": "পটিয়া",
+    "parentId": "55",
+    "parentName": "চট্টগ্রাম",
+    "type": "district"
+  },
+  {
+    "id": "1780",
+    "name": "ছাগলনাইয়া",
+    "enName": null,
+    "slug": "ছাগলনাইয়া",
+    "parentId": "333",
+    "parentName": "ফেনী",
+    "type": "district"
+  },
+  {
+    "id": "1816",
+    "name": "ব্রাহ্মণবাড়িয়াসদর",
+    "enName": null,
+    "slug": "ব্রাহ্মণবাড়িয়া-সদর",
+    "parentId": "328",
+    "parentName": "ব্রাহ্মণবাড়িয়া",
+    "type": "district"
+  },
+  {
+    "id": "1524",
+    "name": "হালুয়াঘাট",
+    "enName": null,
+    "slug": "হালুয়াঘাট",
+    "parentId": "256",
+    "parentName": "ময়মনসিংহ",
+    "type": "district"
+  },
+  {
+    "id": "1442",
+    "name": "কুষ্টিয়া সদর",
+    "enName": null,
+    "slug": "কুষ্টিয়া-সদর",
+    "parentId": "272",
+    "parentName": "কুষ্টিয়া",
+    "type": "district"
+  },
+  {
+    "id": "1528",
+    "name": "ফুলবাড়িয়া",
+    "enName": null,
+    "slug": "ফুলবাড়িয়া",
+    "parentId": "256",
+    "parentName": "ময়মনসিংহ",
+    "type": "district"
+  },
+  {
+    "id": "1718",
+    "name": "পেকুয়া",
+    "enName": null,
+    "slug": "পেকুয়া",
+    "parentId": "264",
+    "parentName": "কক্সবাজার",
+    "type": "district"
+  },
+  {
+    "id": "1730",
+    "name": "খাগড়াছড়িসদর",
+    "enName": null,
+    "slug": "খাগড়াছড়ি-সদর",
+    "parentId": "337",
+    "parentName": "খাগড়াছড়ি",
+    "type": "district"
+  },
+  {
+    "id": "1722",
+    "name": "নাইক্ষ্যংছড়ি",
+    "enName": null,
+    "slug": "নাইক্ষ্যংছড়ি",
+    "parentId": "376",
+    "parentName": "বান্দরবান",
+    "type": "district"
+  },
+  {
+    "id": "1716",
+    "name": "কুতুবদিয়া",
+    "enName": null,
+    "slug": "কুতুবদিয়া",
+    "parentId": "264",
+    "parentName": "কক্সবাজার",
+    "type": "district"
+  },
+  {
+    "id": "1752",
+    "name": "নোয়াখালীসদর",
+    "enName": null,
+    "slug": "নোয়াখালী-সদর",
+    "parentId": "266",
+    "parentName": "নোয়াখালী",
+    "type": "district"
+  },
+  {
+    "id": "1732",
+    "name": "পানছড়ি",
+    "enName": null,
+    "slug": "পানছড়ি",
+    "parentId": "337",
+    "parentName": "খাগড়াছড়ি",
+    "type": "district"
+  },
+  {
+    "id": "1736",
+    "name": "লক্ষ্মীছড়ি",
+    "enName": null,
+    "slug": "লক্ষ্মীছড়ি",
+    "parentId": "337",
+    "parentName": "খাগড়াছড়ি",
+    "type": "district"
+  },
+  {
+    "id": "1740",
+    "name": "জুরাছড়ি",
+    "enName": null,
+    "slug": "জুরাছড়ি",
+    "parentId": "262",
+    "parentName": "রাঙামাটি",
+    "type": "district"
+  },
+  {
+    "id": "1742",
+    "name": "নানিয়ারচর",
+    "enName": null,
+    "slug": "নানিয়ারচর",
+    "parentId": "262",
+    "parentName": "রাঙামাটি",
+    "type": "district"
+  },
+  {
+    "id": "1734",
+    "name": "মহালছড়ি",
+    "enName": null,
+    "slug": "মহালছড়ি",
+    "parentId": "337",
+    "parentName": "খাগড়াছড়ি",
+    "type": "district"
+  },
+  {
+    "id": "1182",
+    "name": "তেঁতুলিয়া",
+    "enName": null,
+    "slug": "তেঁতুলিয়া",
+    "parentId": "483",
+    "parentName": "পঞ্চগড়",
+    "type": "district"
+  },
+  {
+    "id": "1124",
+    "name": "উল্লাপাড়া",
+    "enName": null,
+    "slug": "উল্লাপাড়া",
+    "parentId": "281",
+    "parentName": "সিরাজগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "942",
+    "name": "বিলাইছড়ি",
+    "enName": null,
+    "slug": "বিলাইছড়ি",
+    "parentId": "262",
+    "parentName": "রাঙামাটি",
+    "type": "district"
+  },
+  {
+    "id": "956",
+    "name": "বাগাতিপাড়া",
+    "enName": null,
+    "slug": "বাগাতিপাড়া",
+    "parentId": "487",
+    "parentName": "নাটোর",
+    "type": "district"
+  },
+  {
+    "id": "1178",
+    "name": "নারায়ণগঞ্জসদর",
+    "enName": null,
+    "slug": "নারায়ণগঞ্জ-সদর",
+    "parentId": "247",
+    "parentName": "নারায়ণগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1404",
+    "name": "আগৈলঝারা",
+    "enName": null,
+    "slug": "আগৈলঝারা",
+    "parentId": "92",
+    "parentName": "বরিশাল",
+    "type": "district"
+  },
+  {
+    "id": "1726",
+    "name": "রোয়াংছড়ি",
+    "enName": null,
+    "slug": "রোয়াংছড়ি",
+    "parentId": "376",
+    "parentName": "বান্দরবান",
+    "type": "district"
+  },
+  {
+    "id": "1788",
+    "name": "বুড়িচং",
+    "enName": null,
+    "slug": "বুড়িচং",
+    "parentId": "144",
+    "parentName": "কুমিল্লা",
+    "type": "district"
+  },
+  {
+    "id": "1536",
+    "name": "ধুপচাঁচিয়া",
+    "enName": null,
+    "slug": "ধুপচাঁচিয়া",
+    "parentId": "277",
+    "parentName": "বগুড়া",
+    "type": "district"
+  },
+  {
+    "id": "1802",
+    "name": "কচুয়া",
+    "enName": null,
+    "slug": "কচুয়া",
+    "parentId": "243",
+    "parentName": "চাঁদপুর",
+    "type": "district"
+  },
+  {
+    "id": "1652",
+    "name": "জয়পুরহাটসদর",
+    "enName": null,
+    "slug": "জয়পুরহাট-সদর",
+    "parentId": "305",
+    "parentName": "জয়পুরহাট",
+    "type": "district"
+  },
+  {
+    "id": "1624",
+    "name": "বোয়ালমারী",
+    "enName": null,
+    "slug": "বোয়ালমারী",
+    "parentId": "315",
+    "parentName": "ফরিদপুর",
+    "type": "district"
+  },
+  {
+    "id": "1818",
+    "name": "বিজয়নগর",
+    "enName": null,
+    "slug": "বিজয়নগর",
+    "parentId": "328",
+    "parentName": "ব্রাহ্মণবাড়িয়া",
+    "type": "district"
+  },
+  {
+    "id": "1586",
+    "name": "নড়িয়া",
+    "enName": null,
+    "slug": "নড়িয়া",
+    "parentId": "410",
+    "parentName": "শরীয়তপুর",
+    "type": "district"
+  },
+  {
+    "id": "1526",
+    "name": "সারিয়াকান্দি",
+    "enName": null,
+    "slug": "সারিয়াকান্দি",
+    "parentId": "277",
+    "parentName": "বগুড়া",
+    "type": "district"
+  },
+  {
+    "id": "1422",
+    "name": "কালিয়া",
+    "enName": null,
+    "slug": "কালিয়া",
+    "parentId": "248",
+    "parentName": "নড়াইল",
+    "type": "district"
+  },
+  {
+    "id": "1486",
+    "name": "বটিয়াঘাটা",
+    "enName": null,
+    "slug": "বটিয়াঘাটা",
+    "parentId": "90",
+    "parentName": "খুলনা",
+    "type": "district"
+  },
+  {
+    "id": "1516",
+    "name": "আটঘরিয়া",
+    "enName": null,
+    "slug": "আটঘরিয়া",
+    "parentId": "320",
+    "parentName": "পাবনা",
+    "type": "district"
+  },
+  {
+    "id": "1472",
+    "name": "দামুড়হুদা",
+    "enName": null,
+    "slug": "দামুড়হুদা",
+    "parentId": "364",
+    "parentName": "চুয়াডাঙ্গা",
+    "type": "district"
+  },
+  {
+    "id": "1462",
+    "name": "বাঘারপাড়া",
+    "enName": null,
+    "slug": "বাঘারপাড়া",
+    "parentId": "241",
+    "parentName": "যশোর",
+    "type": "district"
+  },
+  {
+    "id": "1176",
+    "name": "পঞ্চগড়সদর",
+    "enName": null,
+    "slug": "পঞ্চগড়-সদর",
+    "parentId": "483",
+    "parentName": "পঞ্চগড়",
+    "type": "district"
+  },
+  {
+    "id": "1202",
+    "name": "কালিয়াকৈর",
+    "enName": null,
+    "slug": "কালিয়াকৈর",
+    "parentId": "245",
+    "parentName": "গাজীপুর",
+    "type": "district"
+  },
+  {
+    "id": "1494",
+    "name": "কয়রা",
+    "enName": null,
+    "slug": "কয়রা",
+    "parentId": "90",
+    "parentName": "খুলনা",
+    "type": "district"
+  },
+  {
+    "id": "1508",
+    "name": "ময়মনসিংহসদর",
+    "enName": null,
+    "slug": "ময়মনসিংহ-সদর",
+    "parentId": "256",
+    "parentName": "ময়মনসিংহ",
+    "type": "district"
+  },
+  {
+    "id": "601",
+    "name": "ব্রাহ্মণপাড়া",
+    "enName": null,
+    "slug": "ব্রাহ্মণপাড়া",
+    "parentId": "144",
+    "parentName": "কুমিল্লা",
+    "type": "district"
+  },
+  {
+    "id": "608",
+    "name": "তাড়াশ",
+    "enName": null,
+    "slug": "তাড়াশ",
+    "parentId": "281",
+    "parentName": "সিরাজগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "440",
+    "name": "রায়পুর",
+    "enName": null,
+    "slug": "রায়পুর",
+    "parentId": "441",
+    "parentName": "লক্ষ্মীপুর",
+    "type": "district"
+  },
+  {
+    "id": "498",
+    "name": "সিংড়া",
+    "enName": null,
+    "slug": "সিংড়া",
+    "parentId": "487",
+    "parentName": "নাটোর",
+    "type": "district"
+  },
+  {
+    "id": "494",
+    "name": "ফুলবাড়ী",
+    "enName": null,
+    "slug": "ফুলবাড়ী",
+    "parentId": "282",
+    "parentName": "দিনাজপুর",
+    "type": "district"
+  },
+  {
+    "id": "816",
+    "name": "রামগড়",
+    "enName": null,
+    "slug": "রামগড়",
+    "parentId": "337",
+    "parentName": "খাগড়াছড়ি",
+    "type": "district"
+  },
+  {
+    "id": "1278",
+    "name": "ঘোড়াঘাট",
+    "enName": null,
+    "slug": "ঘোড়াঘাট",
+    "parentId": "282",
+    "parentName": "দিনাজপুর",
+    "type": "district"
+  },
+  {
+    "id": "1184",
+    "name": "আড়াইহাজার",
+    "enName": null,
+    "slug": "আড়াইহাজার",
+    "parentId": "247",
+    "parentName": "নারায়ণগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "890",
+    "name": "আটোয়ারী",
+    "enName": null,
+    "slug": "আটোয়ারী",
+    "parentId": "483",
+    "parentName": "পঞ্চগড়",
+    "type": "district"
+  },
+  {
+    "id": "803",
+    "name": "সাঁথিয়া",
+    "enName": null,
+    "slug": "সাঁথিয়া",
+    "parentId": "320",
+    "parentName": "পাবনা",
+    "type": "district"
+  },
+  {
+    "id": "1038",
+    "name": "উখিয়া",
+    "enName": null,
+    "slug": "উখিয়া",
+    "parentId": "264",
+    "parentName": "কক্সবাজার",
+    "type": "district"
+  },
+  {
+    "id": "978",
+    "name": "টঙ্গিবাড়ী",
+    "enName": null,
+    "slug": "টঙ্গিবাড়ী",
+    "parentId": "385",
+    "parentName": "মুন্সিগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "870",
+    "name": "সাটুরিয়া",
+    "enName": null,
+    "slug": "সাটুরিয়া",
+    "parentId": "374",
+    "parentName": "মানিকগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "872",
+    "name": "কুলাউড়া",
+    "enName": null,
+    "slug": "কুলাউড়া",
+    "parentId": "244",
+    "parentName": "মৌলভীবাজার",
+    "type": "district"
+  },
+  {
+    "id": "300",
+    "name": "বালিয়াডাঙ্গী",
+    "enName": null,
+    "slug": "বালিয়াডাঙ্গী",
+    "parentId": "299",
+    "parentName": "ঠাকুরগাঁও",
+    "type": "district"
+  },
+  {
+    "id": "306",
+    "name": "মঠবাড়িয়া",
+    "enName": null,
+    "slug": "মঠবাড়িয়া",
+    "parentId": "307",
+    "parentName": "পিরোজপুর",
+    "type": "district"
+  },
+  {
+    "id": "254",
+    "name": "কেন্দুয়া",
+    "enName": null,
+    "slug": "কেন্দুয়া",
+    "parentId": "253",
+    "parentName": "নেত্রকোনা",
+    "type": "district"
+  },
+  {
+    "id": "384",
+    "name": "গজারিয়া",
+    "enName": null,
+    "slug": "গজারিয়া",
+    "parentId": "385",
+    "parentName": "মুন্সিগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "439",
+    "name": "সাতকানিয়া",
+    "enName": null,
+    "slug": "সাতকানিয়া",
+    "parentId": "55",
+    "parentName": "চট্টগ্রাম",
+    "type": "district"
+  },
+  {
+    "id": "334",
+    "name": "হাতিয়া",
+    "enName": null,
+    "slug": "হাতিয়া",
+    "parentId": "266",
+    "parentName": "নোয়াখালী",
+    "type": "district"
+  },
+  {
+    "id": "458",
+    "name": "চকরিয়া",
+    "enName": null,
+    "slug": "চকরিয়া",
+    "parentId": "264",
+    "parentName": "কক্সবাজার",
+    "type": "district"
+  },
+  {
+    "id": "84230",
+    "name": "ঈদগাঁও",
+    "enName": null,
+    "slug": "ঈদগাঁও",
+    "parentId": "264",
+    "parentName": "কক্সবাজার",
+    "type": "district"
+  },
+  {
+    "id": "367",
+    "name": "গোয়ালন্দ",
+    "enName": null,
+    "slug": "গোয়ালন্দ",
+    "parentId": "368",
+    "parentName": "রাজবাড়ী",
+    "type": "district"
+  },
+  {
+    "id": "817",
+    "name": "মানিকছড়ি",
+    "enName": null,
+    "slug": "মানিকছড়ি",
+    "parentId": "337",
+    "parentName": "খাগড়াছড়ি",
+    "type": "district"
+  },
+  {
+    "id": "249",
+    "name": "তাড়াইল",
+    "enName": null,
+    "slug": "তাড়াইল",
+    "parentId": "250",
+    "parentName": "কিশোরগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "270",
+    "name": "অভয়নগর",
+    "enName": null,
+    "slug": "অভয়নগর",
+    "parentId": "241",
+    "parentName": "যশোর",
+    "type": "district"
+  },
+  {
+    "id": "1474",
+    "name": "চুয়াডাঙ্গাসদর",
+    "enName": null,
+    "slug": "চুয়াডাঙ্গা-সদর",
+    "parentId": "364",
+    "parentName": "চুয়াডাঙ্গা",
+    "type": "district"
+  },
+  {
+    "id": "1424",
+    "name": "নড়াইল সদর",
+    "enName": null,
+    "slug": "নড়াইল-সদর",
+    "parentId": "248",
+    "parentName": "নড়াইল",
+    "type": "district"
+  },
+  {
+    "id": "436",
+    "name": "রায়গঞ্জ",
+    "enName": null,
+    "slug": "রায়গঞ্জ",
+    "parentId": "281",
+    "parentName": "সিরাজগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "444",
+    "name": "সৈয়দপুর",
+    "enName": null,
+    "slug": "সৈয়দপুর",
+    "parentId": "283",
+    "parentName": "নীলফামারী",
+    "type": "district"
+  },
+  {
+    "id": "1158",
+    "name": "রায়পুরা",
+    "enName": null,
+    "slug": "রায়পুরা",
+    "parentId": "386",
+    "parentName": "নরসিংদী",
+    "type": "district"
+  },
+  {
+    "id": "1256",
+    "name": "কুড়িগ্রামসদর",
+    "enName": null,
+    "slug": "কুড়িগ্রাম-সদর",
+    "parentId": "301",
+    "parentName": "কুড়িগ্রাম",
+    "type": "district"
+  },
+  {
+    "id": "1316",
+    "name": "বড়লেখা",
+    "enName": null,
+    "slug": "বড়লেখা",
+    "parentId": "244",
+    "parentName": "মৌলভীবাজার",
+    "type": "district"
+  },
+  {
+    "id": "1582",
+    "name": "শরীয়তপুর সদর",
+    "enName": null,
+    "slug": "শরীয়তপুর-সদর",
+    "parentId": "410",
+    "parentName": "শরীয়তপুর",
+    "type": "district"
+  },
+  {
+    "id": "1646",
+    "name": "পাকুন্দিয়া",
+    "enName": null,
+    "slug": "পাকুন্দিয়া",
+    "parentId": "250",
+    "parentName": "কিশোরগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1678",
+    "name": "পুঠিয়া",
+    "enName": null,
+    "slug": "পুঠিয়া",
+    "parentId": "50",
+    "parentName": "রাজশাহী",
+    "type": "district"
+  },
+  {
+    "id": "1568",
+    "name": "টুঙ্গিপাড়া",
+    "enName": null,
+    "slug": "টুঙ্গিপাড়া",
+    "parentId": "314",
+    "parentName": "গোপালগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1702",
+    "name": "বোয়ালখালী",
+    "enName": null,
+    "slug": "বোয়ালখালী",
+    "parentId": "55",
+    "parentName": "চট্টগ্রাম",
+    "type": "district"
+  },
+  {
+    "id": "1596",
+    "name": "আটপাড়া",
+    "enName": null,
+    "slug": "আটপাড়া",
+    "parentId": "253",
+    "parentName": "নেত্রকোনা",
+    "type": "district"
+  },
+  {
+    "id": "1604",
+    "name": "খালিয়াজুড়ি",
+    "enName": null,
+    "slug": "খালিয়াজুড়ি",
+    "parentId": "253",
+    "parentName": "নেত্রকোনা",
+    "type": "district"
+  },
+  {
+    "id": "1644",
+    "name": "কুলিয়ারচর",
+    "enName": null,
+    "slug": "কুলিয়ারচর",
+    "parentId": "250",
+    "parentName": "কিশোরগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1576",
+    "name": "দেওয়ানগঞ্জ",
+    "enName": null,
+    "slug": "দেওয়ানগঞ্জ",
+    "parentId": "530",
+    "parentName": "জামালপুর",
+    "type": "district"
+  },
+  {
+    "id": "1566",
+    "name": "কোটালীপাড়া",
+    "enName": null,
+    "slug": "কোটালীপাড়া",
+    "parentId": "314",
+    "parentName": "গোপালগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1416",
+    "name": "কলারোয়া",
+    "enName": null,
+    "slug": "কলারোয়া",
+    "parentId": "274",
+    "parentName": "সাতক্ষীরা",
+    "type": "district"
+  },
+  {
+    "id": "1372",
+    "name": "কাঁঠালিয়া",
+    "enName": null,
+    "slug": "কাঁঠালিয়া",
+    "parentId": "339",
+    "parentName": "ঝালকাঠি",
+    "type": "district"
+  },
+  {
+    "id": "1236",
+    "name": "দেলদুয়ার",
+    "enName": null,
+    "slug": "দেলদুয়ার",
+    "parentId": "329",
+    "parentName": "টাঙ্গাইল",
+    "type": "district"
+  },
+  {
+    "id": "1238",
+    "name": "ধনবাড়ী",
+    "enName": null,
+    "slug": "ধনবাড়ী",
+    "parentId": "329",
+    "parentName": "টাঙ্গাইল",
+    "type": "district"
+  },
+  {
+    "id": "1264",
+    "name": "পলাশবাড়ী",
+    "enName": null,
+    "slug": "পলাশবাড়ী",
+    "parentId": "322",
+    "parentName": "গাইবান্ধা",
+    "type": "district"
+  },
+  {
+    "id": "556",
+    "name": "আখাউড়া",
+    "enName": null,
+    "slug": "আখাউড়া",
+    "parentId": "328",
+    "parentName": "ব্রাহ্মণবাড়িয়া",
+    "type": "district"
+  },
+  {
+    "id": "579",
+    "name": "কলাপাড়া",
+    "enName": null,
+    "slug": "কলাপাড়া",
+    "parentId": "355",
+    "parentName": "পটুয়াখালী",
+    "type": "district"
+  },
+  {
+    "id": "652",
+    "name": "কটিয়াদী",
+    "enName": null,
+    "slug": "কটিয়াদী",
+    "parentId": "250",
+    "parentName": "কিশোরগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "795",
+    "name": "কাপাসিয়া",
+    "enName": null,
+    "slug": "কাপাসিয়া",
+    "parentId": "245",
+    "parentName": "গাজীপুর",
+    "type": "district"
+  },
+  {
+    "id": "1266",
+    "name": "ফুলছড়ি",
+    "enName": null,
+    "slug": "ফুলছড়ি",
+    "parentId": "322",
+    "parentName": "গাইবান্ধা",
+    "type": "district"
+  },
+  {
+    "id": "1288",
+    "name": "কাউনিয়া",
+    "enName": null,
+    "slug": "কাউনিয়া",
+    "parentId": "47",
+    "parentName": "রংপুর",
+    "type": "district"
+  },
+  {
+    "id": "1098",
+    "name": "নারায়ণগঞ্জসিটি",
+    "enName": null,
+    "slug": "নারায়ণগঞ্জ-সিটি",
+    "parentId": "247",
+    "parentName": "নারায়ণগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "1366",
+    "name": "পটুয়াখালী সদর",
+    "enName": null,
+    "slug": "পটুয়াখালী-সদর",
+    "parentId": "355",
+    "parentName": "পটুয়াখালী",
+    "type": "district"
+  },
+  {
+    "id": "1218",
+    "name": "শিবালয়",
+    "enName": null,
+    "slug": "শিবালয়",
+    "parentId": "374",
+    "parentName": "মানিকগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "742",
+    "name": "ভেড়ামারা",
+    "enName": null,
+    "slug": "ভেড়ামারা",
+    "parentId": "272",
+    "parentName": "কুষ্টিয়া",
+    "type": "district"
+  },
+  {
+    "id": "766",
+    "name": "বিয়ানীবাজার",
+    "enName": null,
+    "slug": "বিয়ানীবাজার",
+    "parentId": "88",
+    "parentName": "সিলেট",
+    "type": "district"
+  },
+  {
+    "id": "1290",
+    "name": "গঙ্গাছড়া",
+    "enName": null,
+    "slug": "গঙ্গাছড়া",
+    "parentId": "47",
+    "parentName": "রংপুর",
+    "type": "district"
+  },
+  {
+    "id": "1326",
+    "name": "বানিয়াচং",
+    "enName": null,
+    "slug": "বানিয়াচং",
+    "parentId": "260",
+    "parentName": "হবিগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "539",
+    "name": "নিয়ামতপুর",
+    "enName": null,
+    "slug": "নিয়ামতপুর",
+    "parentId": "280",
+    "parentName": "নওগাঁ",
+    "type": "district"
+  },
+  {
+    "id": "1540",
+    "name": "বগুড়াসদর",
+    "enName": null,
+    "slug": "বগুড়া-সদর",
+    "parentId": "277",
+    "parentName": "বগুড়া",
+    "type": "district"
+  },
+  {
+    "id": "1534",
+    "name": "ধোবাউড়া",
+    "enName": null,
+    "slug": "ধোবাউড়া",
+    "parentId": "256",
+    "parentName": "ময়মনসিংহ",
+    "type": "district"
+  },
+  {
+    "id": "1538",
+    "name": "রাজবাড়ী সদর",
+    "enName": null,
+    "slug": "রাজবাড়ী-সদর",
+    "parentId": "368",
+    "parentName": "রাজবাড়ী",
+    "type": "district"
+  },
+  {
+    "id": "1564",
+    "name": "কাশিয়ানী",
+    "enName": null,
+    "slug": "কাশিয়ানী",
+    "parentId": "314",
+    "parentName": "গোপালগঞ্জ",
+    "type": "district"
+  },
+  {
+    "id": "799",
+    "name": "আনোয়ারা",
+    "enName": null,
+    "slug": "আনোয়ারা",
+    "parentId": "55",
+    "parentName": "চট্টগ্রাম",
+    "type": "district"
+  },
+  {
+    "id": "689",
+    "name": "বেড়া",
+    "enName": null,
+    "slug": "বেড়া",
+    "parentId": "320",
+    "parentName": "পাবনা",
+    "type": "district"
+  }
+]

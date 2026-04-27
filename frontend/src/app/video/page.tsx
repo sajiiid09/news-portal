@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { DataService } from '@/lib/data'
 import { Container } from '@/components/layouts/Container'
-import { VideoCard } from '@/components/ui/Card'
+import { EditorialSectionPage } from '@/components/modules/SectionPage'
 
 export const metadata: Metadata = {
   title: 'ভিডিও',
@@ -9,18 +9,24 @@ export const metadata: Metadata = {
 }
 
 export default async function VideoPage() {
-  const videos = await DataService.videos.getAll()
+  const [page, articles, dseItems] = await Promise.all([
+    DataService.sectionPages.getBySlug('video'),
+    DataService.articles.getAll(),
+    DataService.dse.getTicker(),
+  ])
+
+  if (!page) {
+    return null
+  }
 
   return (
     <Container>
-      <section className="bb-section">
-        <h1>ভিডিও</h1>
-      </section>
-      <div className="bb-grid bb-grid--three">
-        {videos.map((video) => (
-          <VideoCard key={video.id} video={video} />
-        ))}
-      </div>
+      <EditorialSectionPage
+        page={page}
+        articles={articles}
+        dseItems={dseItems}
+        dseEndpoint={process.env.NEXT_PUBLIC_DSE_TICKER_ENDPOINT || '/api/dse/ticker'}
+      />
     </Container>
   )
 }

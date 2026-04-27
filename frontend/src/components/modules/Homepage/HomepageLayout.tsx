@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import type { Article, Category, Gallery, Video } from '@/lib/types'
 import { formatBanglaDate } from '@/lib/utils'
+import { adSlots } from '@/config/ads'
 import { HomeMotion } from './HomeMotion'
 
 interface HomepageLayoutProps {
@@ -122,6 +123,49 @@ function SectionHeader({ title, href }: { title: string; href: string }) {
     </div>
   )
 }
+
+function AdSlot({
+  label,
+  variant = 'inline',
+}: {
+  label: string
+  variant?: 'top' | 'inline' | 'anchor'
+}) {
+  const sizeMap = {
+    top: adSlots.leaderboard,
+    inline: adSlots.inArticle,
+    anchor: adSlots.leaderboard,
+  }
+
+  return (
+    <section className={`bb-home-ad-slot bb-home-ad-slot--${variant}`} aria-label={label} data-bb-reveal>
+      <p>{label}</p>
+      <p className="bb-home-ad-slot__size">{sizeMap[variant]}</p>
+      <div className="bb-home-ad-slot__box" />
+    </section>
+  )
+}
+
+// function BreakingTicker({ articles }: { articles: Article[] }) {
+//   if (!articles.length) {
+//     return null
+//   }
+
+//   return (
+//     <section className="bb-ticker" aria-label="ব্রেকিং নিউজ" data-bb-reveal>
+//       <p className="bb-ticker__label">ব্রেকিং</p>
+//       <div className="bb-ticker__viewport">
+//         <div className="bb-ticker__track">
+//           {articles.map((article) => (
+//             <Link key={article.id} href={`/article/${article.slug}`}>
+//               {article.title}
+//             </Link>
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   )
+// }
 
 function StoryStrip({
   articles,
@@ -288,6 +332,61 @@ function MediaBlock({ videos, galleries }: { videos: Video[]; galleries: Gallery
   )
 }
 
+function StreamCluster({
+  title,
+  href,
+  articles,
+  categoryMap,
+}: {
+  title: string
+  href: string
+  articles: Article[]
+  categoryMap: Map<string, string>
+}) {
+  const [lead, ...rest] = articles
+
+  if (!lead) {
+    return null
+  }
+
+  const sideStories = rest.slice(0, 4)
+  const feedStories = rest.slice(4, 12)
+
+  return (
+    <section className="bb-home-stream-cluster" data-bb-reveal>
+      <SectionHeader title={title} href={href} />
+      <div className="bb-home-stream-cluster__grid">
+        <article className="bb-home-stream-cluster__lead" data-bb-reveal>
+          <Link href={`/article/${lead.slug}`} className="bb-home-media bb-home-media--lead">
+            <Image
+              src={lead.image}
+              alt={lead.title}
+              width={960}
+              height={540}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 740px"
+            />
+          </Link>
+          <StoryMeta article={lead} categoryMap={categoryMap} />
+          <h3>
+            <Link href={`/article/${lead.slug}`}>{lead.title}</Link>
+          </h3>
+          <p>{lead.summary}</p>
+        </article>
+        <div className="bb-home-stream-cluster__side">
+          {sideStories.map((article) => (
+            <TextStory key={article.id} article={article} categoryMap={categoryMap} />
+          ))}
+        </div>
+      </div>
+      <div className="bb-home-stream-cluster__feed">
+        {feedStories.map((article) => (
+          <MediaStory key={article.id} article={article} categoryMap={categoryMap} compact />
+        ))}
+      </div>
+    </section>
+  )
+}
+
 export function HomepageLayout({
   featuredArticles,
   latestArticles,
@@ -308,6 +407,7 @@ export function HomepageLayout({
   const categoryMap = new Map(categories.map((category) => [category.id, category.name]))
   const leadArticles = featuredArticles.length >= 5 ? featuredArticles : latestArticles.slice(0, 5)
   const [lead, ...secondaryLead] = leadArticles
+  const infiniteSlots = [1, 2, 3, 4]
 
   if (!lead) {
     return null
@@ -316,6 +416,8 @@ export function HomepageLayout({
   return (
     <div className="bb-home">
       <HomeMotion />
+      <AdSlot label="টপ বিজ্ঞাপন" variant="top" />
+      {/* <BreakingTicker articles={latestArticles.slice(0, 8)} /> */}
       <section className="bb-home-lead-grid" aria-label="প্রধান সংবাদ">
         <div className="bb-home-lead-grid__left">
           <LeadStory article={lead} categoryMap={categoryMap} />
@@ -332,7 +434,15 @@ export function HomepageLayout({
         <LatestList articles={latestArticles.slice(0, 6)} categoryMap={categoryMap} />
       </section>
 
+      <AdSlot label="ইন্টারস্টিশিয়াল বিজ্ঞাপন" variant="inline" />
       <StoryStrip articles={latestArticles.slice(6, 10)} categoryMap={categoryMap} />
+
+      <StreamCluster
+        title="এই মুহূর্তে"
+        href="/latest"
+        articles={latestArticles.slice(10, 24)}
+        categoryMap={categoryMap}
+      />
 
       <div className="bb-home-two-column">
         <div className="bb-home-two-column__main">
@@ -407,6 +517,15 @@ export function HomepageLayout({
           </section>
         </aside>
       </div>
+
+      <AdSlot label="অ্যাঙ্কর বিজ্ঞাপন" variant="anchor" />
+      <section className="bb-home-infinite-markers" aria-label="ইনফিনিট লোড সেকশন" data-bb-reveal>
+        {infiniteSlots.map((slot) => (
+          <div key={slot} className="bb-home-infinite-markers__item" data-infinite-scroll={slot}>
+            আরও কনটেন্ট লোড হবে #{slot}
+          </div>
+        ))}
+      </section>
     </div>
   )
 }
