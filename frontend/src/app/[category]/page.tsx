@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import { DataService } from '@/lib/data'
 import { NewsGrid } from '@/components/modules/NewsGrid'
 import { Container } from '@/components/layouts/Container'
+import { EditorialSectionPage } from '@/components/modules/SectionPage'
 
 export async function generateMetadata({
   params,
@@ -10,11 +11,14 @@ export async function generateMetadata({
   params: Promise<{ category: string }>
 }): Promise<Metadata> {
   const { category } = await params
-  const categoryData = await DataService.categories.getBySlug(category)
+  const [categoryData, sectionPage] = await Promise.all([
+    DataService.categories.getBySlug(category),
+    DataService.sectionPages.getBySlug(category),
+  ])
 
   return {
-    title: categoryData?.name || 'বিভাগ',
-    description: categoryData?.description || 'বিভাগভিত্তিক সংবাদ',
+    title: sectionPage?.label || categoryData?.name || 'বিভাগ',
+    description: sectionPage?.description || categoryData?.description || 'বিভাগভিত্তিক সংবাদ',
   }
 }
 
@@ -24,7 +28,32 @@ export default async function CategoryPage({
   params: Promise<{ category: string }>
 }) {
   const { category } = await params
-  const categoryData = await DataService.categories.getBySlug(category)
+  const [categoryData, sectionPage] = await Promise.all([
+    DataService.categories.getBySlug(category),
+    DataService.sectionPages.getBySlug(category),
+  ])
+
+  if (!categoryData && !sectionPage) {
+    notFound()
+  }
+
+  if (sectionPage) {
+    const [articles, dseItems] = await Promise.all([
+      DataService.articles.getAll(),
+      DataService.dse.getTicker(),
+    ])
+
+    return (
+      <Container>
+        <EditorialSectionPage
+          page={sectionPage}
+          articles={articles}
+          dseItems={dseItems}
+          dseEndpoint={process.env.NEXT_PUBLIC_DSE_TICKER_ENDPOINT || '/api/dse/ticker'}
+        />
+      </Container>
+    )
+  }
 
   if (!categoryData) {
     notFound()

@@ -80,6 +80,27 @@ export const DataService = {
       import('./categories/categories').then((m) => m.categories.find((c) => c.slug === slug)),
     getWithSubCategories: () => import('./categories/categories').then((m) => m.categories),
   },
+  sectionPages: {
+    getAll: () => import('./sectionPages/sectionPages').then((m) => m.sectionPages),
+    getBySlug: (slug: string) =>
+      import('./sectionPages/sectionPages').then((m) =>
+        m.sectionPages.find((page) => page.slug === slug)
+      ),
+  },
+  districtTopics: {
+    getAll: () => import('./districtTopics/districtTopics').then((m) => m.districtTopics),
+    getDivisions: () =>
+      import('./districtTopics/districtTopics').then((m) =>
+        m.districtTopics.filter((topic) => topic.type === 'division')
+      ),
+    getByParent: (parentId: string) =>
+      import('./districtTopics/districtTopics').then((m) =>
+        m.districtTopics.filter((topic) => topic.parentId === parentId)
+      ),
+  },
+  dse: {
+    getTicker: () => import('./dse/dseTicker').then((m) => m.dseTicker),
+  },
   subCategories: {
     getAll: () => import('./categories/subcategories').then((m) => m.subCategories),
     getByCategory: (categoryId: string) =>

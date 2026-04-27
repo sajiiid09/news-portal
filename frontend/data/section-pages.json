@@ -1,0 +1,907 @@
+[
+  {
+    "slug": "bangladesh",
+    "title": "বাংলাদেশ",
+    "label": "বাংলাদেশ",
+    "sourceFile": "bangladesh.html",
+    "template": "category",
+    "description": "বাংলাদেশের খবর | Bangladesh News Update | Prothom Alo",
+    "sections": [
+      {
+        "id": "bangladesh-first-5-বাংলাদেশ",
+        "type": "lead-grid",
+        "title": "বাংলাদেশ",
+        "storyIds": [
+          "pa-8dce12f9-a6b2-487d-a816-eb426f71bd5c",
+          "pa-1bb7bdd2-bdd1-48f3-9418-ecaee5d10614",
+          "pa-0831defc-40ed-4526-8336-a2f845f0a5e6",
+          "pa-a6a82fef-ba65-4aa8-88f1-90fc7b47d6dd",
+          "pa-08935bfa-6ac8-4328-9fdd-e03adeda92e8"
+        ]
+      },
+      {
+        "id": "bangladesh-ad-1",
+        "type": "ad",
+        "title": "বিজ্ঞাপন",
+        "storyIds": []
+      },
+      {
+        "id": "bangladesh-rest-15-বাংলাদেশ",
+        "type": "story-list",
+        "title": "আরও খবর",
+        "storyIds": [
+          "pa-8dce12f9-a6b2-487d-a816-eb426f71bd5c",
+          "pa-1bb7bdd2-bdd1-48f3-9418-ecaee5d10614",
+          "pa-0831defc-40ed-4526-8336-a2f845f0a5e6",
+          "pa-a6a82fef-ba65-4aa8-88f1-90fc7b47d6dd",
+          "pa-08935bfa-6ac8-4328-9fdd-e03adeda92e8",
+          "pa-6c1e8b7f-a509-45ac-a742-a33d3c5c7138",
+          "pa-3fed6f9b-172e-43a1-b264-6b369862d7cb",
+          "pa-b50932ad-80ab-4df3-ac4f-845c6388057c",
+          "pa-814947d9-c80b-4edd-90a0-7278b055027a",
+          "pa-06cdb832-ed02-44f2-90fb-724a96cce558",
+          "pa-f539266a-bdc1-44f7-ba47-81c3240a80e7",
+          "pa-b2170597-f8dd-4bdf-a910-d54b7c9ac8c0",
+          "pa-4b3a7285-0943-4d5a-b596-27fadbe09697",
+          "pa-15aea047-fd66-4ca6-abc2-2fb531f5bc9d",
+          "pa-f28d1b25-ecdc-4d13-a39c-d07ecd3d00fb",
+          "pa-605565d7-c7f3-4ed4-a636-43e4ec09c155",
+          "pa-b8663785-0cc9-45df-9799-d0eeedf1d040",
+          "pa-a689500a-e90c-4e93-9abd-1047bff9196a",
+          "pa-f8830dc2-9987-4c7b-90e1-99433ccd8a19",
+          "pa-8724c5fa-8981-4e70-9047-cafd65629f07",
+          "pa-6bfca343-c8c7-403e-93ad-ae176e9bd8c1",
+          "pa-8cfb03de-4542-42d5-8054-9b31cdcf5c6c",
+          "pa-6e020c5e-6c5d-4d12-bcdf-10631ec57eca",
+          "pa-ee0e9063-7783-4f66-92df-6bad18dced5a",
+          "pa-8df7598c-9072-439b-b28e-7dd50b6b6db8",
+          "pa-397041fc-7995-4e15-a6ce-8ec14ccf2078",
+          "pa-6eb625bb-7553-4c8c-a42b-7184bd1aab1f",
+          "pa-d951348e-7769-4123-b134-e7bac50a657e",
+          "pa-2e9b4400-217e-4b4e-bbae-26a6363ea9f5",
+          "pa-ae4e3ed9-8a11-40b2-9ba9-6623d474be04"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "business",
+    "title": "বাণিজ্য",
+    "label": "বাণিজ্য",
+    "sourceFile": "business.html",
+    "template": "business",
+    "description": "ব্যবসা বাণিজ্য ও অর্থনীতির খবর | Business | Prothom Alo",
+    "sections": [
+      {
+        "id": "business-dse",
+        "type": "dse",
+        "title": "শেয়ারবাজার",
+        "storyIds": []
+      },
+      {
+        "id": "business-first-5-বাণিজ্য",
+        "type": "lead-grid",
+        "title": "বাণিজ্য",
+        "storyIds": [
+          "pa-49f7f316-34f9-4280-8562-9657d3e32715",
+          "pa-8c7b9f39-f361-4b4d-85a9-049292ee2aa2",
+          "pa-4647a81d-6194-41a3-ac7f-211f98d3399d",
+          "pa-5f38ba8d-b499-4629-8fda-bb1b1f7cb81f",
+          "pa-e3262779-6005-4f06-9d78-b7d2e147565f"
+        ]
+      },
+      {
+        "id": "business-নির্বাচিত-বাণিজ্য",
+        "type": "selected-grid",
+        "title": "নির্বাচিত",
+        "storyIds": [
+          "pa-0c985883-d080-4c65-a1dd-9766d2f4f787",
+          "pa-3b514ace-0243-4589-8d32-a089d0d8b102",
+          "pa-214bc85a-ead8-4494-990d-34bdb6acb2f9",
+          "pa-70d78bd7-4d7d-47be-8213-a4a83c68cdf2",
+          "pa-b5816b24-d0bf-4e73-b416-fb93fe7a1d6d",
+          "pa-6c6c6467-c995-4065-9f5b-87797454c729",
+          "pa-5e3512e0-98c0-4cc6-8d9c-6d4559b57bb0",
+          "pa-08dff50a-5436-48dd-9765-1ef064742b15",
+          "pa-a0349ca3-1476-4e65-92f6-d9dcc2ac2b03",
+          "pa-ebb42371-2933-4beb-83d6-58be3f7b56ac",
+          "pa-9a0cf45b-45c8-4fe8-aa0a-e69a3dc1cb6a",
+          "pa-738fb796-9774-4162-b819-b7d1018a377f"
+        ]
+      },
+      {
+        "id": "business-ad-3",
+        "type": "ad",
+        "title": "বিজ্ঞাপন",
+        "storyIds": []
+      },
+      {
+        "id": "business-subsections-4",
+        "type": "subsections",
+        "title": "বাণিজ্যের আরও খবর",
+        "groups": [
+          {
+            "id": "business-market-0",
+            "title": "ব্যাংক",
+            "storyIds": [
+              "pa-7568dc5b-5903-4441-a39a-63fbdf51bd24",
+              "pa-c9e1d931-872e-49a2-9548-df20de1d66c7",
+              "pa-84425ea8-f70a-463c-8a1c-1457dc3ca330",
+              "pa-da147aea-6879-415b-81a0-ab86b3ef75cf",
+              "pa-7666ccbb-4c52-4804-92ce-432ecceb10eb",
+              "pa-bf470eb6-bd7e-42aa-a88a-40d3ccc720a2"
+            ]
+          },
+          {
+            "id": "business-market-1",
+            "title": "বিশ্ববাণিজ্য",
+            "storyIds": [
+              "pa-b143d339-6354-40c5-a4fe-7c73abf6cc4c",
+              "pa-2abfc2a6-f495-44c1-b512-35bf1309c496",
+              "pa-94c067c1-afbc-47de-b446-409c7504c964",
+              "pa-37e5a23d-0c37-4158-8fd7-d2c8a8b2d228",
+              "pa-3d798fab-ade0-4cd0-8b49-c3da845815a7",
+              "pa-3b514ace-0243-4589-8d32-a089d0d8b102"
+            ]
+          },
+          {
+            "id": "business-market-2",
+            "title": "আপনার টাকা",
+            "storyIds": [
+              "pa-b2e538e8-7ae2-4973-b385-40b7832af7f6",
+              "pa-3ded5f38-cabc-445f-8e17-65eefe62bbd8",
+              "pa-0c985883-d080-4c65-a1dd-9766d2f4f787",
+              "pa-00e59f49-eaac-4b7d-ba1b-ea575726d3c4",
+              "pa-6c6c6467-c995-4065-9f5b-87797454c729",
+              "pa-96ee34d6-be63-42bb-8676-8d3b9b3510ce"
+            ]
+          },
+          {
+            "id": "business-market-3",
+            "title": "উদ্যোক্তা",
+            "storyIds": [
+              "pa-cccb8de2-e350-4834-8b7e-86f7a1a8f416",
+              "pa-ef5901e7-45cb-4b1e-8c1e-53b9c09efc38",
+              "pa-c14e65b7-3e76-460e-b8eb-6ea53472b8db",
+              "pa-25524504-4bea-49bf-85fd-5d98c088cf7c",
+              "pa-36b502fe-4883-44b3-ba2d-74661d83888a",
+              "pa-436aea45-84fa-475d-ba5b-983ddc83cf08"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "business-rest-15-বাণিজ্য",
+        "type": "story-list",
+        "title": "আরও খবর",
+        "storyIds": [
+          "pa-49f7f316-34f9-4280-8562-9657d3e32715",
+          "pa-8c7b9f39-f361-4b4d-85a9-049292ee2aa2",
+          "pa-4647a81d-6194-41a3-ac7f-211f98d3399d",
+          "pa-5f38ba8d-b499-4629-8fda-bb1b1f7cb81f",
+          "pa-e3262779-6005-4f06-9d78-b7d2e147565f",
+          "pa-b5e15900-4526-45b6-9830-07a2d48968e6",
+          "pa-b143d339-6354-40c5-a4fe-7c73abf6cc4c",
+          "pa-7568dc5b-5903-4441-a39a-63fbdf51bd24",
+          "pa-2abfc2a6-f495-44c1-b512-35bf1309c496",
+          "pa-94c067c1-afbc-47de-b446-409c7504c964",
+          "pa-b2e538e8-7ae2-4973-b385-40b7832af7f6",
+          "pa-c8f9ad9a-445a-46a1-b5af-519be78155ab",
+          "pa-150b5157-bfed-4e24-81a1-13ed07dbeebb",
+          "pa-e77293f9-f254-4c8d-9aa7-ac85be1ef219",
+          "pa-c9e1d931-872e-49a2-9548-df20de1d66c7",
+          "pa-fe6c28ab-03b9-468c-b1e1-83bdbe687c9f",
+          "pa-84425ea8-f70a-463c-8a1c-1457dc3ca330",
+          "pa-a14b5c41-59c1-43c7-80bb-a837c9d47885",
+          "pa-c16e7591-3e3b-45a3-8bd3-02b27e122de5",
+          "pa-e1c3c250-c105-4b83-bf19-666b391e5fe3",
+          "pa-da147aea-6879-415b-81a0-ab86b3ef75cf",
+          "pa-37e5a23d-0c37-4158-8fd7-d2c8a8b2d228",
+          "pa-1052fe94-e060-4675-9976-877f9de35877",
+          "pa-ed2dc9a1-ab07-4b68-b439-8f01dee3651f",
+          "pa-3ded5f38-cabc-445f-8e17-65eefe62bbd8",
+          "pa-7666ccbb-4c52-4804-92ce-432ecceb10eb",
+          "pa-df71f186-6dda-440f-b57b-d69c5c997070",
+          "pa-c24526ae-efa9-4268-8930-989e6b2cf0f8",
+          "pa-847d95c7-8971-41f6-973c-7cebb2e33307",
+          "pa-11ee3eb7-0a10-457f-b244-49094c271e02",
+          "pa-49f7f316-34f9-4280-8562-9657d3e32715",
+          "pa-8c7b9f39-f361-4b4d-85a9-049292ee2aa2",
+          "pa-4647a81d-6194-41a3-ac7f-211f98d3399d",
+          "pa-5f38ba8d-b499-4629-8fda-bb1b1f7cb81f",
+          "pa-e3262779-6005-4f06-9d78-b7d2e147565f",
+          "pa-b5e15900-4526-45b6-9830-07a2d48968e6",
+          "pa-b143d339-6354-40c5-a4fe-7c73abf6cc4c",
+          "pa-7568dc5b-5903-4441-a39a-63fbdf51bd24",
+          "pa-75ded37d-b5ee-48a5-9303-5af53ab27db3",
+          "pa-2abfc2a6-f495-44c1-b512-35bf1309c496",
+          "pa-94c067c1-afbc-47de-b446-409c7504c964",
+          "pa-b2e538e8-7ae2-4973-b385-40b7832af7f6",
+          "pa-c8f9ad9a-445a-46a1-b5af-519be78155ab",
+          "pa-150b5157-bfed-4e24-81a1-13ed07dbeebb",
+          "pa-e77293f9-f254-4c8d-9aa7-ac85be1ef219",
+          "pa-c9e1d931-872e-49a2-9548-df20de1d66c7",
+          "pa-fe6c28ab-03b9-468c-b1e1-83bdbe687c9f",
+          "pa-84425ea8-f70a-463c-8a1c-1457dc3ca330",
+          "pa-a14b5c41-59c1-43c7-80bb-a837c9d47885",
+          "pa-c16e7591-3e3b-45a3-8bd3-02b27e122de5",
+          "pa-e1c3c250-c105-4b83-bf19-666b391e5fe3",
+          "pa-da147aea-6879-415b-81a0-ab86b3ef75cf",
+          "pa-37e5a23d-0c37-4158-8fd7-d2c8a8b2d228",
+          "pa-1052fe94-e060-4675-9976-877f9de35877",
+          "pa-ed2dc9a1-ab07-4b68-b439-8f01dee3651f",
+          "pa-3ded5f38-cabc-445f-8e17-65eefe62bbd8",
+          "pa-7666ccbb-4c52-4804-92ce-432ecceb10eb",
+          "pa-df71f186-6dda-440f-b57b-d69c5c997070",
+          "pa-c24526ae-efa9-4268-8930-989e6b2cf0f8"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "latest",
+    "title": "সর্বশেষ",
+    "label": "সর্বশেষ",
+    "sourceFile": "latest.html",
+    "template": "latest",
+    "description": "সর্বশেষ",
+    "sections": [
+      {
+        "id": "latest-first-5-সর্বশেষ",
+        "type": "lead-grid",
+        "title": "সর্বশেষ",
+        "storyIds": [
+          "pa-8dce12f9-a6b2-487d-a816-eb426f71bd5c",
+          "pa-1bb7bdd2-bdd1-48f3-9418-ecaee5d10614",
+          "pa-3a237f53-6760-4960-a4db-5aa46d8ff6a9",
+          "pa-9fffd3a5-a242-4afb-87d6-8bac541416ef",
+          "pa-33957ebd-b52f-4417-ac16-a186b81a22d4"
+        ]
+      },
+      {
+        "id": "latest-ad-1",
+        "type": "ad",
+        "title": "বিজ্ঞাপন",
+        "storyIds": []
+      },
+      {
+        "id": "latest-rest-15-সর্বশেষ",
+        "type": "story-list",
+        "title": "আরও খবর",
+        "storyIds": [
+          "pa-8dce12f9-a6b2-487d-a816-eb426f71bd5c",
+          "pa-1bb7bdd2-bdd1-48f3-9418-ecaee5d10614",
+          "pa-3a237f53-6760-4960-a4db-5aa46d8ff6a9",
+          "pa-33957ebd-b52f-4417-ac16-a186b81a22d4",
+          "pa-9fffd3a5-a242-4afb-87d6-8bac541416ef",
+          "pa-2cfb23e1-8018-44ad-848b-462063ab2d59",
+          "pa-0831defc-40ed-4526-8336-a2f845f0a5e6",
+          "pa-51c43e34-0411-4e51-be76-09b60e2e08b3",
+          "pa-7e12ccd5-15ca-4e2a-b114-730775c8713d",
+          "pa-79a0c537-4e66-4c00-9777-28198d4fadb0",
+          "pa-a6a82fef-ba65-4aa8-88f1-90fc7b47d6dd",
+          "pa-08935bfa-6ac8-4328-9fdd-e03adeda92e8",
+          "pa-6c1e8b7f-a509-45ac-a742-a33d3c5c7138",
+          "pa-3806ef94-f25b-4d01-8d4c-49ed23bfdf29",
+          "pa-50d538bd-7f54-4fb2-89ac-c3673fc5280e",
+          "pa-51bd45ab-180d-4e14-88f7-dc9eabf7fdc5",
+          "pa-3fed6f9b-172e-43a1-b264-6b369862d7cb",
+          "pa-21cb7ff0-45d9-41d0-a39a-126207af7637",
+          "pa-f79ae4ab-7541-40f8-a309-324169811db1",
+          "pa-b50932ad-80ab-4df3-ac4f-845c6388057c",
+          "pa-814947d9-c80b-4edd-90a0-7278b055027a",
+          "pa-c9f1ed97-678d-4717-9ed6-3d2e834890d2",
+          "pa-49f7f316-34f9-4280-8562-9657d3e32715",
+          "pa-fd95f6ac-d988-4b71-9d85-41bbdb83e2f0",
+          "pa-ca67fcb7-8345-4d5c-a3fe-fa02f71f80e2",
+          "pa-3fa6a431-fc82-4eef-85ec-f7211d73860d",
+          "pa-4a9788e3-5aba-4730-83d6-3fbf486cb386",
+          "pa-06cdb832-ed02-44f2-90fb-724a96cce558",
+          "pa-cb5a3468-cbbe-472e-9c32-a342a2d55447",
+          "pa-f539266a-bdc1-44f7-ba47-81c3240a80e7"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "entertainment",
+    "title": "বিনোদন",
+    "label": "বিনোদন",
+    "sourceFile": "entertainment.html",
+    "template": "category-selected",
+    "description": "বিনোদন খবর | Most Entertainment News Readers BD প্রথম আলো",
+    "sections": [
+      {
+        "id": "entertainment-first-5-বিনোদন",
+        "type": "lead-grid",
+        "title": "বিনোদন",
+        "storyIds": [
+          "pa-9fffd3a5-a242-4afb-87d6-8bac541416ef",
+          "pa-f79ae4ab-7541-40f8-a309-324169811db1",
+          "pa-062536a4-78a3-4757-b85c-b583de933532",
+          "pa-54d77567-3030-467f-a072-00235439363f",
+          "pa-eb194834-f087-4359-a513-478fae9c9b6b"
+        ]
+      },
+      {
+        "id": "entertainment-নির্বাচিত-বিনোদন",
+        "type": "selected-grid",
+        "title": "নির্বাচিত",
+        "storyIds": [
+          "pa-ed6f5ba5-8abc-4c6c-a84a-61314ba512c2",
+          "pa-e0860263-833a-462b-9417-8c6276e86048",
+          "pa-2309c4cd-95c0-485b-ab6b-23f16bbbeaf0",
+          "pa-9a6868dd-89a0-4a29-9b21-f8fbf9eafc85",
+          "pa-5776650e-5d91-433b-9c8c-6f224fdf62b4",
+          "pa-3e96f5e7-eefa-4e9f-8ce9-ce0d94140535",
+          "pa-f3258b6b-f582-4f2c-bfd8-af82950c3e90",
+          "pa-32d4bde7-ca95-4d51-8ae0-1d295abb18f6",
+          "pa-9fffd3a5-a242-4afb-87d6-8bac541416ef",
+          "pa-f79ae4ab-7541-40f8-a309-324169811db1",
+          "pa-062536a4-78a3-4757-b85c-b583de933532",
+          "pa-54d77567-3030-467f-a072-00235439363f"
+        ]
+      },
+      {
+        "id": "entertainment-ad-2",
+        "type": "ad",
+        "title": "বিজ্ঞাপন",
+        "storyIds": []
+      },
+      {
+        "id": "entertainment-rest-15-বিনোদন",
+        "type": "story-list",
+        "title": "আরও খবর",
+        "storyIds": [
+          "pa-9fffd3a5-a242-4afb-87d6-8bac541416ef",
+          "pa-f79ae4ab-7541-40f8-a309-324169811db1",
+          "pa-062536a4-78a3-4757-b85c-b583de933532",
+          "pa-54d77567-3030-467f-a072-00235439363f",
+          "pa-eb194834-f087-4359-a513-478fae9c9b6b",
+          "pa-7dde0914-5d01-43c4-be7c-ea20207035fe",
+          "pa-76954b75-d419-429c-836b-fee389eb8b66",
+          "pa-b29b3466-2627-444b-88dc-b6e4f619e6db",
+          "pa-d83a8502-0d17-45df-b79a-f4078c6f2ae3",
+          "pa-93a65b31-d11b-43d4-9b59-20f3e7be8d1d",
+          "pa-caa4fb4f-c41d-41cc-b4f5-9b8ed0d2e202",
+          "pa-92f33cf7-a8ff-4a88-9006-661a4e21e4be",
+          "pa-2309c4cd-95c0-485b-ab6b-23f16bbbeaf0",
+          "pa-b789551e-0b31-4bfa-96ce-d1d074dcd765",
+          "pa-037d9b25-b6dd-4b68-bb8f-50cce3b9c93a",
+          "pa-8d5d2e3e-def3-4993-b04a-cb81437fc69c",
+          "pa-30029592-0f1e-44d1-9313-1603db3a435d",
+          "pa-2020eaab-e825-40cf-aa91-27bc26ba87b4",
+          "pa-544842ca-b432-4a53-a545-b4c63eebcc48",
+          "pa-0605b22c-6cf1-4616-9fcd-68783d3c9a3f",
+          "pa-1fd0afc6-a0ad-49f2-95ca-d2bd12d2e30b",
+          "pa-e0860263-833a-462b-9417-8c6276e86048",
+          "pa-784a4c0a-e8c3-43fc-ac26-d3b1daff9dd9",
+          "pa-d8951896-18c5-463d-9437-7d38ced1cebd",
+          "pa-20879bcd-0de4-48ba-b912-9d18332c2c27",
+          "pa-a5ce2513-cb52-4920-b077-189ead0f7bf9",
+          "pa-1e893d33-8254-4af1-ae19-89146a44be8b",
+          "pa-46c3df4c-e0f7-41b5-a1e8-7ae25a61f2b0",
+          "pa-c71d3f14-40dd-4a9f-bc1c-c9eae08797d6",
+          "pa-80876006-223b-4dee-bc1c-2d312ebce2e1"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "jobs",
+    "title": "চাকরি",
+    "label": "চাকরি",
+    "sourceFile": "jobs.html",
+    "template": "category-selected",
+    "description": "চাকরির খবর | Chakrir Khobor 2026| Prothom Alo",
+    "sections": [
+      {
+        "id": "jobs-first-5-চাকরি",
+        "type": "lead-grid",
+        "title": "চাকরি",
+        "storyIds": [
+          "pa-fb0eb282-bdf8-4d5c-937e-c1a268402d51",
+          "pa-f92bbdaa-0199-44c5-9c32-c04e7b24fb12",
+          "pa-b9fd99c4-2c92-40c8-9c13-eb73139c24d6",
+          "pa-983f78da-4b91-4b0c-bb6e-9714f4931f55",
+          "pa-4e7f14c2-1b46-41c8-8e9d-edb815674222"
+        ]
+      },
+      {
+        "id": "jobs-নির্বাচিত-চাকরি",
+        "type": "selected-grid",
+        "title": "নির্বাচিত",
+        "storyIds": [
+          "pa-2e6265a8-c03f-40e9-b515-70746c4930e8",
+          "pa-aca75969-e8b3-4c40-b661-bd2b5413039f",
+          "pa-2f4e196b-1555-4fca-9702-dd5f74d54a05",
+          "pa-f0c1db56-7c59-47b4-ba1c-86a302e4140d",
+          "pa-2e6320c7-f043-4bb7-97f9-a5f856983ce3",
+          "pa-fb0eb282-bdf8-4d5c-937e-c1a268402d51",
+          "pa-b9fd99c4-2c92-40c8-9c13-eb73139c24d6",
+          "pa-dd561022-c268-424e-bc58-65f1225e82cd",
+          "pa-d3d6c4be-e8c2-4ea5-acb4-7e75476355d0",
+          "pa-1dbc9152-591c-4238-beb0-1554215f3503",
+          "pa-f8b4e630-2755-4126-a117-5d057970c09e",
+          "pa-983f78da-4b91-4b0c-bb6e-9714f4931f55"
+        ]
+      },
+      {
+        "id": "jobs-ad-2",
+        "type": "ad",
+        "title": "বিজ্ঞাপন",
+        "storyIds": []
+      },
+      {
+        "id": "jobs-rest-15-চাকরি",
+        "type": "story-list",
+        "title": "আরও খবর",
+        "storyIds": [
+          "pa-fb0eb282-bdf8-4d5c-937e-c1a268402d51",
+          "pa-f92bbdaa-0199-44c5-9c32-c04e7b24fb12",
+          "pa-b9fd99c4-2c92-40c8-9c13-eb73139c24d6",
+          "pa-983f78da-4b91-4b0c-bb6e-9714f4931f55",
+          "pa-4e7f14c2-1b46-41c8-8e9d-edb815674222",
+          "pa-dd561022-c268-424e-bc58-65f1225e82cd",
+          "pa-d3d6c4be-e8c2-4ea5-acb4-7e75476355d0",
+          "pa-1dbc9152-591c-4238-beb0-1554215f3503",
+          "pa-f8b4e630-2755-4126-a117-5d057970c09e",
+          "pa-6eae7179-137c-4af0-a071-dd4f03cecedf",
+          "pa-fe3e510e-2157-4cc2-b466-26e478dedf6d",
+          "pa-f23280e8-2444-41e6-bfa2-57e60570c028",
+          "pa-9660e950-f077-4352-becb-ab7cee8cd23c",
+          "pa-b5bfb98f-0428-448b-afbc-9c0e784f3006",
+          "pa-b0e20f27-2969-4e61-a804-9ab90a5fc161",
+          "pa-604b90c3-f5f1-4882-8cb9-793a5a8e87d3",
+          "pa-e3c9ef18-6a7a-4d8a-b44e-581d353edda5",
+          "pa-d9c590cc-d4ab-4c32-b4c7-ecc8de352588",
+          "pa-78f552ad-65c7-46d7-90c9-594551a379c4",
+          "pa-5de89fa6-14dd-4491-b101-64f399522539",
+          "pa-fe839251-5e45-4a15-b33f-3ede4a6bace1",
+          "pa-f73e4524-1ebb-47e4-a8fa-1542baf7d03f",
+          "pa-366c8371-8a10-414d-9b41-bec55bd61c0e",
+          "pa-f0c1db56-7c59-47b4-ba1c-86a302e4140d",
+          "pa-e44ccfc2-961b-42a4-83b1-4bf5b4f6274a",
+          "pa-2f4e196b-1555-4fca-9702-dd5f74d54a05",
+          "pa-4b6576b0-29c6-4c71-9f10-4f8ace670e6d",
+          "pa-6ab03281-6f02-4120-8bde-28bf7b1297d6",
+          "pa-2e6320c7-f043-4bb7-97f9-a5f856983ce3",
+          "pa-aca75969-e8b3-4c40-b661-bd2b5413039f",
+          "pa-fb0eb282-bdf8-4d5c-937e-c1a268402d51",
+          "pa-b9fd99c4-2c92-40c8-9c13-eb73139c24d6",
+          "pa-dd561022-c268-424e-bc58-65f1225e82cd",
+          "pa-d3d6c4be-e8c2-4ea5-acb4-7e75476355d0",
+          "pa-1dbc9152-591c-4238-beb0-1554215f3503",
+          "pa-f8b4e630-2755-4126-a117-5d057970c09e",
+          "pa-983f78da-4b91-4b0c-bb6e-9714f4931f55",
+          "pa-6eae7179-137c-4af0-a071-dd4f03cecedf",
+          "pa-f92bbdaa-0199-44c5-9c32-c04e7b24fb12",
+          "pa-fe3e510e-2157-4cc2-b466-26e478dedf6d",
+          "pa-f23280e8-2444-41e6-bfa2-57e60570c028",
+          "pa-9660e950-f077-4352-becb-ab7cee8cd23c",
+          "pa-b5bfb98f-0428-448b-afbc-9c0e784f3006",
+          "pa-b0e20f27-2969-4e61-a804-9ab90a5fc161",
+          "pa-604b90c3-f5f1-4882-8cb9-793a5a8e87d3",
+          "pa-e3c9ef18-6a7a-4d8a-b44e-581d353edda5",
+          "pa-d9c590cc-d4ab-4c32-b4c7-ecc8de352588",
+          "pa-78f552ad-65c7-46d7-90c9-594551a379c4",
+          "pa-4e7f14c2-1b46-41c8-8e9d-edb815674222",
+          "pa-5de89fa6-14dd-4491-b101-64f399522539",
+          "pa-fe839251-5e45-4a15-b33f-3ede4a6bace1",
+          "pa-f73e4524-1ebb-47e4-a8fa-1542baf7d03f",
+          "pa-366c8371-8a10-414d-9b41-bec55bd61c0e",
+          "pa-f0c1db56-7c59-47b4-ba1c-86a302e4140d",
+          "pa-e44ccfc2-961b-42a4-83b1-4bf5b4f6274a",
+          "pa-2f4e196b-1555-4fca-9702-dd5f74d54a05",
+          "pa-4b6576b0-29c6-4c71-9f10-4f8ace670e6d",
+          "pa-6ab03281-6f02-4120-8bde-28bf7b1297d6",
+          "pa-2e6320c7-f043-4bb7-97f9-a5f856983ce3"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "lifestyle",
+    "title": "লাইফস্টাইল",
+    "label": "লাইফস্টাইল",
+    "sourceFile": "lifestyle.html",
+    "template": "category-selected",
+    "description": "লাইফস্টাইল | জীবনযাপনের সর্বশেষ Lifestyle ProthomAlo",
+    "sections": [
+      {
+        "id": "lifestyle-first-5-জীবনযাপন",
+        "type": "lead-grid",
+        "title": "লাইফস্টাইল",
+        "storyIds": [
+          "pa-991cf254-9ff1-4a87-9ce3-2fdd19c1badd",
+          "pa-12af8698-74a0-4988-b9d5-adf9e42bab3b",
+          "pa-5321b4b0-2b69-4c9d-8d57-cd11c2863bbd",
+          "pa-ab1f0147-6c94-4cbe-acf4-4507c7b0d695",
+          "pa-a5bb9842-df1c-4060-baba-fc760968a926"
+        ]
+      },
+      {
+        "id": "lifestyle-নির্বাচিত-জীবনযাপন",
+        "type": "selected-grid",
+        "title": "নির্বাচিত",
+        "storyIds": [
+          "pa-a0f258ea-1419-4865-bb10-747b90eb3257",
+          "pa-8e915848-691d-48aa-9643-78ca08b94414",
+          "pa-7e0fdeea-e490-45e0-ae5b-61aea6e0ae3b",
+          "pa-09ed2d8e-0727-4b51-aa2c-8a2294039fca",
+          "pa-da4a823b-13c5-4af5-8d2f-3dae0ad68b92",
+          "pa-991cf254-9ff1-4a87-9ce3-2fdd19c1badd",
+          "pa-12af8698-74a0-4988-b9d5-adf9e42bab3b",
+          "pa-5321b4b0-2b69-4c9d-8d57-cd11c2863bbd",
+          "pa-ab1f0147-6c94-4cbe-acf4-4507c7b0d695",
+          "pa-a5bb9842-df1c-4060-baba-fc760968a926",
+          "pa-5c9d5e2d-f36e-4b88-8f4f-509aad0b8ab7",
+          "pa-2a41cbd4-285f-4359-ad4b-30832dc5cbf0"
+        ]
+      },
+      {
+        "id": "lifestyle-ad-2",
+        "type": "ad",
+        "title": "বিজ্ঞাপন",
+        "storyIds": []
+      },
+      {
+        "id": "lifestyle-rest-15-জীবনযাপন",
+        "type": "story-list",
+        "title": "আরও খবর",
+        "storyIds": [
+          "pa-991cf254-9ff1-4a87-9ce3-2fdd19c1badd",
+          "pa-12af8698-74a0-4988-b9d5-adf9e42bab3b",
+          "pa-5321b4b0-2b69-4c9d-8d57-cd11c2863bbd",
+          "pa-ab1f0147-6c94-4cbe-acf4-4507c7b0d695",
+          "pa-a5bb9842-df1c-4060-baba-fc760968a926",
+          "pa-5c9d5e2d-f36e-4b88-8f4f-509aad0b8ab7",
+          "pa-2a41cbd4-285f-4359-ad4b-30832dc5cbf0",
+          "pa-de767618-b559-41a9-8fd0-84b10e036834",
+          "pa-d3f07990-1bdf-48f8-af5d-bd7a7f828221",
+          "pa-867655c3-07d7-4c79-aa9a-b69bcb007b88",
+          "pa-678222c2-d9ff-43d3-b735-f599b576112a",
+          "pa-758433e1-1a7f-4a57-84d6-6b0f0ae8155b",
+          "pa-cf38dfb8-339c-45db-b35c-cb7180fd0187",
+          "pa-80609e93-e46a-45a6-a106-e0c400c2087f",
+          "pa-9688fce3-64c9-40ef-8965-794abefab4b8",
+          "pa-0e20f3b6-4ce2-422f-b93f-b90449ac171e",
+          "pa-da4a823b-13c5-4af5-8d2f-3dae0ad68b92",
+          "pa-0ab6a27a-63b8-4fc1-bd81-e7bfcf21946f",
+          "pa-e47e4a42-89d0-4295-b37c-2ababb15887a",
+          "pa-4d6debf0-8d7e-4870-a022-7a448cdb477f",
+          "pa-5c8ea4b9-a6fa-4733-b8f6-1daa9c5500ef",
+          "pa-44544fdd-eed3-4538-a4af-285d70bf7feb",
+          "pa-673544aa-19d3-4355-bb13-bd263fc3204b",
+          "pa-09ed2d8e-0727-4b51-aa2c-8a2294039fca",
+          "pa-7e0fdeea-e490-45e0-ae5b-61aea6e0ae3b",
+          "pa-f867afdb-3baf-4c46-b964-bae814c007e4",
+          "pa-8e915848-691d-48aa-9643-78ca08b94414",
+          "pa-572bafb8-d168-4f63-849a-3fc3af144fdf",
+          "pa-e52e274c-4582-4d0b-88d6-b5d597b4b826",
+          "pa-5bc61c87-ff11-4c7f-ac0b-18c139b97b29"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "sports",
+    "title": "খেলা",
+    "label": "খেলা",
+    "sourceFile": "sports.html",
+    "template": "sports",
+    "description": "খেলার খবর | খেলা - সর্বশেষ Sports News Bangla | প্রথম আলো",
+    "sections": [
+      {
+        "id": "sports-খেলা-সব",
+        "type": "lead-grid",
+        "title": "খেলা-সব",
+        "storyIds": [
+          "pa-cd9a54f3-3e89-4eb4-adea-dd95d443c3fe",
+          "pa-8ae9663e-dfd8-467f-8f2f-071e7a26ff75",
+          "pa-1737bb99-dab7-4b64-a48f-468ad3681a09",
+          "pa-1bfc6815-1f93-4d86-b45e-0a37adbc4c0c",
+          "pa-9b608da0-2804-4644-8a9a-1281fcb67d2c",
+          "pa-45cb2e90-7061-46f0-bf96-bee00288c01f",
+          "pa-db81a9a5-9779-4888-bc3c-948955c92c05",
+          "pa-8c94ab15-616c-41eb-b06f-67341f979167",
+          "pa-c0666378-0262-4fb1-8788-7e99cf6e1c6d",
+          "pa-4ef1d8b0-bff5-49e3-9235-d4409cb98370",
+          "pa-4f446941-e14b-45c2-b711-ea1a22d879a7",
+          "pa-9de36b7f-1aa1-4bfd-bee3-cba5acb4808b",
+          "pa-bcf7cf14-bc6c-445d-8603-7f63384b8a96",
+          "pa-9e6afbf1-878f-4cb1-83c2-988b060766bf",
+          "pa-51704c2b-92d8-4f04-a18c-681ee16adf79",
+          "pa-6b4bf3ba-7c21-4b55-b038-a7836e172c41",
+          "pa-8cf6b300-578a-4cef-a30b-feda12760503",
+          "pa-7b2e0408-b3bf-4e36-817a-8058b2999c26",
+          "pa-30618005-d831-4f67-a746-3dd9c06f360b",
+          "pa-e4ef5435-bf80-4a7c-a9cf-4c9d2fc9f2a7",
+          "pa-3cfddf9b-b0f2-4258-a9f8-b4f81895c178"
+        ]
+      },
+      {
+        "id": "sports-ভিজুয়াল-স্টোরি-খেলা",
+        "type": "visual-strip",
+        "title": "ভিজ্যুয়াল স্টোরি",
+        "storyIds": [
+          "pa-294a3475-8de0-4cce-b2a4-786a3c21a784",
+          "pa-0606106a-93a7-4ced-9468-cd282e19b553",
+          "pa-c7b87f82-0ba8-4c79-8d51-28e781efc2af",
+          "pa-6e412439-d993-44bf-b683-16fdb49afc25",
+          "pa-8ed6ba8c-be2e-4766-a88d-397b97cfa638",
+          "pa-b3ac277e-bc1f-46c0-844e-89ba1b5044ce",
+          "pa-035e3923-7ac5-443b-864c-5f4920282fb8",
+          "pa-ea832acb-6563-4298-83f2-303b2162f5ce",
+          "pa-760309cf-f4d8-44b9-afe0-de47d4eaf934",
+          "pa-5a85435c-ff56-4048-b438-ca72fead5869",
+          "pa-a4b6a0e7-375e-4fc7-beac-bcd55d6788cf",
+          "pa-2d424d89-97bf-4141-b812-ca10340a1a1b"
+        ]
+      },
+      {
+        "id": "sports-নির্বাচিত-খেলা",
+        "type": "selected-grid",
+        "title": "নির্বাচিত",
+        "storyIds": [
+          "pa-8214a5a3-c0b1-43fe-b66d-bce0c36eaa47",
+          "pa-3bfbc8a6-a4e9-4249-856e-45bc9e2f080f",
+          "pa-4931feaf-959d-4bf0-b651-edf03f9bce51",
+          "pa-8af5d72d-64fd-449c-887a-bc72e56b5186",
+          "pa-e1105cb7-3309-404c-8c58-763348197d66",
+          "pa-f65f5037-0302-4e76-9777-bc3adcf8a1a7",
+          "pa-8ef207f5-9c51-491c-878c-d99c50f8730d",
+          "pa-da2a37ec-a034-417b-b4c7-c683853eb52c"
+        ]
+      },
+      {
+        "id": "sports-ad-3",
+        "type": "ad",
+        "title": "বিজ্ঞাপন",
+        "storyIds": []
+      },
+      {
+        "id": "sports-split-4",
+        "type": "split",
+        "title": "ক্রিকেট ও ফুটবল",
+        "groups": [
+          {
+            "id": "sports-split-0",
+            "title": "ক্রিকেট",
+            "storyIds": [
+              "pa-8ae9663e-dfd8-467f-8f2f-071e7a26ff75",
+              "pa-1bfc6815-1f93-4d86-b45e-0a37adbc4c0c",
+              "pa-3a66cd9a-831f-4df6-9943-ebbf998a8c1d",
+              "pa-45cb2e90-7061-46f0-bf96-bee00288c01f",
+              "pa-db81a9a5-9779-4888-bc3c-948955c92c05",
+              "pa-4f446941-e14b-45c2-b711-ea1a22d879a7"
+            ]
+          },
+          {
+            "id": "sports-split-1",
+            "title": "ফুটবল",
+            "storyIds": [
+              "pa-cd9a54f3-3e89-4eb4-adea-dd95d443c3fe",
+              "pa-1737bb99-dab7-4b64-a48f-468ad3681a09",
+              "pa-9b608da0-2804-4644-8a9a-1281fcb67d2c",
+              "pa-8c94ab15-616c-41eb-b06f-67341f979167",
+              "pa-c0666378-0262-4fb1-8788-7e99cf6e1c6d"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sports-ভিডিও-খেলা",
+        "type": "video-grid",
+        "title": "ভিডিও",
+        "storyIds": [
+          "pa-3ea8cc7c-ea06-4c36-9bcc-35a278dac391",
+          "pa-daf5aab7-5bae-4522-8ec6-3d8347f72b5d",
+          "pa-f49866c7-e8c2-4297-b333-f25150787c2e",
+          "pa-f20dda4d-9682-4d3c-a80d-ef7e20fc01c9",
+          "pa-9ba0f60a-cd73-4f38-ab67-c6a9cfbc9d8f"
+        ]
+      },
+      {
+        "id": "sports-ad-6",
+        "type": "ad",
+        "title": "বিজ্ঞাপন",
+        "storyIds": []
+      },
+      {
+        "id": "sports-ফটো-ফিচার",
+        "type": "visual-strip",
+        "title": "ফটো ফিচার",
+        "storyIds": [
+          "pa-824c4d3e-e5da-40f7-8c93-73de527e38e2",
+          "pa-e6f811fd-0cfa-4aad-b028-58259dd8270f",
+          "pa-8f8f30ea-9caf-433f-83db-43402979856e",
+          "pa-cfdd1eaf-31a3-4a06-8131-21498f036e48",
+          "pa-3739f61c-ae98-4f44-9658-39546a6003ed"
+        ]
+      },
+      {
+        "id": "sports-rest-15-খেলা",
+        "type": "story-list",
+        "title": "আরও খবর",
+        "storyIds": [
+          "pa-cd9a54f3-3e89-4eb4-adea-dd95d443c3fe",
+          "pa-8ae9663e-dfd8-467f-8f2f-071e7a26ff75",
+          "pa-1737bb99-dab7-4b64-a48f-468ad3681a09",
+          "pa-1bfc6815-1f93-4d86-b45e-0a37adbc4c0c",
+          "pa-9b608da0-2804-4644-8a9a-1281fcb67d2c",
+          "pa-45cb2e90-7061-46f0-bf96-bee00288c01f",
+          "pa-db81a9a5-9779-4888-bc3c-948955c92c05",
+          "pa-8c94ab15-616c-41eb-b06f-67341f979167",
+          "pa-c0666378-0262-4fb1-8788-7e99cf6e1c6d",
+          "pa-4ef1d8b0-bff5-49e3-9235-d4409cb98370",
+          "pa-4f446941-e14b-45c2-b711-ea1a22d879a7",
+          "pa-9de36b7f-1aa1-4bfd-bee3-cba5acb4808b",
+          "pa-bcf7cf14-bc6c-445d-8603-7f63384b8a96",
+          "pa-9e6afbf1-878f-4cb1-83c2-988b060766bf",
+          "pa-51704c2b-92d8-4f04-a18c-681ee16adf79",
+          "pa-6b4bf3ba-7c21-4b55-b038-a7836e172c41",
+          "pa-8cf6b300-578a-4cef-a30b-feda12760503",
+          "pa-7b2e0408-b3bf-4e36-817a-8058b2999c26",
+          "pa-30618005-d831-4f67-a746-3dd9c06f360b",
+          "pa-e4ef5435-bf80-4a7c-a9cf-4c9d2fc9f2a7",
+          "pa-3cfddf9b-b0f2-4258-a9f8-b4f81895c178",
+          "pa-f5d8f94b-7882-42dd-98ae-4b05cfdc38c3",
+          "pa-d6ef4a17-432d-4ad0-8f92-94c9cd7ea9d5",
+          "pa-2db375ed-695a-4358-a63e-9b90cde37f57",
+          "pa-675ae924-b437-4b13-bc5c-2c62d922d366",
+          "pa-99bc1648-2c9b-4b91-97e7-95d575c87231",
+          "pa-294a3475-8de0-4cce-b2a4-786a3c21a784",
+          "pa-0ecd3020-25eb-4501-83e4-63756bd66f58",
+          "pa-8663b22f-38d5-4f6e-b514-5803235b4ec6",
+          "pa-88f77fff-2286-4798-8bb2-d8102ff5b5ec",
+          "pa-cd9a54f3-3e89-4eb4-adea-dd95d443c3fe",
+          "pa-8ae9663e-dfd8-467f-8f2f-071e7a26ff75",
+          "pa-1737bb99-dab7-4b64-a48f-468ad3681a09",
+          "pa-1bfc6815-1f93-4d86-b45e-0a37adbc4c0c",
+          "pa-9b608da0-2804-4644-8a9a-1281fcb67d2c",
+          "pa-3a66cd9a-831f-4df6-9943-ebbf998a8c1d",
+          "pa-45cb2e90-7061-46f0-bf96-bee00288c01f",
+          "pa-db81a9a5-9779-4888-bc3c-948955c92c05",
+          "pa-8c94ab15-616c-41eb-b06f-67341f979167",
+          "pa-c0666378-0262-4fb1-8788-7e99cf6e1c6d",
+          "pa-4ef1d8b0-bff5-49e3-9235-d4409cb98370",
+          "pa-4f446941-e14b-45c2-b711-ea1a22d879a7",
+          "pa-9de36b7f-1aa1-4bfd-bee3-cba5acb4808b",
+          "pa-bcf7cf14-bc6c-445d-8603-7f63384b8a96",
+          "pa-9e6afbf1-878f-4cb1-83c2-988b060766bf",
+          "pa-51704c2b-92d8-4f04-a18c-681ee16adf79",
+          "pa-6b4bf3ba-7c21-4b55-b038-a7836e172c41",
+          "pa-8cf6b300-578a-4cef-a30b-feda12760503",
+          "pa-7b2e0408-b3bf-4e36-817a-8058b2999c26",
+          "pa-30618005-d831-4f67-a746-3dd9c06f360b",
+          "pa-e4ef5435-bf80-4a7c-a9cf-4c9d2fc9f2a7",
+          "pa-3cfddf9b-b0f2-4258-a9f8-b4f81895c178",
+          "pa-f5d8f94b-7882-42dd-98ae-4b05cfdc38c3",
+          "pa-d6ef4a17-432d-4ad0-8f92-94c9cd7ea9d5",
+          "pa-2db375ed-695a-4358-a63e-9b90cde37f57",
+          "pa-675ae924-b437-4b13-bc5c-2c62d922d366",
+          "pa-99bc1648-2c9b-4b91-97e7-95d575c87231",
+          "pa-294a3475-8de0-4cce-b2a4-786a3c21a784",
+          "pa-0ecd3020-25eb-4501-83e4-63756bd66f58"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "video",
+    "title": "ভিডিও",
+    "label": "ভিডিও",
+    "sourceFile": "video.html",
+    "template": "video",
+    "description": "ভিডিও | Video News | Prothom Alo",
+    "sections": [
+      {
+        "id": "video-first-5-ভিডিও",
+        "type": "lead-grid",
+        "title": "ভিডিও",
+        "storyIds": [
+          "pa-3a237f53-6760-4960-a4db-5aa46d8ff6a9",
+          "pa-33957ebd-b52f-4417-ac16-a186b81a22d4",
+          "pa-79a0c537-4e66-4c00-9777-28198d4fadb0",
+          "pa-3806ef94-f25b-4d01-8d4c-49ed23bfdf29",
+          "pa-50d538bd-7f54-4fb2-89ac-c3673fc5280e"
+        ]
+      },
+      {
+        "id": "video-bangladesh-video",
+        "type": "video-grid",
+        "title": "Bangladesh",
+        "storyIds": [
+          "pa-3a237f53-6760-4960-a4db-5aa46d8ff6a9",
+          "pa-3806ef94-f25b-4d01-8d4c-49ed23bfdf29",
+          "pa-51bd45ab-180d-4e14-88f7-dc9eabf7fdc5",
+          "pa-21cb7ff0-45d9-41d0-a39a-126207af7637",
+          "pa-c9f1ed97-678d-4717-9ed6-3d2e834890d2"
+        ]
+      },
+      {
+        "id": "video-entertainment-video",
+        "type": "video-grid",
+        "title": "Entertainment",
+        "storyIds": [
+          "pa-5f70e9b8-7fe9-4c78-8fe0-bcba9be9df89",
+          "pa-22259d61-4668-4169-9357-0d2007a1a4c0",
+          "pa-6e5a63c7-f356-4efb-b97f-8757787da460",
+          "pa-48fcb4ed-481e-487f-90e1-cc6b1dfa0a27",
+          "pa-84c2980f-acb4-4b98-86a5-7002cdcd0f7d",
+          "pa-312e15a7-b7d0-4cc8-8851-5204ead275b2",
+          "pa-42c761ed-87bd-4fd6-8218-a7133e2b4918",
+          "pa-0539d598-9f73-4dbb-9fda-669cc1a16c46"
+        ]
+      },
+      {
+        "id": "video-নির্বাচিত-ভিডিও",
+        "type": "selected-grid",
+        "title": "নির্বাচিত",
+        "storyIds": [
+          "pa-11514bd1-ff78-4e12-84ee-5e92c89c83b6",
+          "pa-c04dec3c-c308-4cfd-b463-84045e78161a",
+          "pa-e6179f20-4395-428c-8275-6b6b081162d7",
+          "pa-1e38a8fa-b8af-47b9-911c-c2a4e4db90b3",
+          "pa-07c5d07a-8903-41f6-996a-ec42d2fa685f",
+          "pa-b3ac91c9-976d-4770-8956-a08d1d475fae",
+          "pa-3f114f1e-b360-4e61-ae11-8c108f3fe3d2",
+          "pa-63b7eb73-acf0-41c0-8f43-6d1eea9f44fc",
+          "pa-c32ea6c2-f25c-4ca0-8b03-6cd89cabdb84",
+          "pa-3b6a6350-3000-464e-b89c-9363351fa1a0",
+          "pa-039b9e8e-9ebb-4336-b0bc-95283147acbe",
+          "pa-9d53e4aa-3f94-479f-8157-2170ad623e67"
+        ]
+      },
+      {
+        "id": "video-sports-video",
+        "type": "video-grid",
+        "title": "Sports",
+        "storyIds": [
+          "pa-5a921a33-deeb-4fa2-bcae-dd65b293980d",
+          "pa-3ea8cc7c-ea06-4c36-9bcc-35a278dac391",
+          "pa-15929ef4-b87d-4ecd-b501-b702d11208e6",
+          "pa-819a220b-8353-43cd-a737-13dd55194820"
+        ]
+      },
+      {
+        "id": "video-rest-15-ভিডিও",
+        "type": "story-list",
+        "title": "আরও খবর",
+        "storyIds": [
+          "pa-3a237f53-6760-4960-a4db-5aa46d8ff6a9",
+          "pa-33957ebd-b52f-4417-ac16-a186b81a22d4",
+          "pa-79a0c537-4e66-4c00-9777-28198d4fadb0",
+          "pa-3806ef94-f25b-4d01-8d4c-49ed23bfdf29",
+          "pa-50d538bd-7f54-4fb2-89ac-c3673fc5280e",
+          "pa-51bd45ab-180d-4e14-88f7-dc9eabf7fdc5",
+          "pa-21cb7ff0-45d9-41d0-a39a-126207af7637",
+          "pa-c9f1ed97-678d-4717-9ed6-3d2e834890d2",
+          "pa-ca67fcb7-8345-4d5c-a3fe-fa02f71f80e2",
+          "pa-3fa6a431-fc82-4eef-85ec-f7211d73860d",
+          "pa-57290bba-3892-47b1-8a03-f602bc710172",
+          "pa-ffb64cfb-0f79-47d4-8fa3-1f0713159b5e",
+          "pa-ac0b6e43-3e47-4c57-bdc8-05d517817428",
+          "pa-7e92ae8d-9e73-450c-9217-d5083b033b58",
+          "pa-226f8338-1a26-4a2f-a1e0-3a5c7769fe1f",
+          "pa-1690417c-a5a3-42a2-9ef7-5bc3a50f1744",
+          "pa-b12586af-31e7-4afb-b247-0dd4bea2c76e",
+          "pa-c5f74a8f-976f-4690-9269-01348c0f7a6b",
+          "pa-7a761db4-4b0c-4434-ba09-937deeb9f28b",
+          "pa-acfcfd4f-0fa6-4bd6-8d3b-47c7469ac037",
+          "pa-413a6aab-3572-42fb-836b-f4bdd0efbccd",
+          "pa-180d7b74-c8cd-4a80-958c-5c112c53611c",
+          "pa-4425c0eb-d0eb-41c5-87a0-4fb872613b49",
+          "pa-8053a1c1-a072-4336-a655-244d135e73cc",
+          "pa-952f522e-48a2-4370-a2e1-0f114e20f954",
+          "pa-946df2ce-c04c-4ece-a072-3fbf3ad84fe4",
+          "pa-401e169f-8655-41b2-aa9d-e3c669652463",
+          "pa-92ba8f25-2361-48c8-842b-870b2fa3074b",
+          "pa-64cd4fb0-729c-49ba-9729-415c42f42347",
+          "pa-cffc1529-7dfb-4c7e-aa70-e612096f8ea6"
+        ]
+      }
+    ]
+  }
+]

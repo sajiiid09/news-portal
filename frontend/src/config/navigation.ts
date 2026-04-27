@@ -6,6 +6,7 @@ export interface NavItem {
 export const navigation: NavItem[] = [
   { label: 'সর্বশেষ', href: '/latest' },
   { label: 'বাংলাদেশ', href: '/bangladesh' },
+  { label: 'জেলা', href: '/district-topics' },
   { label: 'রাজনীতি', href: '/politics' },
   { label: 'বিশ্ব', href: '/world' },
   { label: 'বাণিজ্য', href: '/business' },
