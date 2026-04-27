@@ -3,6 +3,7 @@ import Link from 'next/link'
 import type { Article, Category, Gallery, Video } from '@/lib/types'
 import { formatBanglaDate } from '@/lib/utils'
 import { adSlots } from '@/config/ads'
+import { AdCreative } from '@/components/modules/Ads'
 import { HomeMotion } from './HomeMotion'
 
 interface HomepageLayoutProps {
@@ -141,7 +142,7 @@ function AdSlot({
     <section className={`bb-home-ad-slot bb-home-ad-slot--${variant}`} aria-label={label} data-bb-reveal>
       <p>{label}</p>
       <p className="bb-home-ad-slot__size">{sizeMap[variant]}</p>
-      <div className="bb-home-ad-slot__box" />
+      <AdCreative variant={variant === 'inline' ? 'inline' : 'leaderboard'} />
     </section>
   )
 }
