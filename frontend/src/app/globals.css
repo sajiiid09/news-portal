@@ -677,9 +677,19 @@ button.bb-static-utility {
 .bb-header__masthead {
   align-items: center;
   display: grid;
-  justify-items: center;
+  gap: var(--spacing-4);
+  grid-template-columns: minmax(180px, 0.7fr) minmax(260px, 1fr) minmax(180px, 0.7fr);
+  margin-inline: auto;
+  max-width: var(--container-max-width);
   padding: var(--spacing-4) var(--spacing-4) var(--spacing-3);
   text-align: center;
+  width: 100%;
+}
+
+.bb-header__identity {
+  display: grid;
+  justify-items: center;
+  min-width: 0;
 }
 
 .bb-header__brand {
@@ -701,6 +711,61 @@ button.bb-static-utility {
   font-size: var(--font-size-sm);
   font-weight: 600;
   margin-top: var(--spacing-1);
+}
+
+.bb-header-card {
+  align-items: center;
+  border: 1px solid var(--color-light-gray);
+  border-radius: 6px;
+  display: grid;
+  gap: var(--spacing-2);
+  grid-template-columns: 84px minmax(0, 1fr);
+  min-height: 86px;
+  overflow: hidden;
+  padding: var(--spacing-2);
+  text-align: left;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.bb-header-card:hover {
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-1px);
+}
+
+.bb-header-card img {
+  aspect-ratio: 16 / 10;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.bb-header-card span {
+  color: var(--color-black);
+  display: grid;
+  font-family: var(--font-headline);
+  font-size: var(--font-size-sm);
+  font-weight: 850;
+  gap: 0.15rem;
+  line-height: 1.32;
+  min-width: 0;
+}
+
+.bb-header-card strong {
+  color: var(--color-accent-deep);
+  font-family: var(--font-primary);
+  font-size: var(--font-size-xs);
+  letter-spacing: 0;
+}
+
+.bb-header-card--video {
+  direction: rtl;
+}
+
+.bb-header-card--video span {
+  direction: ltr;
+  text-align: right;
 }
 
 .bb-nav-shell {
@@ -815,14 +880,15 @@ button.bb-static-utility {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: var(--spacing-3);
-  background: var(--color-black);
+  background: linear-gradient(90deg, var(--color-black), #1e313b);
   color: var(--color-white);
-  padding: var(--spacing-2) var(--spacing-4);
+  padding: var(--spacing-2) max(var(--spacing-4), calc((100vw - var(--container-max-width)) / 2));
   overflow: hidden;
 }
 
 .bb-ticker__label {
   background: var(--color-accent);
+  color: var(--color-white);
   padding: 2px 8px;
   border-radius: 3px;
   font-size: var(--font-size-sm);
@@ -864,12 +930,12 @@ button.bb-static-utility {
 }
 
 .bb-ticker__viewport::after {
-  background: linear-gradient(270deg, var(--color-black), transparent);
+  background: linear-gradient(270deg, #1e313b, transparent);
   right: 0;
 }
 
 .bb-ticker__track {
-  animation: bbTickerSlide 38s linear infinite;
+  animation: bbTickerSlide 46s linear infinite;
   display: flex;
   gap: var(--spacing-6);
   width: max-content;
@@ -1520,22 +1586,102 @@ button.bb-static-utility {
 
 .bb-footer {
   margin-top: var(--spacing-8);
-  background: var(--color-black);
+  background:
+    linear-gradient(135deg, rgba(110, 144, 165, 0.24), transparent 38%),
+    linear-gradient(180deg, #101010, #050505);
   color: var(--color-white);
+  border-top: 4px solid var(--color-accent);
 }
 
 .bb-footer__inner {
-  padding-block: var(--spacing-6);
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--spacing-4);
-  justify-content: space-between;
+  display: grid;
+  gap: var(--spacing-6);
+  grid-template-columns: minmax(260px, 1.3fr) minmax(160px, 0.8fr) minmax(160px, 0.8fr) minmax(220px, 1fr);
+  padding-block: var(--spacing-8);
 }
 
-.bb-footer__inner nav {
+.bb-footer__brand,
+.bb-footer__contact,
+.bb-footer-links {
+  min-width: 0;
+}
+
+.bb-footer__logo {
+  color: var(--color-white);
+  display: inline-flex;
+  font-family: var(--font-headline);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: var(--spacing-3);
+}
+
+.bb-footer__brand p,
+.bb-footer__contact p,
+.bb-footer__bottom p {
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.8;
+  margin: 0;
+}
+
+.bb-footer h2 {
+  color: var(--color-white);
+  font-family: var(--font-headline);
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin: 0 0 var(--spacing-3);
+}
+
+.bb-footer-links div {
+  display: grid;
+  gap: var(--spacing-2);
+}
+
+.bb-footer-links a,
+.bb-footer__contact a {
+  color: rgba(255, 255, 255, 0.76);
+  font-weight: 700;
+  transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.bb-footer-links a:hover,
+.bb-footer__contact a:hover,
+.bb-footer-social a:hover {
+  color: var(--color-accent);
+}
+
+.bb-footer__contact a {
+  border: 1px solid rgba(110, 144, 165, 0.65);
+  border-radius: 4px;
+  display: inline-flex;
+  margin-top: var(--spacing-3);
+  padding: 0.55rem 0.75rem;
+}
+
+.bb-footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-2);
+  margin-top: var(--spacing-4);
+}
+
+.bb-footer-social a {
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: var(--font-size-sm);
+  font-weight: 800;
+  padding: 0.4rem 0.7rem;
+}
+
+.bb-footer__bottom {
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
   display: flex;
   flex-wrap: wrap;
   gap: var(--spacing-3);
+  justify-content: space-between;
+  padding-block: var(--spacing-4);
 }
 
 .bb-search-modal-overlay {
@@ -2075,6 +2221,30 @@ button.bb-static-utility {
     gap: var(--spacing-8);
   }
 
+  .bb-header__masthead {
+    grid-template-columns: 1fr;
+  }
+
+  .bb-header__identity {
+    order: -1;
+  }
+
+  .bb-header-card {
+    justify-self: stretch;
+  }
+
+  .bb-header-card--video {
+    direction: ltr;
+  }
+
+  .bb-header-card--video span {
+    text-align: left;
+  }
+
+  .bb-footer__inner {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .bb-home-layout {
     grid-template-columns: 1fr;
   }
@@ -2163,8 +2333,33 @@ button.bb-static-utility {
     padding: var(--spacing-3) var(--spacing-2);
   }
 
+  .bb-header-card {
+    grid-template-columns: 92px minmax(0, 1fr);
+    min-height: 78px;
+  }
+
   .bb-header__brand {
     font-size: clamp(1.8rem, 9vw, 2.45rem);
+  }
+
+  .bb-ticker {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-2);
+    padding-inline: var(--spacing-2);
+  }
+
+  .bb-ticker__label {
+    width: max-content;
+  }
+
+  .bb-footer__inner {
+    grid-template-columns: 1fr;
+    padding-block: var(--spacing-6);
+  }
+
+  .bb-footer__bottom {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .bb-home {

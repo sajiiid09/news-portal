@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import { FooterLinks } from './FooterLinks'
+import { SocialLinks } from './SocialLinks'
 
 const organizationJsonLd = {
   '@context': 'https://schema.org',
@@ -13,14 +15,6 @@ const organizationJsonLd = {
   ],
 }
 
-const footerLinks = [
-  { label: 'আমাদের সম্পর্কে', href: '/about' },
-  { label: 'যোগাযোগ', href: '/contact' },
-  { label: 'গোপনীয়তা নীতি', href: '/privacy' },
-  { label: 'ব্যবহারের শর্তাবলী', href: '/terms' },
-  { label: 'বিজ্ঞাপন', href: '/advertise' },
-]
-
 export function Footer() {
   return (
     <footer className="bb-footer">
@@ -29,14 +23,26 @@ export function Footer() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
       />
       <div className="bb-container bb-footer__inner">
+        <section className="bb-footer__brand" aria-label="বর্তমান বাংলা">
+          <Link href="/" className="bb-footer__logo">
+            বর্তমান বাংলা
+          </Link>
+          <p>
+            দ্রুত, নির্ভরযোগ্য ও পরিষ্কার বাংলা সংবাদ অভিজ্ঞতার জন্য তৈরি একটি আধুনিক
+            ডিজিটাল নিউজরুম।
+          </p>
+          <SocialLinks />
+        </section>
+        <FooterLinks />
+        <section className="bb-footer__contact">
+          <h2>নিউজরুম</h2>
+          <p>সংবাদ, ছবি, ভিডিও ও বিজ্ঞাপন সংক্রান্ত যোগাযোগের জন্য আমাদের অফিসিয়াল চ্যানেল ব্যবহার করুন।</p>
+          <Link href="/contact">যোগাযোগ করুন</Link>
+        </section>
+      </div>
+      <div className="bb-container bb-footer__bottom">
         <p>© {new Date().getFullYear()} বর্তমান বাংলা</p>
-        <nav>
-          {footerLinks.map((link) => (
-            <Link key={link.href} href={link.href}>
-              {link.label}
-            </Link>
-          ))}
-        </nav>
+        <p>ই-পেপার ও ইংরেজি সংস্করণ আপাতত স্থির সংস্করণ।</p>
       </div>
     </footer>
   )

@@ -65,6 +65,141 @@
     ]
   },
   {
+    "slug": "politics",
+    "title": "রাজনীতি",
+    "label": "রাজনীতি",
+    "sourceFile": "politics.html",
+    "template": "category",
+    "description": "রাজনীতি | রাজনীতির সর্বশেষ খবর | Politics News | Prothom Alo",
+    "sections": [
+      {
+        "id": "politics-lead",
+        "type": "lead-grid",
+        "title": "রাজনীতি",
+        "storyIds": [
+          "pa-51c43e34-0411-4e51-be76-09b60e2e08b3",
+          "pa-7e12ccd5-15ca-4e2a-b114-730775c8713d",
+          "pa-cb5a3468-cbbe-472e-9c32-a342a2d55447",
+          "pa-c720deb8-7735-41d0-b92c-781fa304e01a",
+          "pa-2ac3f933-f382-4a94-a3f4-e8d6e0f4d213"
+        ]
+      },
+      {
+        "id": "politics-ad",
+        "type": "ad",
+        "title": "বিজ্ঞাপন",
+        "storyIds": []
+      },
+      {
+        "id": "politics-rest",
+        "type": "story-list",
+        "title": "আরও খবর",
+        "storyIds": [
+          "pa-095d5660-9c2b-433d-a3f3-ce29ece7ec30",
+          "pa-94367c73-365c-4f18-9d25-f3f02440283a",
+          "pa-a3c00c46-1af6-481f-9000-0692b65a2ca5",
+          "pa-737ef435-3f88-45fe-a89f-15b64d54289c",
+          "pa-76d6938e-6e50-4640-91a8-eb4d1cc25edd",
+          "pa-2d44dc95-2963-40d9-a514-d1bde434d1ac",
+          "pa-2588d67c-30ab-4f9d-a558-1514f2b4f7c7",
+          "pa-9e10f0aa-e554-4a98-a5fd-45ae531ccdf7",
+          "pa-0baf5e97-8798-47b1-b5c5-7758131e67ae",
+          "pa-dda4cec7-d253-4834-8089-2568547fac07",
+          "pa-8707704b-161a-43cc-a977-949aa90c80c1",
+          "pa-e0fcd204-dedd-433e-8799-ef9ad7021823",
+          "pa-3096ec2d-bc8d-4f81-9862-afa85720693b",
+          "pa-f646a99a-bd2d-4da8-96bf-dd8ef1eb2e13",
+          "pa-a1054d27-e4ac-4844-94f7-4a315ebe1cca"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "world",
+    "title": "বিশ্ব",
+    "label": "বিশ্ব",
+    "sourceFile": "world.html",
+    "template": "category-selected",
+    "description": "আজকের আন্তর্জাতিক খবর - বিশ্ব সংবাদ | World News প্রথম আলো",
+    "sections": [
+      {
+        "id": "world-first-5-বিশ্ব",
+        "type": "lead-grid",
+        "title": "বিশ্ব",
+        "storyIds": [
+          "pa-89526342-154c-42c8-8b3d-16165721855e",
+          "pa-2cfb23e1-8018-44ad-848b-462063ab2d59",
+          "pa-dcac2ee3-c9a2-4d0a-bc8f-edfce7a56401",
+          "pa-c35e0b62-8fc2-4e81-aad2-d3fe43ae920e",
+          "pa-4072ecc4-3536-4471-9cd9-b80c8bfb32d5"
+        ]
+      },
+      {
+        "id": "world-নির্বাচিত-বিশ্ব",
+        "type": "selected-grid",
+        "title": "নির্বাচিত",
+        "storyIds": [
+          "pa-7c80ac11-f494-4362-bc6a-743e6efdf119",
+          "pa-35ab11e0-856f-406e-b2b1-502a4c94f5b6",
+          "pa-706db1f0-e26c-4551-ba89-c25c5630a4ac",
+          "pa-0c27d0ff-ea90-4e63-816e-dc4f3f8f9216",
+          "pa-5f9c37d4-50f0-43f3-8b06-f7d152d7ffca",
+          "pa-ff0cb466-ae0b-4f6c-94a4-b7adfa848e75",
+          "pa-c62c0a68-c535-4161-9c38-44da012525fa",
+          "pa-89526342-154c-42c8-8b3d-16165721855e",
+          "pa-2cfb23e1-8018-44ad-848b-462063ab2d59",
+          "pa-dcac2ee3-c9a2-4d0a-bc8f-edfce7a56401",
+          "pa-c35e0b62-8fc2-4e81-aad2-d3fe43ae920e",
+          "pa-4072ecc4-3536-4471-9cd9-b80c8bfb32d5"
+        ]
+      },
+      {
+        "id": "world-ad-2",
+        "type": "ad",
+        "title": "বিজ্ঞাপন",
+        "storyIds": []
+      },
+      {
+        "id": "world-rest-15-বিশ্ব",
+        "type": "story-list",
+        "title": "আরও খবর",
+        "storyIds": [
+          "pa-89526342-154c-42c8-8b3d-16165721855e",
+          "pa-2cfb23e1-8018-44ad-848b-462063ab2d59",
+          "pa-dcac2ee3-c9a2-4d0a-bc8f-edfce7a56401",
+          "pa-c35e0b62-8fc2-4e81-aad2-d3fe43ae920e",
+          "pa-4072ecc4-3536-4471-9cd9-b80c8bfb32d5",
+          "pa-9572351c-904b-4c84-a4b6-12e21783a269",
+          "pa-11fe4cdc-62df-4ee7-94e7-d6c17158eed1",
+          "pa-18398c60-5552-453b-8fa1-4c5c28f38778",
+          "pa-67a4fa77-0c6d-4421-9f8f-654356636021",
+          "pa-bfed5e8e-c802-470e-9a3f-2d2fb13859ef",
+          "pa-a75ed414-be63-4a10-85cb-780b33d84647",
+          "pa-9dc402ef-800b-48c1-9049-09760152f482",
+          "pa-581f724a-3dea-4d65-aac4-0547de703c0b",
+          "pa-2aa74ed0-983a-4012-a6e9-977816b29417",
+          "pa-d7604137-6393-42a0-aff5-7dfe592f0bf6",
+          "pa-3da7ed2d-f7d0-419c-b179-79ed8e4a358b",
+          "pa-8cd01a99-b77b-425b-a6bb-bbd886f7dc93",
+          "pa-b5c29d4d-8825-46aa-805d-1a718e809e41",
+          "pa-234233c2-807f-4983-b3ba-6b55d95efd69",
+          "pa-17a92007-6278-4cc6-893c-6029929d41f7",
+          "pa-33c72fbb-3939-447f-a5ad-2cdc7d2913f5",
+          "pa-ab7cd320-67cc-4b9c-88dc-576d92d1a896",
+          "pa-b60fc2c6-fe8e-434c-9f84-57b7d6ba8141",
+          "pa-2d9eb4fb-0db2-4b99-a41a-3961b3468003",
+          "pa-0b5073bd-49db-4d26-9180-4645855200d8",
+          "pa-3cd1cb53-8e54-4f5d-b63c-b35c2c798649",
+          "pa-29e9a84f-537b-4d0e-a0e8-ddbbe8b51c90",
+          "pa-f096170e-4dc5-481d-a76a-ff3080f26578",
+          "pa-763743fa-fa29-41d6-b83c-0c45ec4e1a61",
+          "pa-8ea8af7c-6d2c-41a2-b6f3-1e28bc564425",
+          "pa-94ae99d7-5e29-474d-9f86-cbd7ce909dd1"
+        ]
+      }
+    ]
+  },
+  {
     "slug": "business",
     "title": "বাণিজ্য",
     "label": "বাণিজ্য",
@@ -205,35 +340,7 @@
           "pa-c24526ae-efa9-4268-8930-989e6b2cf0f8",
           "pa-847d95c7-8971-41f6-973c-7cebb2e33307",
           "pa-11ee3eb7-0a10-457f-b244-49094c271e02",
-          "pa-49f7f316-34f9-4280-8562-9657d3e32715",
-          "pa-8c7b9f39-f361-4b4d-85a9-049292ee2aa2",
-          "pa-4647a81d-6194-41a3-ac7f-211f98d3399d",
-          "pa-5f38ba8d-b499-4629-8fda-bb1b1f7cb81f",
-          "pa-e3262779-6005-4f06-9d78-b7d2e147565f",
-          "pa-b5e15900-4526-45b6-9830-07a2d48968e6",
-          "pa-b143d339-6354-40c5-a4fe-7c73abf6cc4c",
-          "pa-7568dc5b-5903-4441-a39a-63fbdf51bd24",
-          "pa-75ded37d-b5ee-48a5-9303-5af53ab27db3",
-          "pa-2abfc2a6-f495-44c1-b512-35bf1309c496",
-          "pa-94c067c1-afbc-47de-b446-409c7504c964",
-          "pa-b2e538e8-7ae2-4973-b385-40b7832af7f6",
-          "pa-c8f9ad9a-445a-46a1-b5af-519be78155ab",
-          "pa-150b5157-bfed-4e24-81a1-13ed07dbeebb",
-          "pa-e77293f9-f254-4c8d-9aa7-ac85be1ef219",
-          "pa-c9e1d931-872e-49a2-9548-df20de1d66c7",
-          "pa-fe6c28ab-03b9-468c-b1e1-83bdbe687c9f",
-          "pa-84425ea8-f70a-463c-8a1c-1457dc3ca330",
-          "pa-a14b5c41-59c1-43c7-80bb-a837c9d47885",
-          "pa-c16e7591-3e3b-45a3-8bd3-02b27e122de5",
-          "pa-e1c3c250-c105-4b83-bf19-666b391e5fe3",
-          "pa-da147aea-6879-415b-81a0-ab86b3ef75cf",
-          "pa-37e5a23d-0c37-4158-8fd7-d2c8a8b2d228",
-          "pa-1052fe94-e060-4675-9976-877f9de35877",
-          "pa-ed2dc9a1-ab07-4b68-b439-8f01dee3651f",
-          "pa-3ded5f38-cabc-445f-8e17-65eefe62bbd8",
-          "pa-7666ccbb-4c52-4804-92ce-432ecceb10eb",
-          "pa-df71f186-6dda-440f-b57b-d69c5c997070",
-          "pa-c24526ae-efa9-4268-8930-989e6b2cf0f8"
+          "pa-75ded37d-b5ee-48a5-9303-5af53ab27db3"
         ]
       }
     ]
@@ -466,36 +573,7 @@
           "pa-4b6576b0-29c6-4c71-9f10-4f8ace670e6d",
           "pa-6ab03281-6f02-4120-8bde-28bf7b1297d6",
           "pa-2e6320c7-f043-4bb7-97f9-a5f856983ce3",
-          "pa-aca75969-e8b3-4c40-b661-bd2b5413039f",
-          "pa-fb0eb282-bdf8-4d5c-937e-c1a268402d51",
-          "pa-b9fd99c4-2c92-40c8-9c13-eb73139c24d6",
-          "pa-dd561022-c268-424e-bc58-65f1225e82cd",
-          "pa-d3d6c4be-e8c2-4ea5-acb4-7e75476355d0",
-          "pa-1dbc9152-591c-4238-beb0-1554215f3503",
-          "pa-f8b4e630-2755-4126-a117-5d057970c09e",
-          "pa-983f78da-4b91-4b0c-bb6e-9714f4931f55",
-          "pa-6eae7179-137c-4af0-a071-dd4f03cecedf",
-          "pa-f92bbdaa-0199-44c5-9c32-c04e7b24fb12",
-          "pa-fe3e510e-2157-4cc2-b466-26e478dedf6d",
-          "pa-f23280e8-2444-41e6-bfa2-57e60570c028",
-          "pa-9660e950-f077-4352-becb-ab7cee8cd23c",
-          "pa-b5bfb98f-0428-448b-afbc-9c0e784f3006",
-          "pa-b0e20f27-2969-4e61-a804-9ab90a5fc161",
-          "pa-604b90c3-f5f1-4882-8cb9-793a5a8e87d3",
-          "pa-e3c9ef18-6a7a-4d8a-b44e-581d353edda5",
-          "pa-d9c590cc-d4ab-4c32-b4c7-ecc8de352588",
-          "pa-78f552ad-65c7-46d7-90c9-594551a379c4",
-          "pa-4e7f14c2-1b46-41c8-8e9d-edb815674222",
-          "pa-5de89fa6-14dd-4491-b101-64f399522539",
-          "pa-fe839251-5e45-4a15-b33f-3ede4a6bace1",
-          "pa-f73e4524-1ebb-47e4-a8fa-1542baf7d03f",
-          "pa-366c8371-8a10-414d-9b41-bec55bd61c0e",
-          "pa-f0c1db56-7c59-47b4-ba1c-86a302e4140d",
-          "pa-e44ccfc2-961b-42a4-83b1-4bf5b4f6274a",
-          "pa-2f4e196b-1555-4fca-9702-dd5f74d54a05",
-          "pa-4b6576b0-29c6-4c71-9f10-4f8ace670e6d",
-          "pa-6ab03281-6f02-4120-8bde-28bf7b1297d6",
-          "pa-2e6320c7-f043-4bb7-97f9-a5f856983ce3"
+          "pa-aca75969-e8b3-4c40-b661-bd2b5413039f"
         ]
       }
     ]
@@ -755,35 +833,7 @@
           "pa-0ecd3020-25eb-4501-83e4-63756bd66f58",
           "pa-8663b22f-38d5-4f6e-b514-5803235b4ec6",
           "pa-88f77fff-2286-4798-8bb2-d8102ff5b5ec",
-          "pa-cd9a54f3-3e89-4eb4-adea-dd95d443c3fe",
-          "pa-8ae9663e-dfd8-467f-8f2f-071e7a26ff75",
-          "pa-1737bb99-dab7-4b64-a48f-468ad3681a09",
-          "pa-1bfc6815-1f93-4d86-b45e-0a37adbc4c0c",
-          "pa-9b608da0-2804-4644-8a9a-1281fcb67d2c",
-          "pa-3a66cd9a-831f-4df6-9943-ebbf998a8c1d",
-          "pa-45cb2e90-7061-46f0-bf96-bee00288c01f",
-          "pa-db81a9a5-9779-4888-bc3c-948955c92c05",
-          "pa-8c94ab15-616c-41eb-b06f-67341f979167",
-          "pa-c0666378-0262-4fb1-8788-7e99cf6e1c6d",
-          "pa-4ef1d8b0-bff5-49e3-9235-d4409cb98370",
-          "pa-4f446941-e14b-45c2-b711-ea1a22d879a7",
-          "pa-9de36b7f-1aa1-4bfd-bee3-cba5acb4808b",
-          "pa-bcf7cf14-bc6c-445d-8603-7f63384b8a96",
-          "pa-9e6afbf1-878f-4cb1-83c2-988b060766bf",
-          "pa-51704c2b-92d8-4f04-a18c-681ee16adf79",
-          "pa-6b4bf3ba-7c21-4b55-b038-a7836e172c41",
-          "pa-8cf6b300-578a-4cef-a30b-feda12760503",
-          "pa-7b2e0408-b3bf-4e36-817a-8058b2999c26",
-          "pa-30618005-d831-4f67-a746-3dd9c06f360b",
-          "pa-e4ef5435-bf80-4a7c-a9cf-4c9d2fc9f2a7",
-          "pa-3cfddf9b-b0f2-4258-a9f8-b4f81895c178",
-          "pa-f5d8f94b-7882-42dd-98ae-4b05cfdc38c3",
-          "pa-d6ef4a17-432d-4ad0-8f92-94c9cd7ea9d5",
-          "pa-2db375ed-695a-4358-a63e-9b90cde37f57",
-          "pa-675ae924-b437-4b13-bc5c-2c62d922d366",
-          "pa-99bc1648-2c9b-4b91-97e7-95d575c87231",
-          "pa-294a3475-8de0-4cce-b2a4-786a3c21a784",
-          "pa-0ecd3020-25eb-4501-83e4-63756bd66f58"
+          "pa-3a66cd9a-831f-4df6-9943-ebbf998a8c1d"
         ]
       }
     ]
