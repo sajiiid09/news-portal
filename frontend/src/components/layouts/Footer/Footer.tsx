@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { FooterLinks } from './FooterLinks'
-import { SocialLinks } from './SocialLinks'
 
 const organizationJsonLd = {
   '@context': 'https://schema.org',
@@ -31,7 +30,6 @@ export function Footer() {
             দ্রুত, নির্ভরযোগ্য ও পরিষ্কার বাংলা সংবাদ অভিজ্ঞতার জন্য তৈরি একটি আধুনিক
             ডিজিটাল নিউজরুম।
           </p>
-          <SocialLinks />
         </section>
         <FooterLinks />
         <section className="bb-footer__contact">

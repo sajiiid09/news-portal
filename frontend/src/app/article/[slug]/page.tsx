@@ -12,7 +12,7 @@ import { ArticleReadingProgress } from '@/components/modules/ArticleReadingProgr
 import { ArticleShare } from '@/components/modules/ArticleShare'
 import { ArticleReactions } from '@/components/modules/ArticleReactions'
 import { ArticleCard } from '@/components/ui/Card/ArticleCard'
-import { adSlots } from '@/config/ads'
+import { AdCreative } from '@/components/modules/Ads'
 
 const BASE_URL = 'https://your-domain.com'
 
@@ -181,7 +181,7 @@ export default async function ArticlePage({
                 {index === 2 ? (
                   <div className="bb-card bb-article-inline-ad" aria-label="Advertisement">
                     <p className="bb-meta">বিজ্ঞাপন</p>
-                    <div className="bb-ad-slot">{adSlots.inArticle}</div>
+                    <AdCreative variant="inline" />
                   </div>
                 ) : null}
               </Fragment>
@@ -205,7 +205,7 @@ export default async function ArticlePage({
         <aside className="bb-article-rail">
           <div className="bb-card bb-article-ad">
             <p className="bb-meta">বিজ্ঞাপন</p>
-            <div className="bb-ad-slot bb-ad-slot--sidebar">{adSlots.sidebarSticky}</div>
+            <AdCreative variant="sidebar" />
           </div>
           <section className="bb-card bb-article-author-card">
             <h3>লেখক পরিচিতি</h3>

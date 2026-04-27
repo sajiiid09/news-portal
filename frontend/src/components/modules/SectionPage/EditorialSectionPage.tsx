@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import type { Article, DseTickerItem, SectionBlock, SectionPageConfig } from '@/lib/types'
 import { formatBanglaDate } from '@/lib/utils'
+import { AdCreative } from '@/components/modules/Ads'
 import { DseTickerWidget } from './DseTickerWidget'
 
 interface EditorialSectionPageProps {
@@ -181,8 +182,7 @@ function SubsectionGrid({ block, storyMap }: { block: SectionBlock; storyMap: Ma
 function AdBlock({ title }: { title: string }) {
   return (
     <section className="bb-section-ad" aria-label={title} data-bb-reveal>
-      <span>{title}</span>
-      <div />
+      <AdCreative variant="leaderboard" />
     </section>
   )
 }
