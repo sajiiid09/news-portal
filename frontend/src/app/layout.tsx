@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Noto_Sans_Bengali, Noto_Serif_Bengali } from 'next/font/google'
+import { Noto_Serif_Bengali } from 'next/font/google'
 import { QueryProvider } from '@/components/providers'
 import { ThemeProvider } from '@/components/providers'
 import { AuthProvider } from '@/components/providers'
@@ -14,16 +14,9 @@ import '@/styles/utilities.css'
 import '@/styles/themes/light.css'
 import '@/styles/themes/dark.css'
 
-const banglaSans = Noto_Sans_Bengali({
-  subsets: ['bengali'],
-  weight: ['400', '500', '600', '700', '800'],
-  display: 'swap',
-  variable: '--font-bangla-sans',
-})
-
 const banglaSerif = Noto_Serif_Bengali({
   subsets: ['bengali'],
-  weight: ['500', '600', '700', '800', '900'],
+  weight: ['300', '400', '500', '600'],
   display: 'swap',
   variable: '--font-bangla-serif',
 })
@@ -59,7 +52,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="bn" suppressHydrationWarning>
-      <body className={`${banglaSans.variable} ${banglaSerif.variable}`}>
+      <body className={banglaSerif.variable}>
         <QueryProvider>
           <AuthProvider>
             <ThemeProvider>

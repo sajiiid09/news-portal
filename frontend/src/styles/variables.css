@@ -35,7 +35,7 @@
   --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
   --motion-pop: cubic-bezier(0.2, 0.8, 0.2, 1);
 
-  --font-body: var(--font-bangla-sans), 'Noto Sans Bengali', 'SolaimanLipi', 'Kalpurush',
+  --font-body: 'Noto Sans Bengali UI', 'Noto Sans Bengali', 'SolaimanLipi', 'Kalpurush',
     sans-serif;
   --font-headline: var(--font-bangla-serif), 'Noto Serif Bengali', 'SolaimanLipi', 'Kalpurush',
     serif;

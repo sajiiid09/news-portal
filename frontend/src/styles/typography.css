@@ -5,7 +5,7 @@ h4,
 h5,
 h6 {
   font-family: var(--font-headline);
-  font-weight: 800;
+  font-weight: 600;
   line-height: 1.22;
   color: var(--color-black);
   margin: 0;
@@ -15,6 +15,7 @@ h6 {
 p {
   color: var(--color-ink);
   line-height: 1.75;
+  font-weight: 400;
   margin: 0;
 }
 
