@@ -270,29 +270,6 @@ function SplitSection({
   )
 }
 
-function GridSection({
-  title,
-  href,
-  articles,
-  categoryMap,
-}: {
-  title: string
-  href: string
-  articles: Article[]
-  categoryMap: Map<string, string>
-}) {
-  return (
-    <section className="bb-home-band bb-home-band--grid" data-bb-reveal>
-      <SectionHeader title={title} href={href} />
-      <div className="bb-home-band__grid">
-        {articles.slice(0, 4).map((article) => (
-          <StackStoryCard key={article.id} article={article} categoryMap={categoryMap} />
-        ))}
-      </div>
-    </section>
-  )
-}
-
 function OpinionBand({ articles, categoryMap }: { articles: Article[]; categoryMap: Map<string, string> }) {
   const [lead, ...rest] = articles
 
@@ -385,59 +362,43 @@ export function HomepageLayout({
   return (
     <div className="bb-home bb-home--inspiration">
       <HomeMotion />
-      <div className="bb-home-layout">
-        <div className="bb-home-layout__main">
-          <section className="bb-home-hero" aria-label="প্রধান সংবাদ">
-            <LeadStoryCard article={lead} categoryMap={categoryMap} />
-            <aside className="bb-home-hero__rail" aria-label="সাম্প্রতিক সংবাদ">
-              {heroRailArticles.slice(0, 4).map((article, index) =>
-                index === 0 ? (
-                  <SplitStoryCard key={article.id} article={article} categoryMap={categoryMap} />
-                ) : (
-                  <TextStoryCard key={article.id} article={article} categoryMap={categoryMap} prominent={index === 1} />
-                )
-              )}
-            </aside>
-          </section>
 
-          <section className="bb-home-strip" aria-label="বাছাই সংবাদ">
-            {storyStripArticles.map((article) => (
-              <StackStoryCard key={article.id} article={article} categoryMap={categoryMap} />
-            ))}
-          </section>
-
-          <SplitSection title="এই মুহূর্তে" href="/latest" articles={momentArticles} categoryMap={categoryMap} />
-
-          <div className="bb-home-band__pair">
-            <SplitSection title="বাংলাদেশ" href="/bangladesh" articles={bangladeshArticles.slice(0, 5)} categoryMap={categoryMap} />
-            <SplitSection title="রাজনীতি" href="/politics" articles={politicsArticles.slice(0, 5)} categoryMap={categoryMap} textRail />
-          </div>
-
-          <div className="bb-home-band__pair">
-            <SplitSection title="বিশ্ব" href="/world" articles={worldArticles.slice(0, 5)} categoryMap={categoryMap} />
-            <SplitSection title="বাণিজ্য" href="/business" articles={businessArticles.slice(0, 5)} categoryMap={categoryMap} textRail />
-          </div>
-
-          <OpinionBand articles={opinionArticles.slice(0, 4)} categoryMap={categoryMap} />
-
-          <VideoBand videos={videos} />
-
-          <GridSection title="খেলা" href="/sports" articles={sportsArticles.slice(0, 4)} categoryMap={categoryMap} />
-
-          <GridSection title="বিনোদন" href="/entertainment" articles={entertainmentArticles.slice(0, 4)} categoryMap={categoryMap} />
-
-          <PhotoBand galleries={galleries} />
-
-          <div className="bb-home-band__pair">
-            <SplitSection title="চাকরি" href="/jobs" articles={jobsArticles.slice(0, 5)} categoryMap={categoryMap} />
-            <SplitSection title="জীবনযাপন" href="/lifestyle" articles={lifestyleArticles.slice(0, 5)} categoryMap={categoryMap} textRail />
-          </div>
-        </div>
-        <aside className="bb-home-layout__rail" aria-label="পাঠকের পছন্দ">
-          <RankedList title="সর্বাধিক পঠিত" articles={mostRead.slice(0, 8)} />
-          <StaticRailNote />
+      <section className="bb-home-hero" aria-label="প্রধান সংবাদ">
+        <LeadStoryCard article={lead} categoryMap={categoryMap} />
+        <aside className="bb-home-hero__rail" aria-label="সাম্প্রতিক সংবাদ">
+          {heroRailArticles.slice(0, 4).map((article, index) =>
+            index === 0 ? (
+              <SplitStoryCard key={article.id} article={article} categoryMap={categoryMap} />
+            ) : (
+              <TextStoryCard key={article.id} article={article} categoryMap={categoryMap} prominent={index === 1} />
+            )
+          )}
         </aside>
-      </div>
+      </section>
+
+      <section className="bb-home-strip" aria-label="বাছাই সংবাদ">
+        {storyStripArticles.map((article) => (
+          <StackStoryCard key={article.id} article={article} categoryMap={categoryMap} />
+        ))}
+      </section>
+
+      <SplitSection title="এই মুহূর্তে" href="/latest" articles={momentArticles} categoryMap={categoryMap} />
+      <SplitSection title="বাংলাদেশ" href="/bangladesh" articles={bangladeshArticles.slice(0, 5)} categoryMap={categoryMap} />
+      <SplitSection title="রাজনীতি" href="/politics" articles={politicsArticles.slice(0, 5)} categoryMap={categoryMap} textRail />
+      <SplitSection title="বিশ্ব" href="/world" articles={worldArticles.slice(0, 5)} categoryMap={categoryMap} />
+      <SplitSection title="বাণিজ্য" href="/business" articles={businessArticles.slice(0, 5)} categoryMap={categoryMap} textRail />
+      <OpinionBand articles={opinionArticles.slice(0, 4)} categoryMap={categoryMap} />
+      <SplitSection title="খেলা" href="/sports" articles={sportsArticles.slice(0, 5)} categoryMap={categoryMap} />
+      <SplitSection title="বিনোদন" href="/entertainment" articles={entertainmentArticles.slice(0, 5)} categoryMap={categoryMap} textRail />
+      <VideoBand videos={videos} />
+      <PhotoBand galleries={galleries} />
+      <SplitSection title="চাকরি" href="/jobs" articles={jobsArticles.slice(0, 5)} categoryMap={categoryMap} />
+      <SplitSection title="জীবনযাপন" href="/lifestyle" articles={lifestyleArticles.slice(0, 5)} categoryMap={categoryMap} textRail />
+
+      <section className="bb-home-band" data-bb-reveal>
+        <RankedList title="সর্বাধিক পঠিত" articles={mostRead.slice(0, 8)} />
+        <StaticRailNote />
+      </section>
     </div>
   )
 }
