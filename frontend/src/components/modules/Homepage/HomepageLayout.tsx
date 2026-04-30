@@ -2,8 +2,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import type { Article, Category, Gallery, Video } from '@/lib/types'
 import { formatBanglaDate } from '@/lib/utils'
-import { adSlots } from '@/config/ads'
-import { AdCreative } from '@/components/modules/Ads'
 import { HomeMotion } from './HomeMotion'
 
 interface HomepageLayoutProps {
@@ -30,36 +28,91 @@ function categoryLabel(article: Article, categoryMap: Map<string, string>) {
 
 function StoryMeta({ article, categoryMap }: { article: Article; categoryMap: Map<string, string> }) {
   return (
-    <p className="bb-home-meta">
+    <p className="bb-home-card__meta">
       <span>{categoryLabel(article, categoryMap)}</span>
       <span>{formatBanglaDate(article.publishedAt)}</span>
     </p>
   )
 }
 
-function LeadStory({ article, categoryMap }: { article: Article; categoryMap: Map<string, string> }) {
+function SectionHeader({ title, href }: { title: string; href: string }) {
   return (
-    <article className="bb-home-lead-story" data-bb-reveal>
-      <Link href={`/article/${article.slug}`} className="bb-home-media bb-home-media--lead">
+    <div className="bb-home-section__header">
+      <h2>{title}</h2>
+      <Link href={href}>আরও</Link>
+    </div>
+  )
+}
+
+function LeadStoryCard({
+  article,
+  categoryMap,
+}: {
+  article: Article
+  categoryMap: Map<string, string>
+}) {
+  return (
+    <article className="bb-home-card bb-home-card--lead" data-bb-reveal>
+      <Link href={`/article/${article.slug}`} className="bb-home-card__media bb-home-card__media--lead">
         <Image
           src={article.image}
           alt={article.title}
           width={1200}
           height={675}
-          sizes="(max-width: 768px) 100vw, (max-width: 1180px) 62vw, 720px"
+          sizes="(max-width: 768px) 100vw, (max-width: 1180px) 62vw, 760px"
           priority
         />
       </Link>
-      <StoryMeta article={article} categoryMap={categoryMap} />
-      <h1>
-        <Link href={`/article/${article.slug}`}>{article.title}</Link>
-      </h1>
-      <p>{article.summary}</p>
+      <div className="bb-home-card__body">
+        <StoryMeta article={article} categoryMap={categoryMap} />
+        <h1 className="bb-home-card__title">
+          <Link href={`/article/${article.slug}`}>{article.title}</Link>
+        </h1>
+        <p className="bb-home-card__summary">{article.summary}</p>
+      </div>
     </article>
   )
 }
 
-function TextStory({
+function SplitStoryCard({
+  article,
+  categoryMap,
+  mediaPosition = 'right',
+  compact = false,
+}: {
+  article: Article
+  categoryMap: Map<string, string>
+  mediaPosition?: 'left' | 'right'
+  compact?: boolean
+}) {
+  return (
+    <article
+      className={`bb-home-card bb-home-card--split ${compact ? 'bb-home-card--compact' : ''} ${
+        mediaPosition === 'left' ? 'bb-home-card--split-left' : 'bb-home-card--split-right'
+      }`}
+      data-bb-reveal
+    >
+      <Link href={`/article/${article.slug}`} className="bb-home-card__media bb-home-card__media--split">
+        <Image
+          src={article.image}
+          alt={article.title}
+          width={420}
+          height={280}
+          sizes="(max-width: 768px) 100vw, 180px"
+        />
+      </Link>
+      <div className="bb-home-card__body">
+        <StoryMeta article={article} categoryMap={categoryMap} />
+        <h3 className="bb-home-card__title">
+          <Link href={`/article/${article.slug}`}>{article.title}</Link>
+        </h3>
+        <p className="bb-home-card__summary">{article.summary}</p>
+      </div>
+    </article>
+  )
+}
+
+function TextStoryCard({
   article,
   categoryMap,
   prominent = false,
@@ -69,129 +122,101 @@ function TextStory({
   prominent?: boolean
 }) {
   return (
-    <article
-      className={prominent ? 'bb-home-text-story bb-home-text-story--prominent' : 'bb-home-text-story'}
-      data-bb-reveal
-    >
+    <article className={`bb-home-card bb-home-card--text ${prominent ? 'bb-home-card--text-prominent' : ''}`} data-bb-reveal>
       <StoryMeta article={article} categoryMap={categoryMap} />
-      <h3>
+      <h3 className="bb-home-card__title">
         <Link href={`/article/${article.slug}`}>{article.title}</Link>
       </h3>
-      {prominent ? <p>{article.summary}</p> : null}
+      <p className="bb-home-card__summary">{article.summary}</p>
     </article>
   )
 }
 
-function MediaStory({
+function StackStoryCard({
   article,
   categoryMap,
-  compact = false,
 }: {
   article: Article
   categoryMap: Map<string, string>
-  compact?: boolean
 }) {
   return (
-    <article
-      className={compact ? 'bb-home-media-story bb-home-media-story--compact' : 'bb-home-media-story'}
-      data-bb-reveal
-    >
-      <Link href={`/article/${article.slug}`} className="bb-home-media">
+    <article className="bb-home-card bb-home-card--stack" data-bb-reveal>
+      <Link href={`/article/${article.slug}`} className="bb-home-card__media bb-home-card__media--stack">
         <Image
           src={article.image}
           alt={article.title}
           width={720}
           height={405}
-          sizes={compact ? '(max-width: 768px) 112px, 160px' : '(max-width: 768px) 100vw, 31vw'}
+          sizes="(max-width: 768px) 100vw, 25vw"
         />
       </Link>
-      <div>
+      <div className="bb-home-card__body">
         <StoryMeta article={article} categoryMap={categoryMap} />
-        <h3>
+        <h3 className="bb-home-card__title">
           <Link href={`/article/${article.slug}`}>{article.title}</Link>
         </h3>
-        {!compact ? <p>{article.summary}</p> : null}
+        <p className="bb-home-card__summary">{article.summary}</p>
       </div>
     </article>
   )
 }
 
-function SectionHeader({ title, href }: { title: string; href: string }) {
+function VideoCard({ video }: { video: Video }) {
   return (
-    <div className="bb-home-section-header">
-      <h2>{title}</h2>
-      <Link href={href}>সব দেখুন</Link>
-    </div>
+    <article className="bb-home-card bb-home-card--video" data-bb-reveal>
+      <Link href={`/video/${video.id}`} className="bb-home-card__media bb-home-card__media--video">
+        <Image
+          src={video.thumbnail}
+          alt={video.title}
+          width={720}
+          height={405}
+          sizes="(max-width: 768px) 100vw, 26vw"
+        />
+        <span className="bb-home-card__play" aria-hidden="true">
+          ▶
+        </span>
+      </Link>
+      <div className="bb-home-card__body bb-home-card__body--video">
+        <p className="bb-home-card__eyebrow">ভিডিও</p>
+        <h3 className="bb-home-card__title">
+          <Link href={`/video/${video.id}`}>{video.title}</Link>
+        </h3>
+      </div>
+    </article>
   )
 }
 
-function AdSlot({
-  label,
-  variant = 'inline',
-}: {
-  label: string
-  variant?: 'top' | 'inline' | 'anchor'
-}) {
-  const sizeMap = {
-    top: adSlots.leaderboard,
-    inline: adSlots.inArticle,
-    anchor: adSlots.leaderboard,
-  }
-
+function GalleryCard({ gallery }: { gallery: Gallery }) {
   return (
-    <section className={`bb-home-ad-slot bb-home-ad-slot--${variant}`} aria-label={label} data-bb-reveal>
-      <p>{label}</p>
-      <p className="bb-home-ad-slot__size">{sizeMap[variant]}</p>
-      <AdCreative variant={variant === 'inline' ? 'inline' : 'leaderboard'} />
-    </section>
-  )
-}
-
-// function BreakingTicker({ articles }: { articles: Article[] }) {
-//   if (!articles.length) {
-//     return null
-//   }
-
-//   return (
-//     <section className="bb-ticker" aria-label="ব্রেকিং নিউজ" data-bb-reveal>
-//       <p className="bb-ticker__label">ব্রেকিং</p>
-//       <div className="bb-ticker__viewport">
-//         <div className="bb-ticker__track">
-//           {articles.map((article) => (
-//             <Link key={article.id} href={`/article/${article.slug}`}>
-//               {article.title}
-//             </Link>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   )
-// }
-
-function StoryStrip({
-  articles,
-  categoryMap,
-}: {
-  articles: Article[]
-  categoryMap: Map<string, string>
-}) {
-  return (
-    <section className="bb-home-story-strip" aria-label="সর্বশেষ সংবাদ">
-      {articles.map((article) => (
-        <MediaStory key={article.id} article={article} categoryMap={categoryMap} compact />
-      ))}
-    </section>
+    <article className="bb-home-card bb-home-card--gallery" data-bb-reveal>
+      <Link href={`/photo/${gallery.id}`} className="bb-home-card__media bb-home-card__media--gallery">
+        <Image
+          src={gallery.coverImage}
+          alt={gallery.title}
+          width={720}
+          height={480}
+          sizes="(max-width: 768px) 100vw, 23vw"
+        />
+      </Link>
+      <div className="bb-home-card__body">
+        <p className="bb-home-card__eyebrow">{gallery.photos.length} ছবি</p>
+        <h3 className="bb-home-card__title">
+          <Link href={`/photo/${gallery.id}`}>{gallery.title}</Link>
+        </h3>
+      </div>
+    </article>
   )
 }
 
 function RankedList({ title, articles }: { title: string; articles: Article[] }) {
   return (
     <section className="bb-home-ranked" data-bb-reveal>
-      <h2>{title}</h2>
-      <ol>
+      <SectionHeader title={title} href="/latest" />
+      <ol className="bb-home-ranked__list">
         {articles.map((article) => (
-          <li key={article.id}>
+          <li key={article.id} className="bb-home-ranked__item">
             <Link href={`/article/${article.slug}`}>{article.title}</Link>
+            <p>{article.summary}</p>
           </li>
         ))}
       </ol>
@@ -199,150 +224,18 @@ function RankedList({ title, articles }: { title: string; articles: Article[] })
   )
 }
 
-function LatestList({ articles, categoryMap }: { articles: Article[]; categoryMap: Map<string, string> }) {
-  return (
-    <section className="bb-home-latest-panel" data-bb-reveal>
-      <div className="bb-home-tabs" role="presentation">
-        <span>সর্বশেষ</span>
-        <span>জনপ্রিয়</span>
-      </div>
-      <div className="bb-home-latest-panel__list">
-        {articles.map((article) => (
-          <TextStory key={article.id} article={article} categoryMap={categoryMap} />
-        ))}
-      </div>
-      <Link href="/latest" className="bb-home-more-link">
-        আরও সর্বশেষ
-      </Link>
-    </section>
-  )
-}
-
-function CategoryBlock({
+function SplitSection({
   title,
   href,
   articles,
   categoryMap,
-  variant = 'standard',
+  textRail = false,
 }: {
   title: string
   href: string
   articles: Article[]
   categoryMap: Map<string, string>
-  variant?: 'standard' | 'dense'
-}) {
-  const [feature, ...rest] = articles
-
-  if (!feature) {
-    return null
-  }
-
-  return (
-    <section
-      className={variant === 'dense' ? 'bb-home-category bb-home-category--dense' : 'bb-home-category'}
-      data-bb-reveal
-    >
-      <SectionHeader title={title} href={href} />
-      <div className="bb-home-category__grid">
-        <MediaStory article={feature} categoryMap={categoryMap} />
-        <div className="bb-home-category__list">
-          {rest.slice(0, variant === 'dense' ? 5 : 4).map((article, index) => (
-            <TextStory
-              key={article.id}
-              article={article}
-              categoryMap={categoryMap}
-              prominent={variant === 'standard' && index === 0}
-            />
-          ))}
-        </div>
-      </div>
-    </section>
-  )
-}
-
-function OpinionBlock({ articles, categoryMap }: { articles: Article[]; categoryMap: Map<string, string> }) {
-  const [feature, ...rest] = articles
-
-  if (!feature) {
-    return null
-  }
-
-  return (
-    <section className="bb-home-opinion" data-bb-reveal>
-      <SectionHeader title="মতামত" href="/opinion" />
-      <div className="bb-home-opinion__grid">
-        <TextStory article={feature} categoryMap={categoryMap} prominent />
-        {rest.slice(0, 3).map((article) => (
-          <TextStory key={article.id} article={article} categoryMap={categoryMap} />
-        ))}
-      </div>
-    </section>
-  )
-}
-
-function MediaBlock({ videos, galleries }: { videos: Video[]; galleries: Gallery[] }) {
-  return (
-    <section className="bb-home-media-block" data-bb-reveal>
-      <div>
-        <SectionHeader title="ভিডিও" href="/video" />
-        <div className="bb-home-media-block__grid">
-          {videos.slice(0, 3).map((video) => (
-            <article key={video.id} className="bb-home-video-card" data-bb-reveal>
-              <Link href={`/video/${video.id}`} className="bb-home-media">
-                <Image
-                  src={video.thumbnail}
-                  alt={video.title}
-                  width={720}
-                  height={405}
-                  sizes="(max-width: 768px) 100vw, 28vw"
-                />
-                <span>{video.duration}</span>
-              </Link>
-              <h3>
-                <Link href={`/video/${video.id}`}>{video.title}</Link>
-              </h3>
-            </article>
-          ))}
-        </div>
-      </div>
-      <div>
-        <SectionHeader title="ছবি" href="/photo" />
-        <div className="bb-home-gallery-list">
-          {galleries.slice(0, 3).map((gallery) => (
-            <article key={gallery.id} className="bb-home-gallery-item" data-bb-reveal>
-              <Link href={`/photo/${gallery.id}`} className="bb-home-media">
-                <Image
-                  src={gallery.coverImage}
-                  alt={gallery.title}
-                  width={240}
-                  height={160}
-                  sizes="120px"
-                />
-              </Link>
-              <div>
-                <p className="bb-home-meta">{gallery.photos.length} ছবি</p>
-                <h3>
-                  <Link href={`/photo/${gallery.id}`}>{gallery.title}</Link>
-                </h3>
-              </div>
-            </article>
-          ))}
-        </div>
-      </div>
-    </section>
-  )
-}
-
-function StreamCluster({
-  title,
-  href,
-  articles,
-  categoryMap,
-}: {
-  title: string
-  href: string
-  articles: Article[]
-  categoryMap: Map<string, string>
+  textRail?: boolean
 }) {
   const [lead, ...rest] = articles
 
@@ -350,40 +243,91 @@ function StreamCluster({
     return null
   }
 
-  const sideStories = rest.slice(0, 4)
-  const feedStories = rest.slice(4, 12)
+  const sideStories = rest.slice(0, textRail ? 4 : 3)
 
   return (
-    <section className="bb-home-stream-cluster" data-bb-reveal>
+    <section className="bb-home-band bb-home-band--split" data-bb-reveal>
       <SectionHeader title={title} href={href} />
-      <div className="bb-home-stream-cluster__grid">
-        <article className="bb-home-stream-cluster__lead" data-bb-reveal>
-          <Link href={`/article/${lead.slug}`} className="bb-home-media bb-home-media--lead">
-            <Image
-              src={lead.image}
-              alt={lead.title}
-              width={960}
-              height={540}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 740px"
-            />
-          </Link>
-          <StoryMeta article={lead} categoryMap={categoryMap} />
-          <h3>
-            <Link href={`/article/${lead.slug}`}>{lead.title}</Link>
-          </h3>
-          <p>{lead.summary}</p>
-        </article>
-        <div className="bb-home-stream-cluster__side">
-          {sideStories.map((article) => (
-            <TextStory key={article.id} article={article} categoryMap={categoryMap} />
+      <div className="bb-home-band__split">
+        <LeadStoryCard article={lead} categoryMap={categoryMap} />
+        <div className={`bb-home-band__rail ${textRail ? 'bb-home-band__rail--text' : ''}`}>
+          {sideStories.map((article, index) =>
+            textRail ? (
+              <TextStoryCard key={article.id} article={article} categoryMap={categoryMap} prominent={index === 0} />
+            ) : (
+              <SplitStoryCard
+                key={article.id}
+                article={article}
+                categoryMap={categoryMap}
+                mediaPosition={index % 2 === 0 ? 'right' : 'left'}
+                compact={index > 0}
+              />
+            )
+          )}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function OpinionBand({ articles, categoryMap }: { articles: Article[]; categoryMap: Map<string, string> }) {
+  const [lead, ...rest] = articles
+
+  if (!lead) {
+    return null
+  }
+
+  return (
+    <section className="bb-home-band bb-home-band--opinion" data-bb-reveal>
+      <SectionHeader title="মতামত" href="/opinion" />
+      <div className="bb-home-band__opinion">
+        <TextStoryCard article={lead} categoryMap={categoryMap} prominent />
+        <div className="bb-home-band__opinion-side">
+          {rest.slice(0, 3).map((article) => (
+            <SplitStoryCard key={article.id} article={article} categoryMap={categoryMap} />
           ))}
         </div>
       </div>
-      <div className="bb-home-stream-cluster__feed">
-        {feedStories.map((article) => (
-          <MediaStory key={article.id} article={article} categoryMap={categoryMap} compact />
+    </section>
+  )
+}
+
+function VideoBand({ videos }: { videos: Video[] }) {
+  return (
+    <section className="bb-home-band bb-home-band--video" data-bb-reveal>
+      <SectionHeader title="ভিডিও" href="/video" />
+      <div className="bb-home-band__video-grid">
+        <div className="bb-home-band__video-lead">
+          {videos[0] ? <VideoCard video={videos[0]} /> : null}
+        </div>
+        <div className="bb-home-band__video-side">
+          {videos.slice(1, 5).map((video) => (
+            <VideoCard key={video.id} video={video} />
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function PhotoBand({ galleries }: { galleries: Gallery[] }) {
+  return (
+    <section className="bb-home-band bb-home-band--photo" data-bb-reveal>
+      <SectionHeader title="ছবি" href="/photo" />
+      <div className="bb-home-band__photo-grid">
+        {galleries.slice(0, 4).map((gallery) => (
+          <GalleryCard key={gallery.id} gallery={gallery} />
         ))}
       </div>
+    </section>
+  )
+}
+
+function StaticRailNote() {
+  return (
+    <section className="bb-home-static-note" data-bb-reveal>
+      <h2>আজকের আয়োজন</h2>
+      <p>ই-পেপার ও ইংরেজি সংস্করণ আপাতত স্থির অবস্থায় রাখা হয়েছে।</p>
     </section>
   )
 }
@@ -407,125 +351,53 @@ export function HomepageLayout({
 }: HomepageLayoutProps) {
   const categoryMap = new Map(categories.map((category) => [category.id, category.name]))
   const leadArticles = featuredArticles.length >= 5 ? featuredArticles : latestArticles.slice(0, 5)
-  const [lead, ...secondaryLead] = leadArticles
-  const infiniteSlots = [1, 2, 3, 4]
+  const [lead, ...heroRailArticles] = leadArticles
+  const storyStripArticles = latestArticles.slice(5, 9)
+  const momentArticles = latestArticles.slice(9, 18)
 
   if (!lead) {
     return null
   }
 
   return (
-    <div className="bb-home">
+    <div className="bb-home bb-home--inspiration">
       <HomeMotion />
-      <AdSlot label="টপ বিজ্ঞাপন" variant="top" />
-      {/* <BreakingTicker articles={latestArticles.slice(0, 8)} /> */}
-      <section className="bb-home-lead-grid" aria-label="প্রধান সংবাদ">
-        <div className="bb-home-lead-grid__left">
-          <LeadStory article={lead} categoryMap={categoryMap} />
-          <div className="bb-home-lead-grid__secondary">
-            {secondaryLead.slice(0, 4).map((article, index) =>
-              index === 0 ? (
-                <MediaStory key={article.id} article={article} categoryMap={categoryMap} compact />
-              ) : (
-                <TextStory key={article.id} article={article} categoryMap={categoryMap} />
-              )
-            )}
-          </div>
-        </div>
-        <LatestList articles={latestArticles.slice(0, 6)} categoryMap={categoryMap} />
+
+      <section className="bb-home-hero" aria-label="প্রধান সংবাদ">
+        <LeadStoryCard article={lead} categoryMap={categoryMap} />
+        <aside className="bb-home-hero__rail" aria-label="সাম্প্রতিক সংবাদ">
+          {heroRailArticles.slice(0, 4).map((article, index) =>
+            index === 0 ? (
+              <SplitStoryCard key={article.id} article={article} categoryMap={categoryMap} />
+            ) : (
+              <TextStoryCard key={article.id} article={article} categoryMap={categoryMap} prominent={index === 1} />
+            )
+          )}
+        </aside>
       </section>
 
-      <AdSlot label="ইন্টারস্টিশিয়াল বিজ্ঞাপন" variant="inline" />
-      <StoryStrip articles={latestArticles.slice(6, 10)} categoryMap={categoryMap} />
-
-      <StreamCluster
-        title="এই মুহূর্তে"
-        href="/latest"
-        articles={latestArticles.slice(10, 24)}
-        categoryMap={categoryMap}
-      />
-
-      <div className="bb-home-two-column">
-        <div className="bb-home-two-column__main">
-          <CategoryBlock
-            title="বাংলাদেশ"
-            href="/bangladesh"
-            articles={bangladeshArticles.slice(0, 5)}
-            categoryMap={categoryMap}
-          />
-          <div className="bb-home-section-pair">
-            <CategoryBlock
-              title="রাজনীতি"
-              href="/politics"
-              articles={politicsArticles.slice(0, 5)}
-              categoryMap={categoryMap}
-              variant="dense"
-            />
-            <CategoryBlock
-              title="বিশ্ব"
-              href="/world"
-              articles={worldArticles.slice(0, 5)}
-              categoryMap={categoryMap}
-              variant="dense"
-            />
-          </div>
-          <CategoryBlock
-            title="বাণিজ্য"
-            href="/business"
-            articles={businessArticles.slice(0, 5)}
-            categoryMap={categoryMap}
-          />
-          <OpinionBlock articles={opinionArticles.slice(0, 4)} categoryMap={categoryMap} />
-          <div className="bb-home-section-pair">
-            <CategoryBlock
-              title="খেলা"
-              href="/sports"
-              articles={sportsArticles.slice(0, 5)}
-              categoryMap={categoryMap}
-              variant="dense"
-            />
-            <CategoryBlock
-              title="বিনোদন"
-              href="/entertainment"
-              articles={entertainmentArticles.slice(0, 5)}
-              categoryMap={categoryMap}
-              variant="dense"
-            />
-          </div>
-          <MediaBlock videos={videos} galleries={galleries} />
-          <div className="bb-home-section-pair">
-            <CategoryBlock
-              title="চাকরি"
-              href="/jobs"
-              articles={jobsArticles.slice(0, 5)}
-              categoryMap={categoryMap}
-              variant="dense"
-            />
-            <CategoryBlock
-              title="জীবনযাপন"
-              href="/lifestyle"
-              articles={lifestyleArticles.slice(0, 5)}
-              categoryMap={categoryMap}
-              variant="dense"
-            />
-          </div>
-        </div>
-        <aside className="bb-home-two-column__rail" aria-label="পাঠকের পছন্দ">
-          <RankedList title="সর্বাধিক পঠিত" articles={mostRead.slice(0, 8)} />
-          <section className="bb-home-static-note" data-bb-reveal>
-            <h2>আজকের আয়োজন</h2>
-            <p>ই-পেপার ও ইংরেজি সংস্করণ আপাতত স্থির অবস্থায় রাখা হয়েছে।</p>
-          </section>
-        </aside>
-      </div>
-
-      <AdSlot label="অ্যাঙ্কর বিজ্ঞাপন" variant="anchor" />
-      <section className="bb-home-infinite-markers" aria-label="ইনফিনিট লোড সেকশন" data-bb-reveal>
-        {infiniteSlots.map((slot) => (
-          <div key={slot} className="bb-home-infinite-markers__item" data-infinite-scroll={slot}>
-            আরও কনটেন্ট লোড হবে #{slot}
-          </div>
+      <section className="bb-home-strip" aria-label="বাছাই সংবাদ">
+        {storyStripArticles.map((article) => (
+          <StackStoryCard key={article.id} article={article} categoryMap={categoryMap} />
         ))}
+      </section>
+
+      <SplitSection title="এই মুহূর্তে" href="/latest" articles={momentArticles} categoryMap={categoryMap} />
+      <SplitSection title="বাংলাদেশ" href="/bangladesh" articles={bangladeshArticles.slice(0, 5)} categoryMap={categoryMap} />
+      <SplitSection title="রাজনীতি" href="/politics" articles={politicsArticles.slice(0, 5)} categoryMap={categoryMap} textRail />
+      <SplitSection title="বিশ্ব" href="/world" articles={worldArticles.slice(0, 5)} categoryMap={categoryMap} />
+      <SplitSection title="বাণিজ্য" href="/business" articles={businessArticles.slice(0, 5)} categoryMap={categoryMap} textRail />
+      <OpinionBand articles={opinionArticles.slice(0, 4)} categoryMap={categoryMap} />
+      <SplitSection title="খেলা" href="/sports" articles={sportsArticles.slice(0, 5)} categoryMap={categoryMap} />
+      <SplitSection title="বিনোদন" href="/entertainment" articles={entertainmentArticles.slice(0, 5)} categoryMap={categoryMap} textRail />
+      <VideoBand videos={videos} />
+      <PhotoBand galleries={galleries} />
+      <SplitSection title="চাকরি" href="/jobs" articles={jobsArticles.slice(0, 5)} categoryMap={categoryMap} />
+      <SplitSection title="জীবনযাপন" href="/lifestyle" articles={lifestyleArticles.slice(0, 5)} categoryMap={categoryMap} textRail />
+
+      <section className="bb-home-band" data-bb-reveal>
+        <RankedList title="সর্বাধিক পঠিত" articles={mostRead.slice(0, 8)} />
+        <StaticRailNote />
       </section>
     </div>
   )
