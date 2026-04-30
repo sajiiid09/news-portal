@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { FooterLinks } from './FooterLinks'
+import { SocialLinks } from './SocialLinks'
 
 const organizationJsonLd = {
   '@context': 'https://schema.org',
@@ -36,6 +37,7 @@ export function Footer() {
           <h2>নিউজরুম</h2>
           <p>সংবাদ, ছবি, ভিডিও ও বিজ্ঞাপন সংক্রান্ত যোগাযোগের জন্য আমাদের অফিসিয়াল চ্যানেল ব্যবহার করুন।</p>
           <Link href="/contact">যোগাযোগ করুন</Link>
+          <SocialLinks />
         </section>
       </div>
       <div className="bb-container bb-footer__bottom">
