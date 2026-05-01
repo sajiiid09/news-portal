@@ -188,12 +188,14 @@ function CategorySection({
   articles,
   categoryMap,
   dense = false,
+  leadSection = false,
 }: {
   title: string
   href: string
   articles: Article[]
   categoryMap: Map<string, string>
   dense?: boolean
+  leadSection?: boolean
 }) {
   const [lead, ...rest] = articles
 
@@ -202,7 +204,10 @@ function CategorySection({
   }
 
   return (
-    <section className={`bb-pa-section ${dense ? 'bb-pa-section--dense' : ''}`} data-bb-reveal>
+    <section
+      className={`bb-pa-section ${dense ? 'bb-pa-section--dense' : ''} ${leadSection ? 'bb-pa-section--lead' : ''}`}
+      data-bb-reveal
+    >
       <SectionHeader title={title} href={href} />
       <div className="bb-pa-section__grid">
         <MediaStory article={lead} categoryMap={categoryMap} />
@@ -309,7 +314,13 @@ export function HomepageLayout({
         ))}
       </section>
 
-      <CategorySection title="বাংলাদেশ" href="/bangladesh" articles={bangladeshArticles.slice(0, 5)} categoryMap={categoryMap} />
+      <CategorySection
+        title="বাংলাদেশ"
+        href="/bangladesh"
+        articles={bangladeshArticles.slice(0, 5)}
+        categoryMap={categoryMap}
+        leadSection
+      />
       <CategorySection title="রাজনীতি" href="/politics" articles={politicsArticles.slice(0, 5)} categoryMap={categoryMap} dense />
       <CategorySection title="বিশ্ব" href="/world" articles={worldArticles.slice(0, 5)} categoryMap={categoryMap} />
       <CategorySection title="বাণিজ্য" href="/business" articles={businessArticles.slice(0, 5)} categoryMap={categoryMap} dense />
