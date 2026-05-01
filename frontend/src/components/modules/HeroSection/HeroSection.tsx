@@ -44,6 +44,7 @@ export function HeroSection({ articles }: { articles: Article[] }) {
             <h3>
               <Link href={`/article/${item.slug}`}>{item.title}</Link>
             </h3>
+            <p>{item.summary}</p>
             <p className="bb-meta">{item.categoryId}</p>
           </article>
         ))}
