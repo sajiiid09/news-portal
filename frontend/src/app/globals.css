@@ -11,6 +11,7 @@
   margin: 0 0 var(--spacing-1);
 }
 
+/* Shared section and page shell used by category and editorial layouts. */
 .bb-section-page {
   display: grid;
   gap: clamp(var(--spacing-5), 4vw, var(--spacing-8));
@@ -32,6 +33,7 @@
   margin: 0;
 }
 
+/* Subcategory links shown directly under category titles. */
 .bb-category-subnav {
   overflow-x: auto;
   scrollbar-width: none;
@@ -102,6 +104,7 @@
   padding-bottom: var(--spacing-2);
 }
 
+/* Standard editorial story blocks and section grids. */
 .bb-section-lead {
   display: grid;
   gap: var(--spacing-5);
@@ -267,6 +270,7 @@
   padding: var(--spacing-2);
 }
 
+/* Featured slider used on category and section pages. */
 .bb-category-featured {
   border-top: 4px solid #158bd1;
   display: grid;
@@ -559,6 +563,7 @@
   color: var(--color-accent-deep);
 }
 
+/* District topics page and its card grid. */
 .bb-district-page {
   display: grid;
   gap: var(--spacing-5);
@@ -714,6 +719,7 @@ a {
   border: 0;
 }
 
+/* Homepage layouts and the main front-page modules. */
 .bb-home--inspiration {
   display: grid;
   gap: clamp(var(--spacing-6), 4vw, var(--spacing-10));
@@ -1193,6 +1199,7 @@ a {
   }
 }
 
+/* Portfolio-style home page and archive-like story groups. */
 .bb-pa-home {
   display: grid;
   gap: clamp(var(--spacing-6), 3.2vw, var(--spacing-10));
@@ -3000,6 +3007,7 @@ button.bb-static-utility {
   gap: var(--spacing-2);
 }
 
+/* Article detail page layout, breadcrumb, and lead/meta area. */
 .bb-article-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 300px;
