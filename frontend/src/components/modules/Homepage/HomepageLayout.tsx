@@ -100,7 +100,7 @@ function MediaStory({
         <h3>
           <Link href={`/article/${article.slug}`}>{article.title}</Link>
         </h3>
-        {!compact ? <p>{article.summary}</p> : null}
+        <p>{article.summary}</p>
       </div>
     </article>
   )
@@ -121,7 +121,7 @@ function TextStory({
       <h3>
         <Link href={`/article/${article.slug}`}>{article.title}</Link>
       </h3>
-      {prominent ? <p>{article.summary}</p> : null}
+      <p>{article.summary}</p>
     </article>
   )
 }
