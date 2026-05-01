@@ -41,11 +41,11 @@ export function HeroSection({ articles }: { articles: Article[] }) {
                 className="bb-card-media"
               />
             </Link>
+            <p className="bb-meta">{item.categoryId}</p>
             <h3>
               <Link href={`/article/${item.slug}`}>{item.title}</Link>
             </h3>
-            <p>{item.summary}</p>
-            <p className="bb-meta">{item.categoryId}</p>
+            <p className="bb-card__summary">{item.summary}</p>
           </article>
         ))}
       </div>

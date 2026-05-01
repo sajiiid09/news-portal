@@ -48,30 +48,46 @@ function SectionHeader({ title, href }: { title: string; href: string }) {
 function LeadStory({
   article,
   categoryMap,
+  followupArticles = [],
 }: {
   article: Article
   categoryMap: Map<string, string>
+  followupArticles?: Article[]
 }) {
   return (
-    <article className="bb-pa-story bb-pa-story--lead" data-bb-reveal>
-      <Link href={`/article/${article.slug}`} className="bb-pa-story__media">
-        <Image
-          src={article.image}
-          alt={article.title}
-          width={900}
-          height={506}
-          sizes="(max-width: 768px) 100vw, (max-width: 1180px) 58vw, 570px"
-          priority
-        />
-      </Link>
-      <div className="bb-pa-story__body">
-        <StoryMeta article={article} categoryMap={categoryMap} />
-        <h1>
-          <Link href={`/article/${article.slug}`}>{article.title}</Link>
-        </h1>
-        <p>{article.summary}</p>
-      </div>
-    </article>
+    <div className="bb-pa-lead-grid__main">
+      <article className="bb-pa-story bb-pa-story--lead" data-bb-reveal>
+        <Link href={`/article/${article.slug}`} className="bb-pa-story__media">
+          <Image
+            src={article.image}
+            alt={article.title}
+            width={900}
+            height={506}
+            sizes="(max-width: 768px) 100vw, (max-width: 1180px) 58vw, 570px"
+            priority
+          />
+        </Link>
+        <div className="bb-pa-story__body">
+          <StoryMeta article={article} categoryMap={categoryMap} />
+          <h1>
+            <Link href={`/article/${article.slug}`}>{article.title}</Link>
+          </h1>
+          <p>{article.summary}</p>
+        </div>
+      </article>
+
+      {followupArticles.length ? (
+        <div className="bb-pa-lead-grid__related">
+          {followupArticles.map((followupArticle) => (
+            <TextStory
+              key={followupArticle.id}
+              article={followupArticle}
+              categoryMap={categoryMap}
+            />
+          ))}
+        </div>
+      ) : null}
+    </div>
   )
 }
 
@@ -100,7 +116,7 @@ function MediaStory({
         <h3>
           <Link href={`/article/${article.slug}`}>{article.title}</Link>
         </h3>
-        {!compact ? <p>{article.summary}</p> : null}
+        <p>{article.summary}</p>
       </div>
     </article>
   )
@@ -121,7 +137,7 @@ function TextStory({
       <h3>
         <Link href={`/article/${article.slug}`}>{article.title}</Link>
       </h3>
-      {prominent ? <p>{article.summary}</p> : null}
+      <p>{article.summary}</p>
     </article>
   )
 }
@@ -188,14 +204,12 @@ function CategorySection({
   articles,
   categoryMap,
   dense = false,
-  leadSection = false,
 }: {
   title: string
   href: string
   articles: Article[]
   categoryMap: Map<string, string>
   dense?: boolean
-  leadSection?: boolean
 }) {
   const [lead, ...rest] = articles
 
@@ -204,10 +218,7 @@ function CategorySection({
   }
 
   return (
-    <section
-      className={`bb-pa-section ${dense ? 'bb-pa-section--dense' : ''} ${leadSection ? 'bb-pa-section--lead' : ''}`}
-      data-bb-reveal
-    >
+    <section className={`bb-pa-section ${dense ? 'bb-pa-section--dense' : ''}`} data-bb-reveal>
       <SectionHeader title={title} href={href} />
       <div className="bb-pa-section__grid">
         <MediaStory article={lead} categoryMap={categoryMap} />
@@ -276,6 +287,9 @@ export function HomepageLayout({
   const categoryMap = new Map(categories.map((category) => [category.id, category.name]))
   const leadArticles = featuredArticles.length >= 5 ? featuredArticles : latestArticles.slice(0, 5)
   const [lead, ...heroRailArticles] = leadArticles
+  const leadFollowupArticles = latestArticles
+    .filter((article) => article.id !== lead?.id && !leadArticles.some((leadArticle) => leadArticle.id === article.id))
+    .slice(0, 3)
   const storyStripArticles = latestArticles.slice(5, 9)
   const latestRailArticles = latestArticles.slice(9, 15)
 
@@ -292,7 +306,7 @@ export function HomepageLayout({
       </section>
 
       <section className="bb-pa-lead-grid" aria-label="প্রধান সংবাদ">
-        <LeadStory article={lead} categoryMap={categoryMap} />
+        <LeadStory article={lead} categoryMap={categoryMap} followupArticles={leadFollowupArticles} />
         <div className="bb-pa-lead-grid__secondary">
           {heroRailArticles.slice(0, 4).map((article, index) =>
             index === 0 ? (
@@ -314,13 +328,7 @@ export function HomepageLayout({
         ))}
       </section>
 
-      <CategorySection
-        title="বাংলাদেশ"
-        href="/bangladesh"
-        articles={bangladeshArticles.slice(0, 5)}
-        categoryMap={categoryMap}
-        leadSection
-      />
+      <CategorySection title="বাংলাদেশ" href="/bangladesh" articles={bangladeshArticles.slice(0, 5)} categoryMap={categoryMap} />
       <CategorySection title="রাজনীতি" href="/politics" articles={politicsArticles.slice(0, 5)} categoryMap={categoryMap} dense />
       <CategorySection title="বিশ্ব" href="/world" articles={worldArticles.slice(0, 5)} categoryMap={categoryMap} />
       <CategorySection title="বাণিজ্য" href="/business" articles={businessArticles.slice(0, 5)} categoryMap={categoryMap} dense />
