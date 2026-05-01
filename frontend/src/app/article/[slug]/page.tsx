@@ -136,7 +136,6 @@ export default async function ArticlePage({
               </Link>
             </p>
             <h1>{article.title}</h1>
-            <p className="bb-article-lead">{article.summary}</p>
             <div className="bb-article-meta">
               <div className="bb-article-byline">
                 <span className="bb-article-avatar" aria-hidden="true">
