@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation'
 import { DataService } from '@/lib/data'
 import { NewsGrid } from '@/components/modules/NewsGrid'
 import { Container } from '@/components/layouts/Container'
-import { EditorialSectionPage } from '@/components/modules/SectionPage'
+import { CategorySubNav, EditorialSectionPage } from '@/components/modules/SectionPage'
 
 export async function generateMetadata({
   params,
@@ -38,9 +38,10 @@ export default async function CategoryPage({
   }
 
   if (sectionPage) {
-    const [articles, dseItems] = await Promise.all([
+    const [articles, dseItems, subCategories] = await Promise.all([
       DataService.articles.getAll(),
       DataService.dse.getTicker(),
+      DataService.subCategories.getByCategory(sectionPage.slug),
     ])
 
     return (
@@ -50,6 +51,7 @@ export default async function CategoryPage({
           articles={articles}
           dseItems={dseItems}
           dseEndpoint={process.env.NEXT_PUBLIC_DSE_TICKER_ENDPOINT || '/api/dse/ticker'}
+          subCategories={subCategories}
         />
       </Container>
     )
@@ -59,7 +61,10 @@ export default async function CategoryPage({
     notFound()
   }
 
-  const articles = await DataService.articles.getByCategory(categoryData.id)
+  const [articles, subCategories] = await Promise.all([
+    DataService.articles.getByCategory(categoryData.id),
+    DataService.subCategories.getByCategory(categoryData.id),
+  ])
   const breadcrumbJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -83,11 +88,13 @@ export default async function CategoryPage({
     <Container>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
-      />
-      <section className="bb-section">
+      >
+        {JSON.stringify(breadcrumbJsonLd)}
+      </script>
+      <section className="bb-section bb-section-page__masthead">
         <h1>{categoryData.name}</h1>
-        <p>{categoryData.description}</p>
+        <CategorySubNav categorySlug={categoryData.slug} items={subCategories} />
+        {categoryData.description ? <p>{categoryData.description}</p> : null}
       </section>
       <NewsGrid title={categoryData.name} articles={articles} viewAllLink={`/${category}`} />
     </Container>

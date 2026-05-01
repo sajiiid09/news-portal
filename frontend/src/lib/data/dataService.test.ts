@@ -16,6 +16,22 @@ describe('DataService', () => {
     expect(articles.every((item) => item.categoryId === 'sports')).toBe(true)
   })
 
+  it('returns Prothom-style subcategories for category pages', async () => {
+    const bangladesh = await DataService.subCategories.getByCategory('bangladesh')
+    const world = await DataService.subCategories.getByCategory('world')
+    const business = await DataService.subCategories.getByCategory('business')
+
+    expect(bangladesh.map((item) => item.name)).toEqual([
+      'রাজধানী',
+      'জেলা',
+      'করোনাভাইরাস',
+      'অপরাধ',
+      'পরিবেশ',
+    ])
+    expect(world.map((item) => item.name)).toContain('লাতিন আমেরিকা')
+    expect(business.map((item) => item.name)).toContain('বাজেট ২০২৫-২৬')
+  })
+
   it('searches by term across title and body', async () => {
     const results = await DataService.search.query('ঢাকা')
     expect(results.length).toBeGreaterThan(0)

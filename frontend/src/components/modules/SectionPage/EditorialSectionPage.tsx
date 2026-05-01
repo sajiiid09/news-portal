@@ -1,8 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import type { Article, DseTickerItem, SectionBlock, SectionPageConfig } from '@/lib/types'
+import type { Article, DseTickerItem, SectionBlock, SectionPageConfig, SubCategory } from '@/lib/types'
 import { formatBanglaDate } from '@/lib/utils'
 import { AdCreative } from '@/components/modules/Ads'
+import { CategoryFeaturedSlider } from './CategoryFeaturedSlider'
+import { CategorySubNav } from './CategorySubNav'
 import { DseTickerWidget } from './DseTickerWidget'
 
 interface EditorialSectionPageProps {
@@ -10,6 +12,7 @@ interface EditorialSectionPageProps {
   articles: Article[]
   dseItems: DseTickerItem[]
   dseEndpoint: string
+  subCategories?: SubCategory[]
 }
 
 function makeStoryMap(articles: Article[]) {
@@ -17,7 +20,55 @@ function makeStoryMap(articles: Article[]) {
 }
 
 function storiesForIds(storyMap: Map<string, Article>, ids: string[] = []) {
-  return ids.map((id) => storyMap.get(id)).filter(Boolean) as Article[]
+  return ids.flatMap((id) => {
+    const story = storyMap.get(id)
+    return story ? [story] : []
+  })
+}
+
+function resolveFeaturedSlider(page: SectionPageConfig, storyMap: Map<string, Article>) {
+  const selectedBlock = page.sections.find((block) => {
+    if (block.type !== 'selected-grid' && block.type !== 'video-grid') {
+      return false
+    }
+
+    return storiesForIds(storyMap, block.storyIds).length > 0
+  })
+
+  if (selectedBlock) {
+    return {
+      consumedBlockId: selectedBlock.id,
+      stories: storiesForIds(storyMap, selectedBlock.storyIds),
+      title: selectedBlock.title || 'নির্বাচিত',
+    }
+  }
+
+  const leadStoryIds = new Set(
+    page.sections.find((block) => block.type === 'lead-grid')?.storyIds || []
+  )
+  const storyListBlock = page.sections.find((block) => block.type === 'story-list')
+  const storyListStories = storiesForIds(storyMap, storyListBlock?.storyIds).filter(
+    (story) => !leadStoryIds.has(story.id)
+  )
+
+  if (storyListStories.length) {
+    return {
+      stories: storyListStories,
+      title: 'নির্বাচিত',
+    }
+  }
+
+  const leadBlock = page.sections.find((block) => block.type === 'lead-grid')
+  const leadStories = storiesForIds(storyMap, leadBlock?.storyIds)
+
+  if (leadStories.length) {
+    return {
+      stories: leadStories,
+      title: 'নির্বাচিত',
+    }
+  }
+
+  return null
 }
 
 function SectionTitle({ title }: { title: string }) {
@@ -192,16 +243,31 @@ export function EditorialSectionPage({
   articles,
   dseItems,
   dseEndpoint,
+  subCategories,
 }: EditorialSectionPageProps) {
   const storyMap = makeStoryMap(articles)
+  const featuredSlider = resolveFeaturedSlider(page, storyMap)
 
   return (
     <div className={`bb-section-page bb-section-page--${page.template}`}>
       <header className="bb-section-page__masthead">
         <h1>{page.label}</h1>
+        <CategorySubNav categorySlug={page.slug} items={subCategories} />
       </header>
 
+      {featuredSlider ? (
+        <CategoryFeaturedSlider
+          title={featuredSlider.title}
+          stories={featuredSlider.stories}
+          categoryLabel={page.label}
+        />
+      ) : null}
+
       {page.sections.map((block) => {
+        if (block.id === featuredSlider?.consumedBlockId) {
+          return null
+        }
+
         const stories = storiesForIds(storyMap, block.storyIds)
 
         if (block.type === 'dse') {
