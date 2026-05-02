@@ -2661,9 +2661,13 @@ button.bb-static-utility {
 
 .bb-card__summary {
   color: var(--color-dark-gray);
+  display: -webkit-box;
   font-size: var(--font-size-sm);
   line-height: 1.65;
   margin: 0;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 
 .bb-meta {
