@@ -35,6 +35,7 @@ describe('CategoryFeaturedSlider', () => {
       true
     )
     expect(screen.getByText('বাংলাদেশ')).toBeInTheDocument()
+    expect(screen.getByText('সংক্ষিপ্ত বর্ণনা')).toBeInTheDocument()
 
     fireEvent.click(screen.getByRole('button', { name: 'পরের নির্বাচিত খবর' }))
     expect(scrollBy).toHaveBeenCalledWith({ left: 410, behavior: 'smooth' })

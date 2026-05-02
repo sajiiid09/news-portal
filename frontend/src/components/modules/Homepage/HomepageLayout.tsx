@@ -3,6 +3,7 @@ import Link from 'next/link'
 import type { Article, Category, Gallery, Video } from '@/lib/types'
 import { formatBanglaDate } from '@/lib/utils'
 import { AdCreative } from '@/components/modules/Ads'
+import { CategoryFeaturedSlider } from '@/components/modules/SectionPage'
 import { HomeMotion } from './HomeMotion'
 
 interface HomepageLayoutProps {
@@ -286,10 +287,14 @@ export function HomepageLayout({
 }: HomepageLayoutProps) {
   const categoryMap = new Map(categories.map((category) => [category.id, category.name]))
   const leadArticles = featuredArticles.length >= 5 ? featuredArticles : latestArticles.slice(0, 5)
+  const leadArticleIds = new Set(leadArticles.map((article) => article.id))
   const [lead, ...heroRailArticles] = leadArticles
   const leadFollowupArticles = latestArticles
-    .filter((article) => article.id !== lead?.id && !leadArticles.some((leadArticle) => leadArticle.id === article.id))
+    .filter((article) => article.id !== lead?.id && !leadArticleIds.has(article.id))
     .slice(0, 3)
+  const homepageSliderArticles = latestArticles
+    .filter((article) => !leadArticleIds.has(article.id))
+    .slice(0, 8)
   const storyStripArticles = latestArticles.slice(5, 9)
   const latestRailArticles = latestArticles.slice(9, 15)
 
@@ -300,7 +305,6 @@ export function HomepageLayout({
   return (
     <div className="bb-pa-home">
       <HomeMotion />
-
       <section className="bb-pa-home__leaderboard" aria-label="বিজ্ঞাপন">
         <AdCreative variant="leaderboard" />
       </section>
@@ -321,6 +325,8 @@ export function HomepageLayout({
           <RankedList title="সর্বশেষ" articles={latestRailArticles} />
         </aside>
       </section>
+
+      <CategoryFeaturedSlider title="নির্বাচিত" stories={homepageSliderArticles} />
 
       <section className="bb-pa-strip" aria-label="বাছাই সংবাদ">
         {storyStripArticles.map((article) => (
