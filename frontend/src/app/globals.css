@@ -161,9 +161,32 @@
 }
 
 .bb-section-story p {
+  margin: 0;
+}
+
+.bb-section-story__summary {
   color: var(--color-dark-gray);
-  line-height: 1.7;
+  display: -webkit-box;
+  font-size: var(--font-size-sm);
+  line-height: 1.65;
   margin: var(--spacing-2) 0 0;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.bb-section-story--lead .bb-section-story__summary,
+.bb-section-story--standard .bb-section-story__summary {
+  -webkit-line-clamp: 3;
+}
+
+.bb-section-story--compact .bb-section-story__summary,
+.bb-section-story--text .bb-section-story__summary {
+  -webkit-line-clamp: 2;
+}
+
+.bb-section-story--visual .bb-section-story__summary {
+  color: rgba(255, 255, 255, 0.76) !important;
 }
 
 .bb-section-story__meta {
@@ -339,7 +362,8 @@
 }
 
 .bb-category-featured__card {
-  background: #e8f5ff;
+  background: var(--color-accent-soft);
+  border: 1px solid var(--color-light-gray);
   border-radius: 4px;
   display: grid;
   grid-template-rows: auto 1fr;

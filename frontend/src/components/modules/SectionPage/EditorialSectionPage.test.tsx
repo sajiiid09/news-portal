@@ -60,6 +60,8 @@ describe('EditorialSectionPage featured slider', () => {
 
     expect(screen.getByRole('region', { name: 'নির্বাচিত' })).toBeInTheDocument()
     expect(screen.getAllByText('Selected Story')).toHaveLength(1)
+    expect(screen.getByText('Selected Story summary')).toBeInTheDocument()
+    expect(screen.getByText('More Story summary')).toBeInTheDocument()
   })
 
   it('falls back to story-list stories after excluding lead stories', () => {

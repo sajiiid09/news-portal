@@ -115,7 +115,7 @@ function StoryCard({
         <h3>
           <Link href={`/article/${article.slug}`}>{article.title}</Link>
         </h3>
-        {variant === 'lead' || variant === 'standard' ? <p>{article.summary}</p> : null}
+        <p className="bb-section-story__summary">{article.summary}</p>
       </div>
     </article>
   )
