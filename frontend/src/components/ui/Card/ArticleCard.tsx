@@ -20,7 +20,7 @@ export function ArticleCard({ article }: { article: Article }) {
       <h3>
         <Link href={`/article/${article.slug}`}>{article.title}</Link>
       </h3>
-      <p>{article.summary}</p>
+      <p className="bb-card__summary">{article.summary}</p>
       <p className="bb-meta">{formatBanglaDate(article.publishedAt)}</p>
     </article>
   )
